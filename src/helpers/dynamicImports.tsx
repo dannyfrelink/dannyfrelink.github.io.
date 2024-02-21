@@ -41,8 +41,6 @@ const dynamicComp = (comp: string) => {
 
 // Header components
 export const Nav = dynamicComp("header/Nav");
-// export const Header = dynamicComp("header/Header");
-// export const Title = dynamicComp("header/Title");
 export const Header = dynamic<HeaderProps>(
   () => import(`../components/header/Header`),
   {
@@ -57,11 +55,6 @@ export const Title = dynamic<TitleProps>(
 );
 
 // Typography compenents
-// export const BaseText = dynamicComp("typography/BaseText");
-// export const H1 = dynamicComp("typography/H1");
-// export const H2 = dynamicComp("typography/H2");
-// export const H3 = dynamicComp("typography/H3");
-// export const H4 = dynamicComp("typography/H4");
 export const BaseText = dynamic<BaseTextProps>(
   () => import(`../components/typography/BaseText`),
   {
@@ -94,13 +87,7 @@ export const H4 = dynamic<H4Props>(
 );
 
 // General compenents
-// export const Button = dynamicComp("general/Button");
-// export const ButtonLink = dynamicComp("general/ButtonLink");
-// export const CloseButton = dynamicComp("general/CloseButton");
-// export const Container = dynamicComp("general/Container");
-// export const Details = dynamicComp("general/Details");
 export const Footer = dynamicComp("general/Footer");
-// export const ScrollBar = dynamicComp("general/ScrollBar");
 export const Button = dynamic<ButtonProps>(
   () => import(`../components/general/Button`),
   {
@@ -139,15 +126,7 @@ export const ScrollBar = dynamic<ScrollBarProps>(
 );
 
 // Blogs page compenents
-// export const BlogContent = dynamicComp("pages/blogs/BlogContent");
-// export const BlogImage = dynamicComp("pages/blogs/BlogImage");
-// export const BottomBar = dynamicComp("pages/blogs/BottomBar");
-// export const CountryTag = dynamicComp("pages/blogs/CountryTag");
-// export const NextBlog = dynamicComp("pages/blogs/NextBlog");
-// export const NextBlogs = dynamicComp("pages/blogs/NextBlogs");
-// export const SideBar = dynamicComp("pages/blogs/SideBar");
 export const Socials = dynamicComp("pages/blogs/Socials");
-// export const TableOfContents = dynamicComp("pages/blogs/TableOfContents");
 export const BlogContent = dynamic<BlogContentProps>(
   () => import(`../components/pages/blogs/BlogContent`),
   {
@@ -198,8 +177,6 @@ export const TableOfContents = dynamic<TableOfContentsProps>(
 );
 
 // Home page compenents
-// export const Carousel = dynamicComp("pages/home/Carousel");
-// export const Featured = dynamicComp("pages/home/Featured");
 export const Carousel = dynamic<CarouselProps>(
   () => import(`../components/pages/home/Carousel`),
   {
@@ -214,12 +191,6 @@ export const Featured = dynamic<FeaturedProps>(
 );
 
 // Overview page compenents
-// export const AccommodationList = dynamicComp(
-//   "pages/overview/AccommodationList"
-// );
-// export const IntroOverview = dynamicComp("pages/overview/IntroOverview");
-// export const ListOverview = dynamicComp("pages/overview/ListOverview");
-// export const Overview = dynamicComp("pages/overview/Overview");
 export const ScrollToTopButton = dynamicComp(
   "pages/overview/ScrollToTopButton"
 );

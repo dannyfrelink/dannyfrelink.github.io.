@@ -16,7 +16,9 @@ import { Destination } from "./indonesie/index";
 import { useEffect, useState } from "react";
 import React from "react";
 // import { GetStaticProps } from "next";
-import Head from "next/head";
+// import Head from "next/head";
+import dynamic from "next/dynamic";
+const Head = dynamic(() => import("next/head"));
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
@@ -176,7 +178,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
 //   };
 // };
 
-export async function getServerSideProps(context: any) {
+export const getServerSideProps = async (context: any) => {
   const blogData = require("../data/blogs.json");
   const route = context.resolvedUrl;
   const allMetaData = require("../data/metaData.json");
@@ -195,6 +197,6 @@ export async function getServerSideProps(context: any) {
       metaData,
     },
   };
-}
+};
 
 export default Home;
