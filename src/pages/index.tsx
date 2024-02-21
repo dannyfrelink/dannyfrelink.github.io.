@@ -17,10 +17,11 @@ import { useEffect, useState } from "react";
 import React from "react";
 // import { GetStaticProps } from "next";
 // import Head from "next/head";
-import dynamic from "next/dynamic";
-const Head = dynamic(() => import("next/head"));
+// import dynamic from "next/dynamic";
+// const Head = dynamic(() => import("next/head"));
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { Metadata } from "next";
 
 interface HomeProps {
   blogData: {
@@ -35,6 +36,10 @@ interface HomeProps {
     image: string;
   };
 }
+
+export const metadata: Metadata = {
+  title: "Testing",
+};
 
 const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
   const { screenSize } = useAppContext();
@@ -53,8 +58,8 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
   return (
     <ScrollBar>
       <div>
-        <Head>
-          {/* <title>ReisFeeld.nl | Jouw avontuur, ons verhaal!</title>
+        {/* <Head> */}
+        {/* <title>ReisFeeld.nl | Jouw avontuur, ons verhaal!</title>
           <meta
             name="description"
             content="Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!"
@@ -69,7 +74,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
             content="Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!"
           />
           <meta property="og:url" content="https://www.reisfeeld.nl/" /> */}
-
+        {/* 
           <title>{metaData.title}</title>
           <meta name="description" content={metaData.description} />
 
@@ -81,7 +86,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
             property="og:image"
             content={`https://www.reisfeeld.nl${metaData.image}`}
           />
-        </Head>
+        </Head> */}
 
         <Header
           HeaderImage={() => (
