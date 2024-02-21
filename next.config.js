@@ -7,7 +7,9 @@ const nextConfig = {
   devIndicators: {
     buildActivity: false,
   },
-  output: "standalone",
+  output: {
+    dir: "out",
+  },
 };
 
 const withTM = require("next-transpile-modules")(["tailwindcss"]);
