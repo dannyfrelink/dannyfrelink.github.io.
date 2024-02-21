@@ -24,6 +24,8 @@ const BlogPost: React.FC<BlogProps> = React.memo(({ blog, allBlogs }) => {
   const images = blog.images;
   const sections = Object.values(blog.content);
 
+  console.log(coverImage);
+
   return (
     <ScrollBar>
       <div>
@@ -40,7 +42,7 @@ const BlogPost: React.FC<BlogProps> = React.memo(({ blog, allBlogs }) => {
 
           <meta
             name="og:image"
-            content={`https://www.reisfeeld.nl/assets/pages/blogposts${coverImage}`}
+            content={`https://www.reisfeeld.nl${coverImage.default.src}`}
           />
           <meta property="og:image:width" content="2500" />
           <meta property="og:image:height" content="1667" />

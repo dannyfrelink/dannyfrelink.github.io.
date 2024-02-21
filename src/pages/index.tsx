@@ -1,6 +1,3 @@
-// import { Inter } from "next/font/google";
-// const inter = Inter({ subsets: ["latin"] });
-
 import {
   Header,
   H2,
@@ -67,7 +64,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
 
           <meta
             property="og:image"
-            content={`https://www.reisfeeld.nl${headerImage}`}
+            content={`https://www.reisfeeld.nl${HeaderImage.src}`}
           />
           <meta property="og:image:width" content="2500" />
           <meta property="og:image:height" content="1667" />
