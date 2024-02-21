@@ -195,7 +195,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
 //   };
 // };
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const blogData = require("../data/blogs.json");
 
   return {
