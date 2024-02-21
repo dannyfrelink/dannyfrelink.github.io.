@@ -58,6 +58,22 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
 
   return (
     <ScrollBar>
+      <NextSeo
+        title={metaData.title}
+        description={metaData.description}
+        openGraph={{
+          title: metaData.title,
+          description: metaData.description,
+          url: "https://www.reisfeeld.nl/",
+          images: [
+            {
+              url: `https://www.reisfeeld.nl${metaData.image}`,
+              alt: "Bromo Vulkaan",
+            },
+          ],
+          type: "website",
+        }}
+      />
       <div>
         {/* <Head> */}
         {/* <title>ReisFeeld.nl | Jouw avontuur, ons verhaal!</title>
@@ -88,23 +104,6 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
             content={`https://www.reisfeeld.nl${metaData.image}`}
           />
         </Head> */}
-
-        <NextSeo
-          title={metaData.title}
-          description={metaData.description}
-          openGraph={{
-            title: metaData.title,
-            description: metaData.description,
-            url: "https://www.reisfeeld.nl/",
-            images: [
-              {
-                url: `https://www.reisfeeld.nl${metaData.image}`,
-                alt: "Bromo Vulkaan",
-              },
-            ],
-            type: "website",
-          }}
-        />
 
         <Header
           HeaderImage={() => (
