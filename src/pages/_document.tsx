@@ -1,4 +1,55 @@
 import { Html, Head, Main, NextScript } from "next/document";
+// import { useRouter } from "next/router";
+
+// const metaData = {
+//   "/": {
+//     title: "ReisFeeld.nl | Jouw avontuur, ons verhaal!",
+//     description:
+//       "Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!",
+//     OG: {
+//       title: "ReisFeeld.nl | Jouw avontuur, ons verhaal!",
+//       description:
+//         "Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!",
+//       url: "https://www.reisfeeld.nl/",
+//     },
+//   },
+//   "/indonesie": {
+//     title: "",
+//     description: "",
+//     OG: {
+//       title: "",
+//       description: "",
+//       url: "https://www.reisfeeld.nl/indonesie/",
+//     },
+//   },
+//   "/indonesie/:href": {
+//     title: "",
+//     description: "",
+//     OG: {
+//       title: "",
+//       description: "",
+//       url: "https://www.reisfeeld.nl/indonesie/:href",
+//     },
+//   },
+//   "/accommodaties": {
+//     title: "",
+//     description: "",
+//     OG: {
+//       title: "",
+//       description: "",
+//       url: "https://www.reisfeeld.nl/accommodaties/",
+//     },
+//   },
+//   "/over-ons": {
+//     title: "",
+//     description: "",
+//     OG: {
+//       title: "",
+//       description: "",
+//       url: "https://www.reisfeeld.nl/over-ons/",
+//     },
+//   },
+// };
 
 export default function Document() {
   return (
@@ -19,7 +70,11 @@ export default function Document() {
           rel="stylesheet"
         />
 
-        <meta
+        <meta property="og:image:width" content="2500" />
+        <meta property="og:image:height" content="1667" />
+        <meta property="og:image:type" content="image/jpeg" />
+
+        {/* <meta
           property="og:title"
           content="ReisFeeld.nl | Jouw avontuur, ons verhaal!"
         />
@@ -35,7 +90,7 @@ export default function Document() {
         />
         <meta property="og:image:width" content="2500" />
         <meta property="og:image:height" content="1667" />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:type" content="image/jpeg" /> */}
       </Head>
       <body>
         <Main />
