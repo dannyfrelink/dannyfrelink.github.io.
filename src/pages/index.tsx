@@ -90,19 +90,19 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
         </Head> */}
 
         <NextSeo
-          title="ReisFeeld.nl | Jouw avontuur, ons verhaal!"
-          description="Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!"
+          title={metaData.title}
+          description={metaData.description}
           openGraph={{
-            title: "ReisFeeld.nl | Jouw avontuur, ons verhaal!",
-            description:
-              "Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!",
+            title: metaData.title,
+            description: metaData.description,
             url: "https://www.reisfeeld.nl/",
             images: [
               {
-                url: `https://www.reisfeeld.nl${HeaderImage.src}`,
+                url: `https://www.reisfeeld.nl${metaData.image}`,
                 alt: "Bromo Vulkaan",
               },
             ],
+            type: "website",
           }}
         />
 
