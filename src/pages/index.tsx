@@ -71,7 +71,6 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
               alt: "Bromo Vulkaan",
             },
           ],
-          type: "website",
         }}
       />
       <div>
