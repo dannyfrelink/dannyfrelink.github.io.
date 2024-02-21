@@ -97,6 +97,10 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
                 alt: "Bromo Vulkaan",
               },
             ],
+            type: "website",
+          }}
+          facebook={{
+            appId: "home",
           }}
         />
 
