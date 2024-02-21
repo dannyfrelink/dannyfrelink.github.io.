@@ -30,13 +30,19 @@ interface HomeProps {
       [dest: string]: Destination[];
     };
   };
+  metaData: {
+    title: string;
+    description: string;
+    url: string;
+    image: string;
+  };
 }
 
 export const metadata: Metadata = {
   title: "Testing",
 };
 
-const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
+const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
   const { screenSize } = useAppContext();
   const blogs: Destination[] = [];
   Object.values(blogData.blogs).map((blogArr) =>
@@ -195,12 +201,23 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
 //   };
 // };
 
-export const getServerSideProps = async () => {
+export const getServerSideProps = async (context: any) => {
   const blogData = require("../data/blogs.json");
+  const route = context.resolvedUrl;
+  const allMetaData = require("../data/metaData.json");
+  const thumbnailImg = require("../assets/header/home.webp");
+  let metaData: HomeProps["metaData"] | {} = {};
+
+  Object.keys(allMetaData).map((dRoute) => {
+    if (dRoute == route) {
+      metaData = { ...allMetaData[dRoute], image: thumbnailImg.default.src };
+    }
+  });
 
   return {
     props: {
       blogData,
+      metaData,
     },
   };
 };
