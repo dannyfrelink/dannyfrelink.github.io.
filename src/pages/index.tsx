@@ -24,18 +24,20 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { Metadata } from "next";
 import { NextSeo } from "next-seo";
 
+export interface MetadataProps {
+  title: string;
+  description: string;
+  url: string;
+  image?: string;
+}
+
 interface HomeProps {
   blogData: {
     blogs: {
       [dest: string]: Destination[];
     };
   };
-  metaData: {
-    title: string;
-    description: string;
-    url: string;
-    image: string;
-  };
+  metaData: MetadataProps;
 }
 
 export const metadata: Metadata = {
