@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
               <Image
                 width={500}
                 height={500}
-                className="h-12"
+                className="h-12 w-fit"
                 src={LogoBlack}
                 alt="Logo ReisFeeld"
               />

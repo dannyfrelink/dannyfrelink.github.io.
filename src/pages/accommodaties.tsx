@@ -1,18 +1,18 @@
-import Header from "../components/header/Header";
+import {
+  Header,
+  BaseText,
+  Overview,
+  Footer,
+  AccommodationList,
+  IntroOverview,
+  ScrollBar,
+} from "@/helpers/dynamicImports";
 import HeaderImage from "../assets/header/accommodations.jpg";
-import BaseText from "../components/typography/BaseText";
-import Overview from "../components/pages/overview/Overview";
-import Footer from "../components/general/Footer";
-// import data from "../data/accommodations.json";
-import AccommodationList from "../components/pages/overview/AccommodationList";
-import IntroOverview from "../components/pages/overview/IntroOverview";
 import { useEffect, useState } from "react";
-import ScrollBar from "../components/general/ScrollBar";
 import React from "react";
 import { GetStaticProps } from "next";
 import Head from "next/head";
 import Image from "next/image";
-// import { Helmet } from "react-helmet-async";
 
 export interface Destination {
   image: {
