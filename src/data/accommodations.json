@@ -1,0 +1,280 @@
+{
+	"accommodations": {
+		"Canggu (Bali)": [
+			{
+				"image": {
+					"src": "the-kamare-canggu.jpg",
+					"alt": "The Kamare Accommodatie Canggu Bali"
+				},
+				"name": "The Kamare",
+				"description": "In dit prachtige hotel verblijf je in stijlvolle kamers met een heerlijk zwembad voor de deur. Het hotel zit op een rustig gelegen plek, maar wel dicht bij alle restaurants en leuke plekjes. De kamer en badkamer zijn erg ruim, het bed ligt super lekker en er is een fijne stortdouche. De ideale plek om te verblijven in Canggu!",
+				"prices": {
+					"high": 63,
+					"low": 63
+				},
+				"link": "https://www.booking.com/hotel/id/the-kamare.en-gb.html?aid=843227&label=hotels-maleisie&sid=60ae8935677a8f1bea71258387055f3a&all_sr_blocks=689141701_0_2_0_0;checkin=2024-05-14;checkout=2024-05-15;dest_id=6891417;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=689141701_0_2_0_0;hpos=1;matching_block_id=689141701_0_2_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=689141701_0_2_0_0__102837499;srepoch=1706806298;srpvid=8e3d768c53590087;type=total;ucfs=1&#hotelTmpl"
+			},
+			{
+				"image": {
+					"src": "frangipani-canggu.jpeg",
+					"alt": "Frangipani House and Spa Accommodatie Canggu Bali"
+				},
+				"name": "Frangipani House and Spa",
+				"description": "Ben je op zoek naar een fijne plek in Canggu die ook nog eens heel betaalbaar is? Bij Frangipani House and Spa kan je genieten van de rust in het toch wel hectische Canggu. Gelegen in een zijstraat en aan de rijstvelden is dit echt een klein pareltje. Binnen 3 minuten lopen sta je midden in het centrum en kan je genieten van alle lekkere restaurants.",
+				"prices": {
+					"high": 37,
+					"low": 27
+				},
+				"link": "https://www.booking.com/hotel/id/frangipani-house-and-spa-by-ecommerceloka.en-gb.html?aid=843227&label=hotels-maleisie&sid=f203536283bb57af51aba557a9c9b22f&all_sr_blocks=902308302_367924928_0_0_0;checkin=2024-05-14;checkout=2024-05-15;dest_id=900048236;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=10;highlighted_blocks=902308302_367924928_0_0_0;hpos=10;matching_block_id=902308302_367924928_0_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=902308302_367924928_0_0_0__46728000;srepoch=1706805657;srpvid=1a21754783ae00ae;type=total;ucfs=1&#hotelTmpl"
+			},
+			{
+				"image": {
+					"src": "sense-canggu.jpg",
+					"alt": "Sense Canggu Beach Hotel Accommodatie Bali"
+				},
+				"name": "Sense Canggu Beach Hotel",
+				"description": "Dit hotel ligt dicht bij het strand en verschillende leuke beachclubs. Als je een honeymoon suite boekt, kan je direct vanuit je balkon het zwembad induiken, hoe leuk! Bij de poolbar kan je drankjes bestellen en in het restaurant kan je lekker eten. Ze bieden zelf een floating breakfast aan. ",
+				"prices": {
+					"high": 80,
+					"low": 58
+				},
+				"link": "https://www.booking.com/hotel/id/sense-canggu-beach.en-gb.html?aid=843227&label=hotels-maleisie&sid=60ae8935677a8f1bea71258387055f3a&all_sr_blocks=273671001_106422611_0_42_0;checkin=2024-05-14;checkout=2024-05-15;dest_id=2736710;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=273671001_106422611_0_42_0;hpos=1;matching_block_id=273671001_106422611_0_42_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=273671001_106422611_0_42_0__100035000;srepoch=1706806369;srpvid=ff1576ac0bf804f8;type=total;ucfs=1&#hotelTmpl"
+			},
+			{
+				"image": {
+					"src": "turtle-villas-canggu.jpg",
+					"alt": "Turtle Villas Accommodatie Canggu Bali"
+				},
+				"name": "Turtle Villas",
+				"description": "Dicht bij de shortcut in Canggu vind je Turtle Villas. Ondanks de relatief drukke locatie, valt de geluidsoverlast erg mee. De kamers zien er goed uit en zijn erg ruim. Vanuit de kamer stap je bijna direct het zwembad in, waar je heerlijk van de zon kan genieten. Vergeet ook niet af en toe de huispoes te aaien.",
+				"prices": {
+					"high": 70,
+					"low": 56
+				},
+				"link": "https://www.booking.com/hotel/id/turtle-villas-canggu.en-gb.html?label=hotels-maleisie&sid=60ae8935677a8f1bea71258387055f3a&aid=843227&ucfs=1&arphpl=1&checkin=2024-05-14&checkout=2024-05-15&dest_id=6873168&dest_type=hotel&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=525f76d0042d01a4&srepoch=1706806434&all_sr_blocks=687316802_279362582_2_0_0&highlighted_blocks=687316802_279362582_2_0_0&matching_block_id=687316802_279362582_2_0_0&sr_pri_blocks=687316802_279362582_2_0_0__78731300&from_sustainable_property_sr=1&from=searchresults#hotelTmpl"
+			},
+			{
+				"image": {
+					"src": "lemon-guesthouse-canggu.webp",
+					"alt": "Lemon Guest House Accommodatie Canggu Bali"
+				},
+				"name": "Lemon Guest House",
+				"description": "Midden in het centrum van Canggu, maar toch op een rustige plek. In dit leuke guesthouse zit je op loopafstand van verschillende leuke plekken in Canggu. Je hebt de keuze tussen een kamer op de begane grond of op de eerste verdieping. Ontbijt zit bij de prijs inbegrepen, de WiFi is goed en er is een heerlijk zwembad.",
+				"prices": {
+					"high": 50,
+					"low": 40
+				},
+				"link": "https://www.booking.com/hotel/id/lemon-guest-house.nl.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaKkBiAEBmAEcuAEHyAEM2AEB6AEB-AELiAIBqAIDuAK6lu-tBsACAdICJGY1NzY0NjY0LTA3OTEtNGQxNi04MWQ5LWQyNTk5NjI3MjM3ZNgCBuACAQ&sid=60ae8935677a8f1bea71258387055f3a&dest_id=0&room1=A%2CA&group_adults=2&group_children=0&no_rooms=1&atlas_src=sr_iw_title&ucfs=1"
+			}
+		],
+		"Ubud (Bali)": [
+			{
+				"image": {
+					"src": "queen-at-gunung-sari-ubud.jpg",
+					"alt": "Queen at Gunung Sari Accommodatie Ubud Bali"
+				},
+				"name": "Queen at Gunung Sari",
+				"description": "Queen at Gunung Sari ligt iets buiten het centrum, maar nog steeds dichtbij genoeg om er lopend heen te gaan. Het is de perfecte plek om Ubud te ontdekken en tegelijkertijd tot rust te komen. Mocht je een scooter willen huren, kan je dit bij de receptie regelen. De accommodatie is in 2021 open gegaan en de kamers zien er nieuw en schoon uit.",
+				"prices": {
+					"high": 138,
+					"low": 62
+				},
+				"link": "https://www.booking.com/hotel/id/queen-at-gunung-sari.nl.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaKkBiAEBmAEcuAEHyAEM2AEB6AEB-AELiAIBqAIDuAK6lu-tBsACAdICJGY1NzY0NjY0LTA3OTEtNGQxNi04MWQ5LWQyNTk5NjI3MjM3ZNgCBuACAQ&sid=60ae8935677a8f1bea71258387055f3a&all_sr_blocks=767179901_379650473_0_2_0;checkin=2024-05-14;checkout=2024-05-15;dest_id=7671799;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=767179901_379650473_0_2_0;hpos=1;matching_block_id=767179901_379650473_0_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=767179901_379650473_0_2_0__167625000;srepoch=1706806546;srpvid=d3767708b4f90277;type=total;ucfs=1&#hotelTmpl"
+			},
+			{
+				"image": {
+					"src": "bumi-muwa-ubud.jpeg",
+					"alt": "Bumi Muwa Ubud Accommodatie Bali"
+				},
+				"name": "Bumi Muwa Ubud",
+				"description": "Buiten het centrum van Ubud vind je Bumi Muwa Ubud. Het personeel is ontzettend vriendelijk. Ze staan altijd open om een praatje te maken en helpen je met liefde. De kamers zien er super schoon en mooi uit. Met een aantal kamers kan je vanuit het bad door het raam uitkijken op de rijstvelden, prachtig!",
+				"prices": {
+					"high": 138,
+					"low": 113
+				},
+				"link": "https://www.booking.com/hotel/id/bumi-muwa-ubud-katiklantang.nl.html?label=gen173nr-1FCAEoggI46AdIM1gEaKkBiAEBmAEcuAEHyAEM2AEB6AEB-AELiAIBqAIDuAK6lu-tBsACAdICJGY1NzY0NjY0LTA3OTEtNGQxNi04MWQ5LWQyNTk5NjI3MjM3ZNgCBuACAQ&sid=60ae8935677a8f1bea71258387055f3a&aid=304142&ucfs=1&arphpl=1&checkin=2024-05-14&checkout=2024-05-15&dest_id=3389049&dest_type=hotel&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=2c847723fd660104&srepoch=1706806602&all_sr_blocks=338904901_367102985_2_2_0&highlighted_blocks=338904901_367102985_2_2_0&matching_block_id=338904901_367102985_2_2_0&sr_pri_blocks=338904901_367102985_2_2_0__193680000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl"
+			},
+			{
+				"image": {
+					"src": "athaya-ubud.jpg",
+					"alt": "Athaya Ubud Accommodatie Bali"
+				},
+				"name": "Athaya Ubud",
+				"description": "Voor een locatie buiten het centrum kan je naar Athaya Ubud. Deze accommodatie ligt op ongeveer 10 minuten scooteren van het centrum. Bij dit verblijf is het dan ook erg rustig en kan je heerlijk ontspannen. De kamers zijn vrij basic ingericht, maar alles is schoon.",
+				"prices": {
+					"high": 38,
+					"low": 34
+				},
+				"link": "https://www.booking.com/hotel/id/the-athaya-ubud.nl.html?label=gen173nr-1FCAEoggI46AdIM1gEaKkBiAEBmAEcuAEHyAEM2AEB6AEB-AELiAIBqAIDuAK6lu-tBsACAdICJGY1NzY0NjY0LTA3OTEtNGQxNi04MWQ5LWQyNTk5NjI3MjM3ZNgCBuACAQ&sid=60ae8935677a8f1bea71258387055f3a&aid=304142&ucfs=1&arphpl=1&checkin=2024-05-14&checkout=2024-05-15&dest_id=2156205&dest_type=hotel&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=3ab67736e98a0056&srepoch=1706806642&all_sr_blocks=215620504_351013775_2_2_0&highlighted_blocks=215620504_351013775_2_2_0&matching_block_id=215620504_351013775_2_2_0&sr_pri_blocks=215620504_351013775_2_2_0__57834000&from=searchresults#hotelTmpl"
+			}
+		],
+		"Seminyak (Bali)": [
+			{
+				"image": {
+					"src": "bali-karma-sajtra-seminyak.jpeg",
+					"alt": "Bali Karma Sajtra Hotel Accommodatie Seminyak Bali"
+				},
+				"name": "Bali Karma Sajtra Hotel",
+				"description": "Aan het einde van een lang, mooi aangekleed pad ligt het Bali Karma Sajtra Hotel. Ondanks de drukte in Seminyak, hoor je hier in het hotel helemaal niks van. De kamers zijn lekker ruim en het zwembad is erg groot. Eenmaal het pad afgelopen, sta je direct in de drukte van Seminyak en word je omringd door leuke restaurants.",
+				"prices": {
+					"high": 50,
+					"low": 48
+				},
+				"link": "https://www.booking.com/hotel/id/bali-karma-sajtra.nl.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaKkBiAEBmAEcuAEHyAEM2AEB6AEB-AELiAIBqAIDuAK6lu-tBsACAdICJGY1NzY0NjY0LTA3OTEtNGQxNi04MWQ5LWQyNTk5NjI3MjM3ZNgCBuACAQ&sid=60ae8935677a8f1bea71258387055f3a&all_sr_blocks=760564902_0_2_0_0;checkin=2024-05-14;checkout=2024-05-15;dest_id=7605649;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=760564902_0_2_0_0;hpos=1;matching_block_id=760564902_0_2_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=760564902_0_2_0_0__94758199;srepoch=1706806693;srpvid=f7f9774f2d2802e7;type=total;ucfs=1&#hotelTmpl"
+			},
+			{
+				"image": {
+					"src": "kamaniiya-seminyak.jpeg",
+					"alt": "Kamaniiya Petitenget Seminyak Accommodatie Bali"
+				},
+				"name": "Kamaniiya Petitenget Seminyak",
+				"description": "Kamaniiya Petitenget Seminyak heeft van buiten een moderne uitstraling. De kamers zijn simpel en hebben alles wat je nodig hebt. Het zwembad ziet er mooi uit, maar is redelijk druk. Wanneer je het hotel uitloopt, bevind je je direct in het centrum van Seminyak. Als je op zoek bent naar een betaalbaar hotel en je veel op pad bent, is dit een fijne uitvalsbasis!",
+				"prices": {
+					"high": 45,
+					"low": 40
+				},
+				"link": "https://www.booking.com/hotel/id/ibis-styles-bali-petitenget.en-gb.html?label=hotels-maleisie&sid=f203536283bb57af51aba557a9c9b22f&aid=843227&ucfs=1&arphpl=1&checkin=2024-05-14&checkout=2024-05-15&dest_id=1566316&dest_type=hotel&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=70ec77798237003d&srepoch=1706806789&all_sr_blocks=156631601_94609151_0_2_0&highlighted_blocks=156631601_94609151_0_2_0&matching_block_id=156631601_94609151_0_2_0&sr_pri_blocks=156631601_94609151_0_2_0__69187500&from_sustainable_property_sr=1&from=searchresults#hotelTmpl"
+			}
+		],
+		"Amed (Bali)": [
+			{
+				"image": {
+					"src": "villa-adi-amed.jpg",
+					"alt": "Villa Adi Accommodatie Amed Bali"
+				},
+				"name": "Villa Adi",
+				"description": "Voor villas met 2 of 3 slaapkamers is Villa Adi een echte aanrader. De villas zijn inclusief een privézwembad, ruime zitgelegenheid, eettafel, keuken en een hangmat. Bij het verblijf zit een eigen restaurant, waar heerlijk eten geserveerd wordt. Ook bieden zij scooters aan om te huren, waarmee je Amed kan verkennen.",
+				"prices": {
+					"high": 108,
+					"low": 94
+				},
+				"link": "https://www.booking.com/hotel/id/villa-adi.en-gb.html?label=hotels-maleisie&sid=f203536283bb57af51aba557a9c9b22f&aid=843227&ucfs=1&arphpl=1&checkin=2024-05-14&checkout=2024-05-15&dest_id=783480&dest_type=hotel&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=5f1677c279db0109&srepoch=1706806938&all_sr_blocks=78348002_348703267_4_2_0&highlighted_blocks=78348002_348703267_4_2_0&matching_block_id=78348002_348703267_4_2_0&sr_pri_blocks=78348002_348703267_4_2_0__161500000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl"
+			},
+			{
+				"image": {
+					"src": "mejore-beach-hotel-amed.jpg",
+					"alt": "Mejore Beach Hotel Accommodatie Amed Bali"
+				},
+				"name": "Mejore Beach Hotel",
+				"description": "Als je op zoek bent naar een low budget hotel aan het strand, dan ben je bij Mejore Beach Hotel aan het juiste adres. Vanaf het zwembad heb je uitzicht op de zee en loop je met een paar stappen het strand op. De kamers zijn ruim en op het dak heb je de mogelijkheid om een lekker drankje te doen. Tegenover het hotel zit een heerlijk restaurant waar je voor ontbijt, lunch én diner terecht kan.",
+				"prices": {
+					"high": 38,
+					"low": 32
+				},
+				"link": "https://www.booking.com/hotel/id/mejore.nl.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaKkBiAEBmAEcuAEHyAEM2AEB6AEB-AELiAIBqAIDuAKGtOWsBsACAdICJDliOWRjMzNiLTM0NjMtNGE5ZS1hNzViLWI1YTFhMGQwOGI5YtgCBuACAQ&sid=60ae8935677a8f1bea71258387055f3a&all_sr_blocks=615555501_369749038_2_2_0;checkin=2024-05-14;checkout=2024-05-15;dest_id=6155555;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=615555501_369749038_2_2_0;hpos=1;matching_block_id=615555501_369749038_2_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=615555501_369749038_2_2_0__59976000;srepoch=1706819736;srpvid=d36b90cad27a01f1;type=total;ucfs=1&#hotelTmpl"
+			}
+		],
+		"Nusa Lembongan": [
+			{
+				"image": {
+					"src": "dpuncak-villas-nusa-lembongan.jpg",
+					"alt": "D'Puncak Villas Nusa Lembongan Accommodatie"
+				},
+				"name": "D'Puncak Villas Lembongan",
+				"description": "Bij deze gezellige familie accommodatie is het heerlijk vertoeven. De eigenaren vertellen vol trots over alles wat zij hebben opgebouwd en doen er alles aan om jouw verblijf zo fijn mogelijk te maken. Het ligt centraal op het eiland en met een paar minuten scooteren ben je in het centrum. Je slaapt in een leuk huisje en hebt een zwembad voor de deur.",
+				"prices": {
+					"high": 47,
+					"low": 32
+				},
+				"link": "https://www.booking.com/hotel/id/d-39-puncak-villas-lembongan.en-gb.html?aid=843227&label=hotels-maleisie&sid=f203536283bb57af51aba557a9c9b22f&all_sr_blocks=347732902_156364466_0_2_0;checkin=2024-05-14;checkout=2024-05-15;dest_id=3477329;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=347732902_156364466_0_2_0;hpos=1;matching_block_id=347732902_156364466_0_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=347732902_156364466_0_2_0__58000000;srepoch=1706806995;srpvid=925577e74b73021c;type=total;ucfs=1&#hotelTmpl"
+			},
+			{
+				"image": {
+					"src": "the-parnas-nusa-lembongan.webp",
+					"alt": "The Parnas Accommodatie Nusa Lembongan"
+				},
+				"name": "The Parnas",
+				"description": "In dit heerlijke familiehotel word je erg gastvrij ontvangen en wil de host je overal bij helpen. Je krijg een privé huisje met een balkon, airconditioning en een semi-open badkamer. Ook kan je lekker chillen aan het zwembad en voor een goede prijs een scooter huren.",
+				"prices": {
+					"high": 40,
+					"low": 35
+				},
+				"link": "https://www.booking.com/hotel/id/the-parnas.en-gb.html?aid=843227&label=hotels-maleisie&sid=f203536283bb57af51aba557a9c9b22f&all_sr_blocks=439158901_169066716_0_1_0;checkin=2024-05-14;checkout=2024-05-15;dest_id=4391589;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=439158901_169066716_0_1_0;hpos=1;matching_block_id=439158901_169066716_0_1_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=439158901_169066716_0_1_0__68000000;srepoch=1706807050;srpvid=b2497803663c010c;type=total;ucfs=1&#hotelTmpl"
+			},
+			{
+				"image": {
+					"src": "garden-cottage-nusa-lembongan.webp",
+					"alt": "Garden Cottage Nusa Lembongan & Hostel Accommodatie"
+				},
+				"name": "Garden Cottage Lembongan & Hostel",
+				"description": "Wil je verblijven in een schattige bungalow met airconditioning en een heerlijk zwembad? Dan zit je bij Garden Cottage Lembongan helemaal goed. Het ontbijt zit bij de prijs in en het personeel helpt je graag bij het boeken van leuke activiteiten. Ook zit je erg dicht bij het strand en leuke eettentjes!",
+				"prices": {
+					"high": 35,
+					"low": 27
+				},
+				"link": "https://www.booking.com/hotel/id/lembongan-garden-cottages.en-gb.html?aid=843227&label=hotels-maleisie&sid=f203536283bb57af51aba557a9c9b22f&checkin=2024-05-14;checkout=2024-05-15;dest_id=1357927;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;soh=1;sr_order=popularity;srepoch=1706807081;srpvid=7c11781314c101a4;type=total;ucfs=1&#no_availability_msg"
+			}
+		],
+		"Nusa Penida": [
+			{
+				"image": {
+					"src": "singabu-bungalows.jpeg",
+					"alt": "Singabu Bungalows Accommodatie Nusa Penida"
+				},
+				"name": "Singabu Bungalows",
+				"description": "Deze accommodatie op Nusa Penida heeft meerdere leuke huisjes achter het bijbehorende restaurant. In dit restaurant wordt het ontbijt geserveerd en kan je overdag verschillende gerechten en drankjes bestellen. Ze komen dit zelfs bij het zwembad brengen. Bij het verblijf kan je eventueel een taxi boeken die je naar verschillende plekken op het eiland brengt.",
+				"prices": {
+					"high": 44,
+					"low": 35
+				},
+				"link": "https://www.booking.com/hotel/id/singabu-bungalows.en-gb.html?aid=843227&label=hotels-maleisie&sid=f203536283bb57af51aba557a9c9b22f&all_sr_blocks=270030804_335388435_0_1_0;checkin=2024-05-14;checkout=2024-05-15;dest_id=2700308;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=270030804_335388435_0_1_0;hpos=1;matching_block_id=270030804_335388435_0_1_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=270030804_335388435_0_1_0__60000000;srepoch=1706807118;srpvid=25b27823ff4200d6;type=total;ucfs=1&#hotelTmpl"
+			},
+			{
+				"image": {
+					"src": "the-sandat-bungalow-nusa-penida.JPG",
+					"alt": "The Sandat Bungalow Accommodatie Nusa Penida"
+				},
+				"name": "The Sandat Bungalow",
+				"description": "Bij deze kleine accommodatie met 4 schattige bungalows kan je op Nusa Penida heel low budget verblijven. Het personeel is heel behulpzaam, je krijgt elke ochtend ontbijt wat bij de prijs in zit en je stapt vanuit je huisje zo het zwembad in. Dit verblijf ligt wel wat uit het centrum, maar met de scooter is alles goed te bereiken.",
+				"prices": {
+					"high": 25,
+					"low": 17
+				},
+				"link": "https://www.booking.com/hotel/id/the-sandat-bungalow.en-gb.html?aid=843227&label=hotels-maleisie&sid=f203536283bb57af51aba557a9c9b22f&checkin=2024-05-14;checkout=2024-05-15;dest_id=2875684;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;soh=1;sr_order=popularity;srepoch=1706807157;srpvid=7a6d78391ef20135;type=total;ucfs=1&#no_availability_msg"
+			}
+		],
+		"Gili Trawangan": [
+			{
+				"image": {
+					"src": "royal-regantris-gili-trawangan.jpeg",
+					"alt": "Royal Regantris Gili Trawangan Accommodatie"
+				},
+				"name": "Royal Regantris Trawangan",
+				"description": "In het westen van Gili Trawangan vind je Royal Regantris Trawangan. Deze kant van het eiland is lekker rustig en is perfect om een prachtige zonsondergang te bekijken. De accommodatie is erg luxe en heeft een groot zwembad. Er wordt ook ontbijt aangeboden, waarbij je verse eieren en wafels kan bestellen. ’s Avonds kan je genieten van een leuke filmavond op het strand.",
+				"prices": {
+					"high": 67,
+					"low": 37
+				},
+				"link": "https://www.booking.com/hotel/id/royal-singosari-trawangan.en-gb.html?aid=843227&label=hotels-maleisie&sid=f203536283bb57af51aba557a9c9b22f&all_sr_blocks=740302905_0_2_0_0;checkin=2024-05-14;checkout=2024-05-15;dest_id=7403029;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=740302905_0_2_0_0;hpos=1;matching_block_id=740302905_0_2_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=740302905_0_2_0_0__56807580;srepoch=1706807189;srpvid=340978493aad016f;type=total;ucfs=1&#hotelTmpl"
+			},
+			{
+				"image": {
+					"src": "villa-pine-tree.jpeg",
+					"alt": "Villa Pine Tree Accommodatie Gili Trawangan"
+				},
+				"name": "Villa Pine Tree",
+				"description": "Verwacht een warm welkom wanneer je aankomt bij Villa Pine Tree op Gili Trawangan. De medewerkers zijn erg gastvrij en vinden het leuk om een praatje met je te maken. Het verblijf ligt in het midden van het eiland, waardoor je op het toch wel drukke Gili Trawangan, toch nog de rust kan ervaren. Met de fiets kom je gemakkelijk bij dit verblijf en zijn de lekkere eettentjes binnen handbereik. Het zwembad is ruim genoeg om wat baantjes te trekken of gewoon lekker af te koelen.",
+				"prices": {
+					"high": 45,
+					"low": 45
+				},
+				"link": "https://www.booking.com/hotel/id/villa-pine-tree.en-gb.html?label=hotels-maleisie&sid=f203536283bb57af51aba557a9c9b22f&aid=843227&ucfs=1&arphpl=1&checkin=2024-05-14&checkout=2024-05-15&dest_id=2581056&dest_type=hotel&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=4e63785b3906012e&srepoch=1706807226&all_sr_blocks=258105601_265759084_2_1_0&highlighted_blocks=258105601_265759084_2_1_0&matching_block_id=258105601_265759084_2_1_0&sr_pri_blocks=258105601_265759084_2_1_0__76500000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl"
+			}
+		],
+		"Kuta (Lombok)": [
+			{
+				"image": {
+					"src": "el-tropico-kuta-lombok.jpeg",
+					"alt": "El Tropico Boutique Hotel Accommodatie Kuta Lombok"
+				},
+				"name": "El Tropico Boutique Hotel",
+				"description": "El Tropico Boutique Hotel is een hele leuke moderne accommodatie. De kamers zijn schoon, heerlijk ruim opgezet en erg leuk ingericht. Het hotel ligt in een zijstraat van de hoofstraat van Kuta. Het is mogelijk om scooters te huren bij het verblijf tegen een goed tarief en ze geven graag advies over leuke activiteiten. Bij het zwembad kom je helemaal tot rust op één van de zitzakken en kan je een hapje en drankje bestellen bij de bar.",
+				"prices": {
+					"high": 99,
+					"low": 70
+				},
+				"link": "https://www.booking.com/hotel/id/el-tropico-boutique-kabupaten-lombok-tengah.en-gb.html?aid=843227&label=hotels-maleisie&sid=f203536283bb57af51aba557a9c9b22f&all_sr_blocks=835992509_349036136_0_2_0;checkin=2024-05-14;checkout=2024-05-15;dest_id=8359925;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=835992509_349036136_0_2_0;hpos=1;matching_block_id=835992509_349036136_0_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=835992509_349036136_0_2_0__120000000;srepoch=1706807246;srpvid=3e7a7866683b0045;type=total;ucfs=1&#hotelTmpl"
+			}
+		]
+	}
+}

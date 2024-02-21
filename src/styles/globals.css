@@ -1,27 +1,211 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.overflow-y-scroll,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.overflow-y-scroll::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  font-family: "IBM Plex Serif", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: "Tenor Sans", Helvetica, sans-serif;
+}
+
+code {
+  font-family: "IBM Plex Serif", serif;
+}
+
+.blogText-anchor > * {
+  display: inline;
+}
+
+.blogText-anchor a {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.blogImage-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.blogImage-container:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.blogImage-container > img {
+  height: auto;
+  width: 49%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blogList-container {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.blogText-container > *:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.tip {
+  background-color: rgba(232, 223, 209, 0.5);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+@keyframes fadeOutScrollbar {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.scrollbar-notVisible {
+  animation: fadeOutScrollbar 0.3s ease-out forwards;
+}
+
+.scrollbar-hovered {
+  opacity: 1 !important;
+  display: block !important;
+  animation: hoverScrollbarContainer 0.3s ease-out forwards;
+}
+
+.scrollbar-hovered button {
+  animation: hoverScrollbar 0.3s ease-out forwards;
+}
+
+@media (min-width: 750px) {
+  .blogImage-container {
+    margin-top: 1.5rem;
+  }
+  .blogImage-container:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  .blogText-container > *:not(:last-child) {
+    margin-bottom: 0.88rem;
+  }
+
+  .blogList-container {
+    font-size: 18px;
+  }
+
+  .blogText-anchor a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .tip {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  a:focus > div:not(.buttonLink),
+  a:hover > div:not(.buttonLink) {
+    opacity: 0.5;
+  }
+
+  a:focus > .buttonLink,
+  a:hover > .buttonLink,
+  button:hover,
+  button:focus {
+    opacity: 0.9;
+  }
+
+  a:not(.contentsLink):hover,
+  a:not(.contentsLink):focus {
+    color: #687b68;
+  }
+
+  .contentsLink button:hover,
+  .contentsLink button:focus {
+    text-decoration: underline;
+  }
+
+  @keyframes hoverScrollbarContainer {
+    0% {
+      width: 0.625rem;
+    }
+    100% {
+      width: 0.875rem;
+      background-color: rgba(255, 248, 242, 0.5);
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  @keyframes hoverScrollbar {
+    0% {
+      width: 0.375rem;
+    }
+    100% {
+      width: 0.625rem;
+      margin-left: 0.125rem;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .blogImage-container {
+    margin-top: 2rem;
+  }
+  .blogImage-container:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .blogText-container > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .blogText-anchor a {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .tip {
+    padding: 1.25rem 1.75rem;
+  }
+
+  @keyframes hoverScrollbarContainer {
+    0% {
+      width: 0.75rem;
+    }
+    100% {
+      width: 1rem;
+      background-color: rgba(255, 248, 242, 0.5);
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  @keyframes hoverScrollbar {
+    0% {
+      width: 0.5rem;
+    }
+    100% {
+      width: 0.75rem;
+      margin-left: 0.125rem;
+    }
+  }
 }
