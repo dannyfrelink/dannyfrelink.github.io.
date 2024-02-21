@@ -58,7 +58,7 @@ const Accommodations: React.FC<AccommodationsProps> = React.memo(({ data }) => {
             content="In Indonesië kan je echt van alles vinden: een guesthouse met lieve eigenaren, een luxe privé villa en alles wat hier tussenin zit."
           />
 
-          <meta
+          {/* <meta
             property="og:title"
             content="Slaap op de leukste plekken in Indonesië!"
           />
@@ -77,7 +77,7 @@ const Accommodations: React.FC<AccommodationsProps> = React.memo(({ data }) => {
           />
           <meta property="og:image:width" content="2500" />
           <meta property="og:image:height" content="1667" />
-          <meta property="og:image:type" content="image/jpeg" />
+          <meta property="og:image:type" content="image/jpeg" /> */}
         </Head>
 
         <Header
