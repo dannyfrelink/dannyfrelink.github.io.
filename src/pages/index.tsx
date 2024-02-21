@@ -22,6 +22,7 @@ import React from "react";
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { Metadata } from "next";
+import { NextSeo } from "next-seo";
 
 interface HomeProps {
   blogData: {
@@ -29,19 +30,13 @@ interface HomeProps {
       [dest: string]: Destination[];
     };
   };
-  metaData: {
-    title: string;
-    description: string;
-    url: string;
-    image: string;
-  };
 }
 
 export const metadata: Metadata = {
   title: "Testing",
 };
 
-const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
+const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
   const { screenSize } = useAppContext();
   const blogs: Destination[] = [];
   Object.values(blogData.blogs).map((blogArr) =>
@@ -87,6 +82,23 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
             content={`https://www.reisfeeld.nl${metaData.image}`}
           />
         </Head> */}
+
+        <NextSeo
+          title="ReisFeeld.nl | Jouw avontuur, ons verhaal!"
+          description="Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!"
+          openGraph={{
+            title: "ReisFeeld.nl | Jouw avontuur, ons verhaal!",
+            description:
+              "Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!",
+            url: "https://www.reisfeeld.nl/",
+            images: [
+              {
+                url: `https://www.reisfeeld.nl${HeaderImage.src}`,
+                alt: "Bromo Vulkaan",
+              },
+            ],
+          }}
+        />
 
         <Header
           HeaderImage={() => (
@@ -183,23 +195,12 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
 //   };
 // };
 
-export const getServerSideProps = async (context: any) => {
+export const getStaticProps = async () => {
   const blogData = require("../data/blogs.json");
-  const route = context.resolvedUrl;
-  const allMetaData = require("../data/metaData.json");
-  const thumbnailImg = require("../assets/header/home.webp");
-  let metaData: HomeProps["metaData"] | {} = {};
-
-  Object.keys(allMetaData).map((dRoute) => {
-    if (dRoute == route) {
-      metaData = { ...allMetaData[dRoute], image: thumbnailImg.default.src };
-    }
-  });
 
   return {
     props: {
       blogData,
-      metaData,
     },
   };
 };
