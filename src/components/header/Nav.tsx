@@ -79,7 +79,7 @@ const Nav: React.FC = () => {
               : screenSize < 1000
               ? "h-[52px]"
               : `${scrolled > 250 && scrolledUp ? "h-12" : "h-16"}`
-          } w-fit`}
+          } w-auto`}
           src={
             screenSize < 1000 || (scrolled > 250 && scrolledUp)
               ? LogoBlack
