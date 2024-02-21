@@ -10,7 +10,7 @@ export interface H4Props {
 const H4: React.FC<H4Props> = ({ children, color = "black", className }) => {
   const { screenSize } = useAppContext();
   return (
-    <div
+    <h4
       className={`font-semibold ${className} ${
         color === "black" ? "text-black" : "text-primary"
       } ${
@@ -22,7 +22,7 @@ const H4: React.FC<H4Props> = ({ children, color = "black", className }) => {
       }`}
     >
       {children}
-    </div>
+    </h4>
   );
 };
 

@@ -15,7 +15,7 @@ const H1: React.FC<H1Props> = ({ children, subTitle, isBlog }) => {
   const title = children?.toString().toUpperCase();
 
   return (
-    <div
+    <h1
       className={`font-bold max-w-[1000px] ${
         screenSize < 750
           ? `${checkAccom && "!text-3xl"} ${isBlog ? "text-xl" : "text-5xl"} ${
@@ -33,7 +33,7 @@ const H1: React.FC<H1Props> = ({ children, subTitle, isBlog }) => {
       }`}
     >
       {title}
-    </div>
+    </h1>
   );
 };
 

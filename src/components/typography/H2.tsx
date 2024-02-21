@@ -10,7 +10,7 @@ export interface H2Props {
 const H2: React.FC<H2Props> = ({ children, id, className }) => {
   const { screenSize } = useAppContext();
   return (
-    <div
+    <h2
       id={id}
       className={`font-semibold ${className} ${
         screenSize < 750
@@ -21,7 +21,7 @@ const H2: React.FC<H2Props> = ({ children, id, className }) => {
       }`}
     >
       {children}
-    </div>
+    </h2>
   );
 };
 

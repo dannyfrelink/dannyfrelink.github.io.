@@ -19,8 +19,8 @@ const Featured: React.FC<FeaturedProps> = ({ blog }) => {
     <div className="flex items-center relative w-full h-[calc(85vh-(24px*2))]">
       <div className="absolute bottom-0 -left-0 w-full h-full opacity-60  bg-gradient-to-b from-transparent via-gray-700 to-transparent z-[-1]"></div>
       <Image
-        width={500}
-        height={500}
+        width={1500}
+        height={1000}
         className="w-full h-[85vh] absolute -top-6 z-[-2] object-cover object-[50%_65%]"
         src={image}
         alt={blog.coverImage.alt}

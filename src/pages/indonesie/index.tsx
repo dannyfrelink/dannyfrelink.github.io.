@@ -132,8 +132,8 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ data }) => {
         <Header
           HeaderImage={() => (
             <Image
-              width={500}
-              height={5000}
+              width={2000}
+              height={1300}
               src={HeaderImage}
               alt="Rijstvelden Indonesië"
             />

@@ -10,7 +10,7 @@ export interface H3Props {
 const H3: React.FC<H3Props> = ({ children, color = "black", className }) => {
   const { screenSize } = useAppContext();
   return (
-    <div
+    <h3
       className={`font-semibold ${className} ${
         color === "black" ? "text-black" : "text-primary"
       } ${
@@ -22,7 +22,7 @@ const H3: React.FC<H3Props> = ({ children, color = "black", className }) => {
       }`}
     >
       {children}
-    </div>
+    </h3>
   );
 };
 

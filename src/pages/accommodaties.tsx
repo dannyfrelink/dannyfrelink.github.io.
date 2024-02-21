@@ -85,8 +85,8 @@ const Accommodations: React.FC<AccommodationsProps> = React.memo(({ data }) => {
           align="bottom"
           HeaderImage={() => (
             <Image
-              width={500}
-              height={500}
+              width={2000}
+              height={1300}
               src={HeaderImage}
               alt="Hotels op Bali"
             />

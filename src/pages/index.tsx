@@ -77,8 +77,8 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
         <Header
           HeaderImage={() => (
             <Image
-              width={500}
-              height={500}
+              width={2000}
+              height={1300}
               src={HeaderImage}
               alt="Bromo Vulkaan"
             />
