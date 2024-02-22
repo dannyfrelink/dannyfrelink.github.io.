@@ -2,26 +2,31 @@
   "/": {
     "title": "ReisFeeld.nl | Jouw avontuur, ons verhaal!",
     "description": "Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!",
-    "url": "https://www.reisfeeld.nl/"
+    "url": "https://www.reisfeeld.nl/",
+    "image": "../assets/header/home.webp"
   },
   "/indonesie": {
     "title": "",
     "description": "",
-    "url": "https://www.reisfeeld.nl/indonesie/"
+    "url": "https://www.reisfeeld.nl/indonesie/",
+    "image": "../assets/header/blogs.jpg"
   },
   "/indonesie/:href": {
     "title": "",
     "description": "",
-    "url": "https://www.reisfeeld.nl/indonesie/:href"
+    "url": "https://www.reisfeeld.nl/indonesie/:href",
+    "image": "../assets/pages/blogposts/de-lekkerste-lokale-restaurants-in-canggu/cover.webp"
   },
   "/accommodaties": {
     "title": "",
     "description": "",
-    "url": "https://www.reisfeeld.nl/accommodaties/"
+    "url": "https://www.reisfeeld.nl/accommodaties/",
+    "image": "../assets/header/accommodations.jpg"
   },
   "/over-ons": {
     "title": "",
     "description": "",
-    "url": "https://www.reisfeeld.nl/over-ons/"
+    "url": "https://www.reisfeeld.nl/over-ons/",
+    "image": "../assets/header/about.webp"
   }
 }
