@@ -62,8 +62,8 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
         title={metaData.title}
         description={metaData.description}
         openGraph={{
-          title: "Testing",
-          description: "Testing description",
+          title: "Testing Reisfeeld",
+          description: "Testing description Reisfeeld",
           url: "https://www.reisfeeld.nl/",
           images: [
             {
