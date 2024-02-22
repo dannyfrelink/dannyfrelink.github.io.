@@ -24,7 +24,7 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { GetStaticProps } from "next";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
-import { Head } from "next/document";
+import { Head } from "next/head";
 
 export interface MetadataProps {
   title: string;
@@ -54,8 +54,6 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
   useEffect(() => {
     headerImage !== "" && setHeaderImage(HeaderImage);
   }, [headerImage]);
-
-  console.log(metaData);
 
   return (
     <ScrollBar>
