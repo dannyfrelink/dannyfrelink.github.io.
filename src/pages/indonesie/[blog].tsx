@@ -134,11 +134,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   );
   const blogData = allBlogs.find((b) => b.href === blog);
 
+  let metaImage = require(`../../assets/pages/blogposts/${blogData?.coverImage.src}`);
   const metaData = {
     title: blogData?.metaTitle,
     description: blogData?.metaDesc,
     url: `https://www.reisfeeld.nl/indonesie/${blogData?.href}`,
-    image: `/${blogData?.coverImage.src}`,
+    image: metaImage.default.src,
     fbAppID: blogData?.href,
   };
 
