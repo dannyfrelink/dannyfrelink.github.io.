@@ -2,30 +2,65 @@ import { AppProvider } from "@/config/AppContext";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+import * as ga from "../helpers/gtag";
 
-export default function App({ Component, router, pageProps }: AppProps) {
-  const route = router.pathname;
+export default function App({ Component, pageProps }: AppProps) {
   const metaData = pageProps.metaData;
+  const router = useRouter();
+  const route = router.pathname;
+
+  useEffect(() => {
+    const handleRouteChange = (url: string) => {
+      ga.pageview(url);
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
     <>
-      {route !== "/_error" && (
-        <Head>
-          <title>{metaData.title}</title>
-          <meta name="description" content={metaData.description} />
+      {/* {route !== "/_error" && ( */}
+      <Head>
+        <title>{metaData.title}</title>
+        <meta name="description" content={metaData.description} />
 
-          <meta property="og:title" content={metaData.title} />
-          <meta property="og:description" content={metaData.description} />
-          <meta property="og:url" content={metaData.url} />
-          <meta property="og:type" content="website" />
-          <meta
-            property="og:image"
-            content={`https://www.reisfeeld.nl${metaData.image}`}
-          />
+        <meta property="og:title" content={metaData.title} />
+        <meta property="og:description" content={metaData.description} />
+        <meta property="og:url" content={metaData.url} />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content={`https://www.reisfeeld.nl${metaData.image}`}
+        />
 
-          <meta property="fb:app_id" content={metaData.fbAppID} />
-        </Head>
-      )}
+        <meta property="fb:app_id" content={metaData.fbAppID} />
+
+        {/* Google Analytics */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${ga.GA_TRACKING_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+  
+              gtag('config', '${ga.GA_TRACKING_ID}', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+      </Head>
+      {/* )} */}
 
       <AppProvider>
         <Component {...pageProps} />
