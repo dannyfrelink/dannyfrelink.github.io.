@@ -3,11 +3,12 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, router, pageProps }: AppProps) {
   // const route = router.pathname;
   const metaData = pageProps.metaData;
   // const metaData = allMetaData[route];
 
+  console.log("Meta data: ", router.pathname);
   console.log("Meta data: ", metaData);
 
   return (
