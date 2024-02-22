@@ -89,6 +89,10 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
           content="Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!"
         />
         <meta property="og:url" content="https://www.reisfeeld.nl/" />
+        <meta
+          property="og:image"
+          content={`https://www.reisfeeld.nl${HeaderImage.src}`}
+        />
 
         {/* <title>{metaData.title}</title>
         <meta name="description" content={metaData.description} />
