@@ -26,8 +26,6 @@ const BlogPost: React.FC<BlogProps> = React.memo(({ blog, allBlogs }) => {
   const images = blog.images;
   const sections = Object.values(blog.content);
 
-  console.log(coverImage);
-
   return (
     <ScrollBar>
       <div>

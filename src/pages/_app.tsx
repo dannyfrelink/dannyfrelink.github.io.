@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const metaData = pageProps.metaData;
   // const metaData = allMetaData[route];
 
-  console.log(metaData);
+  console.log("Meta data: ", metaData);
 
   return (
     <>
