@@ -7,6 +7,7 @@ import LogoBlack from "../../assets/logo/Logo-ReisFeeld-black.svg";
 import LogoPrimary from "../../assets/logo/Logo-ReisFeeld-primary.svg";
 import Socials from "../pages/blogs/Socials";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Nav: React.FC = () => {
   const { screenSize, navOpen, setNavOpen } = useAppContext();
@@ -15,6 +16,8 @@ const Nav: React.FC = () => {
   );
   const [scrolledUp, setScrolledUp] = useState<boolean>(false);
   const lastScrolledRef = useRef<number>(scrolled);
+  const router = useRouter();
+  const route = router.pathname;
 
   const handleScroll = useCallback(() => {
     const currentScrollY = window.scrollY;
@@ -31,8 +34,8 @@ const Nav: React.FC = () => {
     };
   }, [handleScroll]);
 
-  const checkActive = (isActive: boolean) => {
-    return isActive ? "font-bold text-[#729172]" : "";
+  const checkActive = (path: string) => {
+    return route == path ? "font-bold text-[#729172]" : "";
   };
 
   const handleClick = (e: any) => {
@@ -114,18 +117,26 @@ const Nav: React.FC = () => {
         />
 
         <li>
-          <Link href="/">Home</Link>
+          <Link className={checkActive("/")} href="/">
+            Home
+          </Link>
         </li>
 
         <li>
-          <Link href="/indonesie">Indonesië</Link>
+          <Link className={checkActive("/indonesie")} href="/indonesie">
+            Indonesië
+          </Link>
         </li>
 
         <li>
-          <Link href="/accommodaties">Accommodaties</Link>
+          <Link className={checkActive("/accommodaties")} href="/accommodaties">
+            Accommodaties
+          </Link>
         </li>
         <li>
-          <Link href="/over-ons">Over ons</Link>
+          <Link className={checkActive("/over-ons")} href="/over-ons">
+            Over ons
+          </Link>
         </li>
 
         <div
