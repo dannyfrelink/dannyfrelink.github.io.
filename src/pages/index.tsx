@@ -40,10 +40,6 @@ interface HomeProps {
   metaData: MetadataProps;
 }
 
-export const metadata: Metadata = {
-  title: "Testing",
-};
-
 const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
   const { screenSize } = useAppContext();
   const blogs: Destination[] = [];
@@ -69,12 +65,13 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
           url: "https://affiliate-blog-next.vercel.app/",
           images: [
             {
-              url: `https://affiliate-blog-next.vercel.app${metaData.image}`,
+              url: `${metaData.image}`,
               alt: "Bromo Vulkaan",
             },
           ],
         }}
       />
+
       <div>
         {/* <Head> */}
         {/* <title>ReisFeeld.nl | Jouw avontuur, ons verhaal!</title>
