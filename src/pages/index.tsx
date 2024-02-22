@@ -90,7 +90,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
         />
         <meta property="og:url" content="https://www.reisfeeld.nl/" />
 
-        <title>{metaData.title}</title>
+        {/* <title>{metaData.title}</title>
         <meta name="description" content={metaData.description} />
 
         <meta property="og:title" content={metaData.title} />
@@ -100,7 +100,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
         <meta
           property="og:image"
           content={`https://www.reisfeeld.nl${HeaderImage.src}`}
-        />
+        /> */}
       </Head>
 
       <div>
