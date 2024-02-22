@@ -12,10 +12,12 @@ import React from "react";
 import Image from "next/image";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
+import { MetadataProps } from "..";
 
 interface BlogProps {
   blog: Destination;
   allBlogs: Destination[];
+  metaData: MetadataProps;
 }
 
 const BlogPost: React.FC<BlogProps> = React.memo(({ blog, allBlogs }) => {
@@ -29,7 +31,7 @@ const BlogPost: React.FC<BlogProps> = React.memo(({ blog, allBlogs }) => {
   return (
     <ScrollBar>
       <div>
-        <Head>
+        {/* <Head>
           <title>{blog.metaTitle}</title>
           <meta name="description" content={blog.metaDesc} />
 
@@ -47,7 +49,7 @@ const BlogPost: React.FC<BlogProps> = React.memo(({ blog, allBlogs }) => {
           <meta property="og:image:width" content="2500" />
           <meta property="og:image:height" content="1667" />
           <meta property="og:image:type" content="image/jpeg" />
-        </Head>
+        </Head> */}
 
         <Header
           HeaderImage={() => (
@@ -134,10 +136,18 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   );
   const blogData = allBlogs.find((b) => b.href === blog);
 
+  const metaData = {
+    title: blogData?.metaTitle,
+    description: blogData?.metaDesc,
+    url: `https://www.reisfeeld.nl/indonesie/${blogData?.href}`,
+    image: blogData?.coverImage.src,
+  };
+
   return {
     props: {
       blog: blogData,
       allBlogs,
+      metaData,
     },
   };
 };

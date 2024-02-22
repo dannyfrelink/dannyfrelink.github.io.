@@ -10,10 +10,16 @@ import {
   ScrollBar,
 } from "@/helpers/dynamicImports";
 import React, { useEffect, useState } from "react";
-import Head from "next/head";
+// import Head from "next/head";
 import Image from "next/image";
+import { MetadataProps } from ".";
+import { GetStaticProps } from "next";
 
-const About: React.FC = React.memo(() => {
+interface AboutProps {
+  metaData: MetadataProps;
+}
+
+const About: React.FC<AboutProps> = React.memo(() => {
   const { screenSize } = useAppContext();
   const [headerImage, setHeaderImage] = useState<string>();
   useEffect(() => {
@@ -172,5 +178,17 @@ const About: React.FC = React.memo(() => {
     </ScrollBar>
   );
 });
+
+export const getStaticProps: GetStaticProps<AboutProps> = async () => {
+  const allMetaData: {
+    [path: string]: MetadataProps;
+  } = require("../data/metaData.json");
+
+  return {
+    props: {
+      metaData: allMetaData["/over-ons"],
+    },
+  };
+};
 
 export default About;

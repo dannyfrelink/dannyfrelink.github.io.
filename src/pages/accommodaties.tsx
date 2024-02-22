@@ -13,6 +13,7 @@ import React from "react";
 import { GetStaticProps } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { MetadataProps } from ".";
 
 export interface Destination {
   image: {
@@ -34,10 +35,9 @@ export interface AccommodationsData {
 
 interface AccommodationsProps {
   data: {
-    accommodations: {
-      [dest: string]: Destination[];
-    };
+    accommodations: AccommodationsData;
   };
+  metaData: MetadataProps;
 }
 
 const Accommodations: React.FC<AccommodationsProps> = React.memo(({ data }) => {
@@ -51,7 +51,7 @@ const Accommodations: React.FC<AccommodationsProps> = React.memo(({ data }) => {
   return (
     <ScrollBar>
       <div>
-        <Head>
+        {/* <Head>
           <title>Slaap op de leukste plekken in Indonesië!</title>
           <meta
             name="description"
@@ -78,7 +78,7 @@ const Accommodations: React.FC<AccommodationsProps> = React.memo(({ data }) => {
           <meta property="og:image:width" content="2500" />
           <meta property="og:image:height" content="1667" />
           <meta property="og:image:type" content="image/jpeg" />
-        </Head>
+        </Head> */}
 
         <Header
           size="small"
@@ -128,10 +128,14 @@ const Accommodations: React.FC<AccommodationsProps> = React.memo(({ data }) => {
 
 export const getStaticProps: GetStaticProps<AccommodationsProps> = async () => {
   const data = require("../data/accommodations.json");
+  const allMetaData: {
+    [path: string]: MetadataProps;
+  } = require("../data/metaData.json");
 
   return {
     props: {
       data,
+      metaData: allMetaData["/accommodaties"],
     },
   };
 };

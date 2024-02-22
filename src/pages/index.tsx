@@ -23,16 +23,17 @@ import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { GetStaticProps } from "next";
 // import { NextSeo } from "next-seo";
-const DynamicNextSeo = dynamic(() =>
-  import("next-seo").then((mod) => mod.NextSeo)
-);
-import { useRouter } from "next/router";
-import Head from "next/head";
+// const DynamicNextSeo = dynamic(() =>
+//   import("next-seo").then((mod) => mod.NextSeo)
+// );
+// import { useRouter } from "next/router";
+// import Head from "next/head";
 
 export interface MetadataProps {
   title: string;
   description: string;
   url: string;
+  image: string;
 }
 
 interface HomeProps {
@@ -44,7 +45,7 @@ interface HomeProps {
   metaData: MetadataProps;
 }
 
-const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
+const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
   const { screenSize } = useAppContext();
   const blogs: Destination[] = [];
   Object.values(blogData.blogs).map((blogArr) =>
@@ -60,7 +61,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
 
   return (
     <ScrollBar>
-      <DynamicNextSeo
+      {/* <DynamicNextSeo
         title={metaData.title}
         description={metaData.description}
         openGraph={{
@@ -74,7 +75,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
             },
           ],
         }}
-      />
+      /> */}
 
       {/* <Head>
         <title>ReisFeeld.nl | Jouw avontuur, ons verhaal!</title>
