@@ -21,14 +21,14 @@ import React from "react";
 // const Head = dynamic(() => import("next/head"));
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import { Metadata } from "next";
+import { GetStaticProps } from "next";
 import { NextSeo } from "next-seo";
+import { useRouter } from "next/router";
 
 export interface MetadataProps {
   title: string;
   description: string;
   url: string;
-  image?: string;
 }
 
 interface HomeProps {
@@ -54,6 +54,8 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
     headerImage !== "" && setHeaderImage(HeaderImage);
   }, [headerImage]);
 
+  console.log(metaData);
+
   return (
     <ScrollBar>
       <NextSeo
@@ -65,7 +67,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
           url: "https://affiliate-blog-next.vercel.app/",
           images: [
             {
-              url: `${metaData.image}`,
+              url: `${HeaderImage.src}`,
               alt: "Bromo Vulkaan",
             },
           ],
@@ -188,35 +190,39 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
   );
 });
 
-// export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-//   const blogData = require("../data/blogs.json");
-
-//   return {
-//     props: {
-//       blogData,
-//     },
-//   };
-// };
-
-export const getServerSideProps = async (context: any) => {
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const blogData = require("../data/blogs.json");
-  const route = context.resolvedUrl;
-  const allMetaData = require("../data/metaData.json");
-  const thumbnailImg = require("../assets/header/home.webp");
-  let metaData: HomeProps["metaData"] | {} = {};
-
-  Object.keys(allMetaData).map((dRoute) => {
-    if (dRoute == route) {
-      metaData = { ...allMetaData[dRoute], image: thumbnailImg.default.src };
-    }
-  });
+  const allMetaData: {
+    [path: string]: MetadataProps;
+  } = require("../data/metaData.json");
 
   return {
     props: {
       blogData,
-      metaData,
+      metaData: allMetaData["/"],
     },
   };
 };
+
+// export const getServerSideProps = async (context: any) => {
+//   const blogData = require("../data/blogs.json");
+// const route = context.resolvedUrl;
+// const allMetaData = require("../data/metaData.json");
+// const thumbnailImg = require("../assets/header/home.webp");
+// let metaData: HomeProps["metaData"] | {} = {};
+
+// Object.keys(allMetaData).map((dRoute) => {
+//   if (dRoute == route) {
+//     metaData = { ...allMetaData[dRoute], image: thumbnailImg.default.src };
+//   }
+// });
+
+//   return {
+//     props: {
+//       blogData,
+//       metaData,
+//     },
+//   };
+// };
 
 export default Home;
