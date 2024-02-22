@@ -10,7 +10,6 @@ import {
   ScrollBar,
 } from "@/helpers/dynamicImports";
 import React, { useEffect, useState } from "react";
-// import Head from "next/head";
 import Image from "next/image";
 import { MetadataProps } from ".";
 import { GetStaticProps } from "next";
@@ -29,32 +28,6 @@ const About: React.FC<AboutProps> = React.memo(() => {
   return (
     <ScrollBar>
       <div>
-        {/* <Head>
-          <title>Reisfeeld | Over ons</title>
-          <meta
-            name="description"
-            content="Met onze tips en ervaringen hopen wij jouw voorbereidingen én reis een stukje leuker te maken. En wij zijn nog lang niet klaar met reizen!"
-          /> */}
-
-        {/* <meta property="og:title" content="Reisfeeld | Over ons" />
-          <meta
-            property="og:description"
-            content="Met onze tips en ervaringen hopen wij jouw voorbereidingen én reis een stukje leuker te maken. En wij zijn nog lang niet klaar met reizen!"
-          />
-          <meta
-            property="og:url"
-            content="https://www.reisfeeld.nl/over-ons/"
-          />
-
-          <meta
-            name="og:image"
-            content={`https://www.reisfeeld.nl${HeaderImage.src}`}
-          />
-          <meta property="og:image:width" content="2500" />
-          <meta property="og:image:height" content="1667" />
-          <meta property="og:image:type" content="image/jpeg" /> */}
-        {/* </Head> */}
-
         <Header
           HeaderImage={() => (
             <Image

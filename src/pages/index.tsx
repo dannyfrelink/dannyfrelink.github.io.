@@ -15,19 +15,9 @@ import AboutImage from "../assets/pages/about/couple.jpg";
 import { Destination } from "./indonesie/index";
 import { useEffect, useState } from "react";
 import React from "react";
-// import { GetStaticProps } from "next";
-// import Head from "next/head";
-// import dynamic from "next/dynamic";
-// const Head = dynamic(() => import("next/head"));
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { GetStaticProps } from "next";
-// import { NextSeo } from "next-seo";
-// const DynamicNextSeo = dynamic(() =>
-//   import("next-seo").then((mod) => mod.NextSeo)
-// );
-// import { useRouter } from "next/router";
-// import Head from "next/head";
 
 export interface MetadataProps {
   title: string;
@@ -62,87 +52,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
 
   return (
     <ScrollBar>
-      {/* <DynamicNextSeo
-        title={metaData.title}
-        description={metaData.description}
-        openGraph={{
-          title: "Testing Reisfeeld",
-          description: "Testing description Reisfeeld",
-          url: "https://www.reisfeeld.nl/",
-          images: [
-            {
-              url: `${HeaderImage.src}`,
-              alt: "Bromo Vulkaan",
-            },
-          ],
-        }}
-      /> */}
-
-      {/* <Head>
-        <title>ReisFeeld.nl | Jouw avontuur, ons verhaal!</title>
-        <meta
-          name="description"
-          content="Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!"
-        />
-
-        <meta
-          property="og:title"
-          content="ReisFeeld.nl | Jouw avontuur, ons verhaal!"
-        />
-        <meta
-          property="og:description"
-          content="Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!"
-        />
-        <meta property="og:url" content="https://www.reisfeeld.nl/" />
-        <meta
-          property="og:image"
-          content={`https://www.reisfeeld.nl${HeaderImage.src}`}
-        />
-
-        <title>{metaData.title}</title>
-        <meta name="description" content={metaData.description} />
-
-        <meta property="og:title" content={metaData.title} />
-        <meta property="og:description" content={metaData.description} />
-        <meta property="og:url" content={metaData.url} />
-
-        <meta
-          property="og:image"
-          content={`https://www.reisfeeld.nl${HeaderImage.src}`}
-        />
-      </Head> */}
-
       <div>
-        {/* <Head>
-        <title>ReisFeeld.nl | Jouw avontuur, ons verhaal!</title>
-          <meta
-            name="description"
-            content="Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!"
-          />
-
-          <meta
-            property="og:title"
-            content="ReisFeeld.nl | Jouw avontuur, ons verhaal!"
-          />
-          <meta
-            property="og:description"
-            content="Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!"
-          />
-          <meta property="og:url" content="https://www.reisfeeld.nl/" />
-        
-          <title>{metaData.title}</title>
-          <meta name="description" content={metaData.description} />
-
-          <meta property="og:title" content={metaData.title} />
-          <meta property="og:description" content={metaData.description} />
-          <meta property="og:url" content={metaData.url} />
-
-          <meta
-            property="og:image"
-            content={`https://www.reisfeeld.nl${metaData.image}`}
-          />
-        </Head> */}
-
         <Header
           HeaderImage={() => (
             <Image
@@ -241,26 +151,5 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
     },
   };
 };
-
-// export const getServerSideProps = async (context: any) => {
-//   const blogData = require("../data/blogs.json");
-// const route = context.resolvedUrl;
-// const allMetaData = require("../data/metaData.json");
-// const thumbnailImg = require("../assets/header/home.webp");
-// let metaData: HomeProps["metaData"] | {} = {};
-
-// Object.keys(allMetaData).map((dRoute) => {
-//   if (dRoute == route) {
-//     metaData = { ...allMetaData[dRoute], image: thumbnailImg.default.src };
-//   }
-// });
-
-//   return {
-//     props: {
-//       blogData,
-//       metaData,
-//     },
-//   };
-// };
 
 export default Home;

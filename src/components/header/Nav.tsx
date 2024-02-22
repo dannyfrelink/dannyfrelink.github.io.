@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
-// import { NavLink } from "react-router-dom";
 import Link from "next/link";
 import { useAppContext } from "../../config/AppContext";
 import CloseButton from "../general/CloseButton";

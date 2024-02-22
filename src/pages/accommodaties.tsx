@@ -51,35 +51,6 @@ const Accommodations: React.FC<AccommodationsProps> = React.memo(({ data }) => {
   return (
     <ScrollBar>
       <div>
-        {/* <Head>
-          <title>Slaap op de leukste plekken in Indonesië!</title>
-          <meta
-            name="description"
-            content="In Indonesië kan je echt van alles vinden: een guesthouse met lieve eigenaren, een luxe privé villa en alles wat hier tussenin zit."
-          />
-
-          <meta
-            property="og:title"
-            content="Slaap op de leukste plekken in Indonesië!"
-          />
-          <meta
-            property="og:description"
-            content="In Indonesië kan je echt van alles vinden: een guesthouse met lieve eigenaren, een luxe privé villa en alles wat hier tussenin zit."
-          />
-          <meta
-            property="og:url"
-            content="https://www.reisfeeld.nl/accommodaties/"
-          />
-
-          <meta
-            name="og:image"
-            content={`https://www.reisfeeld.nl${HeaderImage.src}`}
-          />
-          <meta property="og:image:width" content="2500" />
-          <meta property="og:image:height" content="1667" />
-          <meta property="og:image:type" content="image/jpeg" />
-        </Head> */}
-
         <Header
           size="small"
           align="bottom"
