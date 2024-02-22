@@ -17,12 +17,15 @@ import { useEffect, useState } from "react";
 import React from "react";
 // import { GetStaticProps } from "next";
 // import Head from "next/head";
-// import dynamic from "next/dynamic";
+import dynamic from "next/dynamic";
 // const Head = dynamic(() => import("next/head"));
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { GetStaticProps } from "next";
-import { NextSeo } from "next-seo";
+// import { NextSeo } from "next-seo";
+const DynamicNextSeo = dynamic(() =>
+  import("next-seo").then((mod) => mod.NextSeo)
+);
 import { useRouter } from "next/router";
 import Head from "next/head";
 
@@ -57,7 +60,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
 
   return (
     <ScrollBar>
-      {/* <NextSeo
+      <DynamicNextSeo
         title={metaData.title}
         description={metaData.description}
         openGraph={{
@@ -71,10 +74,10 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
             },
           ],
         }}
-      /> */}
+      />
 
-      <Head>
-        {/* <title>ReisFeeld.nl | Jouw avontuur, ons verhaal!</title>
+      {/* <Head>
+        <title>ReisFeeld.nl | Jouw avontuur, ons verhaal!</title>
         <meta
           name="description"
           content="Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!"
@@ -92,7 +95,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
         <meta
           property="og:image"
           content={`https://www.reisfeeld.nl${HeaderImage.src}`}
-        /> */}
+        />
 
         <title>{metaData.title}</title>
         <meta name="description" content={metaData.description} />
@@ -105,7 +108,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
           property="og:image"
           content={`https://www.reisfeeld.nl${HeaderImage.src}`}
         />
-      </Head>
+      </Head> */}
 
       <div>
         {/* <Head>
