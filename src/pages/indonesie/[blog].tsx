@@ -138,7 +138,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     title: blogData?.metaTitle,
     description: blogData?.metaDesc,
     url: `https://www.reisfeeld.nl/indonesie/${blogData?.href}`,
-    image: blogData?.coverImage.src,
+    image: `/${blogData?.coverImage.src},
     fbAppID: blogData?.href,
   };
 
