@@ -34,6 +34,7 @@ export interface MetadataProps {
   description: string;
   url: string;
   image: string;
+  fbAppID: string;
 }
 
 interface HomeProps {
