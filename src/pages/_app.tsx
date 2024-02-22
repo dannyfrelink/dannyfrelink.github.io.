@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 
 export default function App({ Component, router, pageProps }: AppProps) {
-  // const route = router.pathname;
+  const route = router.pathname;
   const metaData = pageProps.metaData;
   // const metaData = allMetaData[route];
 
@@ -13,19 +13,22 @@ export default function App({ Component, router, pageProps }: AppProps) {
 
   return (
     <>
-      <Head>
-        <title>{metaData.title}</title>
-        <meta name="description" content={metaData.description} />
+      {route !== "/_error" && (
+        <Head>
+          <title>{metaData.title}</title>
+          <meta name="description" content={metaData.description} />
 
-        <meta property="og:title" content={metaData.title} />
-        <meta property="og:description" content={metaData.description} />
-        <meta property="og:url" content={metaData.url} />
+          <meta property="og:title" content={metaData.title} />
+          <meta property="og:description" content={metaData.description} />
+          <meta property="og:url" content={metaData.url} />
 
-        <meta
-          property="og:image"
-          content={`https://www.reisfeeld.nl${metaData.image}`}
-        />
-      </Head>
+          <meta
+            property="og:image"
+            content={`https://www.reisfeeld.nl${metaData.image}`}
+          />
+        </Head>
+      )}
+
       <AppProvider>
         <Component {...pageProps} />
       </AppProvider>
