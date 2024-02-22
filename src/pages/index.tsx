@@ -74,7 +74,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
       /> */}
 
       <Head>
-        <title>ReisFeeld.nl | Jouw avontuur, ons verhaal!</title>
+        {/* <title>ReisFeeld.nl | Jouw avontuur, ons verhaal!</title>
         <meta
           name="description"
           content="Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!"
@@ -92,9 +92,9 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
         <meta
           property="og:image"
           content={`https://www.reisfeeld.nl${HeaderImage.src}`}
-        />
+        /> */}
 
-        {/* <title>{metaData.title}</title>
+        <title>{metaData.title}</title>
         <meta name="description" content={metaData.description} />
 
         <meta property="og:title" content={metaData.title} />
@@ -104,7 +104,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData, metaData }) => {
         <meta
           property="og:image"
           content={`https://www.reisfeeld.nl${HeaderImage.src}`}
-        /> */}
+        />
       </Head>
 
       <div>
