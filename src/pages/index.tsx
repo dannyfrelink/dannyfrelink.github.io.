@@ -17,7 +17,7 @@ import { useEffect, useState } from "react";
 import React from "react";
 // import { GetStaticProps } from "next";
 // import Head from "next/head";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 // const Head = dynamic(() => import("next/head"));
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
