@@ -25,21 +25,24 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      {/* {route !== "/_error" && ( */}
       <Head>
-        <title>{metaData.title}</title>
-        <meta name="description" content={metaData.description} />
+        {route !== "/_error" && (
+          <>
+            <title>{metaData.title}</title>
+            <meta name="description" content={metaData.description} />
 
-        <meta property="og:title" content={metaData.title} />
-        <meta property="og:description" content={metaData.description} />
-        <meta property="og:url" content={metaData.url} />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content={`https://www.reisfeeld.nl${metaData.image}`}
-        />
+            <meta property="og:title" content={metaData.title} />
+            <meta property="og:description" content={metaData.description} />
+            <meta property="og:url" content={metaData.url} />
+            <meta property="og:type" content="website" />
+            <meta
+              property="og:image"
+              content={`https://www.reisfeeld.nl${metaData.image}`}
+            />
 
-        <meta property="fb:app_id" content={metaData.fbAppID} />
+            <meta property="fb:app_id" content={metaData.fbAppID} />
+          </>
+        )}
 
         {/* Google Analytics */}
         <script
@@ -60,7 +63,6 @@ export default function App({ Component, pageProps }: AppProps) {
           }}
         />
       </Head>
-      {/* )} */}
 
       <AppProvider>
         <Component {...pageProps} />
