@@ -41,6 +41,8 @@ export default function App({ Component, pageProps }: AppProps) {
             />
 
             <meta property="fb:app_id" content={metaData.fbAppID} />
+
+            <link rel="canonical" href={metaData.url} key="canonical" />
           </>
         )}
 
