@@ -56,7 +56,7 @@ const BlogContent: React.FC<BlogContentProps> = ({
         )}
 
         <article
-          className={`[&>img]:w-full [&_img]:rounded-2xl [&_img]:shadow-subtle [&>img]:object-center [&>img]:object-cover [&>img]:max-h-[500px] [&_h3]:font-medium ${
+          className={`[&>img]:w-full [&_img]:rounded-2xl [&_img]:shadow-subtle [&>img]:object-center [&>img]:object-cover [&>img]:max-h-[500px] [&_h3]:font-medium [&_h4]:mt-5 ${
             screenSize < 1000
               ? "[&>img]:h-[50.3vw] [&>div>img]:h-[62.6vw]"
               : screenSize < 1250 && "[&>img]:h-[30vw] [&>div>img]:h-[37.2vw]"

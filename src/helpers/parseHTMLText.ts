@@ -1,8 +1,8 @@
 import React from "react";
-import BaseText from "../components/typography/BaseText";
-import H3 from "../components/typography/H3";
-import BlogImage from "../components/pages/blogs/BlogImage";
-import H2 from "../components/typography/H2";
+import BaseText from "@/components/typography/BaseText";
+import H3 from "@/components/typography/H3";
+import H4 from "@/components/typography/H4";
+import BlogImage from "@/components/pages/blogs/BlogImage";
 import { Element } from "react-scroll";
 import Link from "next/link";
 
@@ -29,7 +29,7 @@ const tagToComponent: TagToComponentMap = {
   a: Link as React.FC<AnchorProps | TextProps | ImageProps>,
   p: BaseText as React.FC<AnchorProps | TextProps | ImageProps>,
   image: BlogImage as React.FC<AnchorProps | TextProps | ImageProps>,
-  h2: H2 as React.FC<AnchorProps | TextProps | ImageProps>,
+  h4: H4 as React.FC<AnchorProps | TextProps | ImageProps>,
   h3: H3 as React.FC<AnchorProps | TextProps | ImageProps>,
 };
 

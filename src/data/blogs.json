@@ -149,137 +149,6 @@
         "carousel": true
       }
     ],
-    "Nusa eilanden": [
-      {
-        "id": 1,
-        "metaTitle": "Een dagtrip op Nusa Penida: de mooiste plekjes!",
-        "metaDesc": "Tips voor Nusa Penida | Mooie bezienswaardigheden op Nusa Penida: Kelingking Beach | Angel’s Billabong | Broken Beach | Peguyangan Waterval | lunchen bij AMARTA",
-        "href": "nusa-penida-tips",
-        "date": "22 januari, 2024",
-        "coverImage": {
-          "src": "een-dagtrip-op-nusa-penida/broken-beach-1.jpg",
-          "alt": "Broken Beach Nusa Penida"
-        },
-        "title": "Een dagtrip op Nusa Penida",
-        "headers": [
-          "Peguyangan Waterval",
-          "Het bekende Kelingking Beach",
-          "AMARTA",
-          "Angel’s Billabong",
-          "Broken Beach"
-        ],
-        "content": {
-          "section1": {
-            "text": "<p class='font-semibold'>Nusa Penida is een eiland naast Bali en met ongeveer 30 minuten varen begeef je je in een hele andere omgeving. Waar Bali op sommige plekken heel druk kan zijn, is Nusa Penida nog een stuk rustiger en zijn er veel minder toeristen. Toch kunnen er op de toeristische trekpleisters van het eiland nog best druk zijn, omdat er veel dagtrips vanuit Bali worden georganiseerd. Zorg er dan ook voor dat je vroeg start en het liefst verblijft op het eiland zelf of op het naastgelegen Nusa Lembongan. In deze blog lichten wij een aantal mooie en leuke plekken uit die je in één dag zou kunnen bezoeken. Mocht je hier verblijven en meer willen zien, dan heeft Nusa Penida nog veel meer moois te bieden!</p>//<div class='blogText-anchor tip'><p class='font-medium'>Tip:</p><p> Trek goede schoenen aan als je op pad gaat op Nusa Penida. Veel plekken zijn rotsachtig en soms moet je best een stukje lopen. Doe dit dan ook niet op slippers, want dit kan soms erg gevaarlijk en oncomfortabel zijn.</p></div>//<div class='blogImage-container'><image1><image2></div>//<h3>Peguyangan Waterval</h3>//<p>Probeer deze stop zo vroeg mogelijk te plannen, want je zal heel wat inspanning moeten leveren om naar benden en weer omhoog te komen. Je gaat een steile blauwe trap naar beneden en hebt de meest prachtige uitzichten. Soms kan je zelfs zo goed de zee inkijken dat je manta’s ziet zwemmen. Zoals de naam je misschien laat denken, is het geen echte waterval. Als je beneden komt heb je wel wat kleine waterbronnen waar je in zou kunnen afkoelen.</p>//<div class='blogImage-container'><image3><image4></div>//<image5>//<h3>Het bekende Kelingking Beach</h3>//<p>Een plek die veel mensen kennen van de foto’s is Kelingking Beach. Een uitzichtpunt waar je van bovenaf een rots ziet in de vorm van een T-Rex, maar waar je ook een afdaling naar beneden kan maken om het strand te zien. Deze afdaling is niet geheel risico vrij, dus trek goede schoenen aan en zorg dat je goed oplet tijdens het lopen. Mocht je niet naar benden gaan, is de plek nog steeds prachtig om te zien.</p>",
-            "image": {
-              "src": "een-dagtrip-op-nusa-penida/kelingking.webp",
-              "alt": "Kelingking Beach Nusa Penida"
-            }
-          },
-          "section2": {
-            "text": "<h3>AMARTA</h3>//<p>Tijdens de dagtour moet er natuurlijk ook geluncht worden. AMARTA is een hele leuke plek met een prachtig uitzicht en heerlijk eten. Toen wij hier kwamen heette het nog ‘Greenkubu’, maar ze hebben recent een naamsverandering gehad. Mocht je even willen afkoelen, kan je ook nog gebruik maken van het zwembad wat bij dit restaurant zit.</p>//<image6>//<div class='blogImage-container'><image7><image8></div>//<h3>Angel’s Billabong</h3><p>Angel’s Billabong is een natuurlijke infinity pool die je kan zien wanneer het eb is. Je kan hier dan zelfs het water even in. Doe wel voorzichtig, want het kan glad zijn en door de rotsen kan je je echt bezeren. Ook moet je goed opletten wanneer het weer vloed wordt, want dan kan het gevaarlijk worden. Als er een golf de infinity pool inkomt en je meetrekt in de zee, kan dit niet goed aflopen. Lees je daarom goed in over eb en vloed.</p>//<image9>//<h3>Broken Beach</h3>//<p>Dicht bij Angel’s Billabong vind je Broken Beach. Dit is zo’n mooie plek, dat wij hier uren naar kunnen kijken. Je kan een rondje lopen over de boog die je aan de andere kant kan zien, zodat je ook het strand goed kan bekijken. Ook kan je hier prachtige drone beelden maken.</p>//<image10>"
-          }
-        },
-        "images": {
-          "src": {
-            "image1": "een-dagtrip-op-nusa-penida/intro-1.jpg",
-            "image2": "een-dagtrip-op-nusa-penida/intro-2.jpg",
-            "image3": "een-dagtrip-op-nusa-penida/peguyangan-1.jpg",
-            "image4": "een-dagtrip-op-nusa-penida/peguyangan-2.jpg",
-            "image5": "een-dagtrip-op-nusa-penida/peguyangan-3.jpg",
-            "image6": "een-dagtrip-op-nusa-penida/amarta-1.jpg",
-            "image7": "een-dagtrip-op-nusa-penida/amarta-2.jpg",
-            "image8": "een-dagtrip-op-nusa-penida/amarta-3.jpg",
-            "image9": "een-dagtrip-op-nusa-penida/angel-billabong-1.jpg",
-            "image10": "een-dagtrip-op-nusa-penida/broken-beach-1.jpg"
-          },
-          "alt": {
-            "image1": "Kelingking Beach Nusa Penida",
-            "image2": "Broken Beach Nusa Penida",
-            "image3": "Peguyangan Waterfall Nusa Penida",
-            "image4": "Peguyangan Waterfall Nusa Penida",
-            "image5": "Peguyangan Waterfall Nusa Penida",
-            "image6": "AMARTA Nusa Penida",
-            "image7": "AMARTA Nusa Penida",
-            "image8": "AMARTA Nusa Penida",
-            "image9": "Angel's Billabong Nusa Penida",
-            "image10": "Broken Beach Nusa Penida"
-          }
-        }
-      },
-      {
-        "id": 2,
-        "metaTitle": "Wat te doen op Nusa Lembongan: de leukste tips!",
-        "metaDesc": "Tips voor Nusa Lembongan | Leuke activiteiten op Nusa Lembongan: Blue Lagoon | Devil’s Tear | Snorkelen met manta’s | Beachclub Ohana’s | Touren over het eiland",
-        "href": "wat-te-doen-op-nusa-lembongan",
-        "date": "23 januari, 2024",
-        "coverImage": {
-          "src": "wat-te-doen-op-nusa-lembongan/cover.webp",
-          "alt": "Beach Nusa Lembongan"
-        },
-        "title": "Wat te doen op Nusa Lembongan",
-        "headers": [
-          "Devil's Tear",
-          "Schildpadden en manta’s spotten met een snorkeltour",
-          "Yellow Bridge",
-          "Blue Lagoon",
-          "Chillen bij Tigerlillys Beach Shack",
-          "Souvenir shoppen bij Ketut Souvenir Shop",
-          "Zwemmen bij Ohana’s beachclub",
-          "Touren over het eiland",
-          "Ontspannen bij Spring Spa",
-          "Dagtrip naar Nusa Penida"
-        ],
-        "content": {
-          "section1": {
-            "text": "<p class='font-semibold'>Nusa Lembongan is een prachtig klein eiland naast Bali. Vanaf Bali kan je de boot pakken en met 20 tot 30 minuten sta je op dit geweldige eiland. Als je hier aankomt, zie je gelijk de witte stranden en het mooie blauwe water. Wat ons betreft is dit eiland echt de moeite en staat het dan ook zeker op ons favorieten lijstje in Indonesië. Op Nusa Lembongan kan je heerlijk een paar dagen relaxen, genieten van lekker eten bij de leukste restaurants en tijdens het touren de leukste plekjes ontdekken. Naast relaxen kan je hier ook een aantal activiteiten doen en mooie plekken bezoeken. In deze blog vind je 10 leuke dingen die je kan doen op Nusa Lembongan!</p>//<image1>//<h3>Devil's Tear</h3>//<p>Aan de westkant van Nusa Lembongan vind je Devil’s Tear, een plek waar de golven tegen de rotsen slaan en je een prachtig uitzicht hebt op de zonsondergang. De golven zijn soms zo hoog dat je moet oppassen om niet nat te worden (al is dit helemaal niet erg als het zo warm is). Een paar jaar geleden stond hier nog geen afbakening omheen, maar voor de veiligheid kan je tegenwoordig niet meer tot de rand lopen. De entree is 25K per persoon en dit kaartje kan je onbeperkt gebruiken.</p>//<image2>//<h3>Schildpadden en manta’s spotten met een snorkeltour</h3>//<p>De snorkeltour is echt een activiteit die je niet mag missen als je op Nusa Lembongan verblijft. Wij hebben deze tour al twee keer met de organisatie Aquaman gedaan en dit is 100% een aanrader! Je vertrekt ’s ochtends om 8 uur vanaf het strand waarna je drie snorkelspots bezoekt. Het kan per dag verschillen, maar je gaat in ieder geval op zoek naar manta roggen, schildpadden en mooie tropische vissen. Ook is er altijd een gids mee in het water en maakt deze ook mooie onderwaterfoto’s die je na de tour toegestuurd krijgt.</p>//<p>Op de boot krijg je een handdoek, water, snacks en snorkelmateriaal mocht je dit zelf niet hebben. Wij betaalde voor deze tour 250K per persoon inclusief alles wat wij hierboven hebben benoemd.</p>//<image3>//<image4>//<h3>Yellow Bridge</h3>//<p>De Yellow Brigde is de brug die de eilanden Nusa Lembongan en Nusa Ceningan met elkaar verbindt. Je kan alleen als voetganger, met de fiets of met een scooter over deze brug heen, want hij is te smal voor auto’s. De brug is niet alleen functioneel, maar ook een plaatje om te zien.</p>",
-            "image": {
-              "src": "wat-te-doen-op-nusa-lembongan/yellow-bridge.webp",
-              "alt": "Yellow Bridge Nusa Lembongan"
-            }
-          },
-          "section2": {
-            "text": "<h3>Blue Lagoon</h3>//<p>Om bij de Blue Lagoon te komen, moet je de Yellow Bridge over naar het eiland Nusa Ceningan. Vanaf de Yellow Bridge ben je ongeveer 10 minuutjes onderweg en kan je je scooter parkeren voor de ingang. Dit is gewoon een stuk zand, dus verwacht geen fancy parkeerplek. Eenmaal bij de Blue Lagoon aangekomen kijk je uit over het blauwste water van het eiland. Hoe verleidelijk het er ook uit ziet om er in te zwemmen, is dit helaas niet mogelijk door alle rotsen en de sterke stroming.</p>//<image5>//<h3>Chillen bij Tigerlillys Beach Shack</h3>//<p>Wil je een paar uurtjes (of de hele dag) relaxen op het strand? Dan is deze plek echt een aanrader. Je hoeft hier geen minimaal bedrag uit te geven en kan plaatsnemen op één van de heerlijke ligbedjes, zitzakken of normale stoelen. Je kan hier heerlijk eten, drinken en zwemmen in de zee. Ons favoriete ontbijt was hier zeker de French Toast Bites!</p>//<image6>//<div class='blogImage-container'><image7><image8></div>//<h3>Souvenir shoppen bij Ketut Souvenir Shop</h3>//<div class='blogText-anchor'><p>De eigenaar van deze winkel is zo lief en gepassioneerd over zijn winkel, dat ik deze wel moest benoemen in deze blog. Je kan hier echt leuke souvenirs kopen voor een lage prijs en bijna alles is handgemaakt. De eigenaar vertelt graag over het maken van de souvenirs en laat het ook aan je zien. Dit winkeltje is dus zeker een bezoekje waard! Je kan het winkeltje </p>//<a href='https://maps.app.goo.gl/kg1aMYzGztj78cCq7?g_st=iw' target='_blank'>hier</a>//<p> vinden.</p></div>//<h3>Zwemmen bij Ohana’s beachclub</h3>//<p>Ohana’s Beachclub is wat aan de duurdere kant, maar je kan hier heerlijk genieten van de muziek, een zwembad en een goede menukaart. Je hebt hier verschillende soorten bedjes en zitzakken, waarbij je soms wel een bepaald bedrag moet besteden om hier te mogen liggen.</p>//<div class='blogImage-container'><image9><image10></div>//<h3>Touren over het eiland</h3>//<p>Soms kom je de leukste plekjes tegen door gewoon een rondje op de scooter te rijden. Ook als je op zoek bent naar een leuk restaurantje of een leuke plek om even aan het strand te liggen, kan het soms leuker zijn om dit gewoon op de bonnefooi te doen. Je kan bijna niet verdwalen op deze eilanden, dus pak je scooter en ga erop uit.</p>",
-            "image": {
-              "src": "wat-te-doen-op-nusa-lembongan/touren.webp",
-              "alt": "Uitzicht Nusa Lembongan"
-            }
-          },
-          "section3": {
-            "text": "<h3>Ontspannen bij Spring Spa</h3>//<p>Dit is één van de mooiste locaties voor een spa die wij ooit hebben gezien. Met uitzicht op zee en een prachtig interieur is dit een heerlijke plek om even te ontspannen. Je kan hier een massage nemen, je nagels laten doen of verschillende facials proberen. Om hier te komen moet je wel een stukje lopen, want je kan hier niet met de scooter naartoe.</p>//<h3>Dagtrip naar Nusa Penida</h3>//<div class='blogText-anchor'><p>Als je op Nusa Lembongan verblijft, kan je ook een dag tour doen op Nusa Penida. Op dit eiland zijn namelijk een aantal prachtige plekken die je eigenlijk niet mag missen. Denk bijvoorbeeld aan Kelingking Beach, Angel’s Billabong en Broken Beach. Vanaf Nusa Lembongan kan je een boot nemen die je binnen 10 minuten naar Nusa Penida brengt. Hier kan je zelf een scooter huren en het eiland ontdekken of een privéchauffeur huren die je het hele eiland rondrijdt. In </p>//<a href='/indonesie/nusa-penida-tips'>deze blog</a>//<p> kan je meer lezen over een leuke dag tour op Nusa Penida.</p></div>//<image11>"
-          }
-        },
-        "images": {
-          "src": {
-            "image1": "wat-te-doen-op-nusa-lembongan/intro.webp",
-            "image2": "wat-te-doen-op-nusa-lembongan/devils-tear.webp",
-            "image3": "wat-te-doen-op-nusa-lembongan/snorkling-1.webp",
-            "image4": "wat-te-doen-op-nusa-lembongan/snorkling-2.webp",
-            "image5": "wat-te-doen-op-nusa-lembongan/blue-lagoon.webp",
-            "image6": "wat-te-doen-op-nusa-lembongan/tigerlillys-1.webp",
-            "image7": "wat-te-doen-op-nusa-lembongan/tigerlillys-2.webp",
-            "image8": "wat-te-doen-op-nusa-lembongan/tigerlillys-3.webp",
-            "image9": "wat-te-doen-op-nusa-lembongan/ohana-1.webp",
-            "image10": "wat-te-doen-op-nusa-lembongan/ohana-2.webp",
-            "image11": "een-dagtrip-op-nusa-penida/kelingking.webp"
-          },
-          "alt": {
-            "image1": "Nusa Lembongan Beach",
-            "image2": "Devil's Tear Nusa Lembongan",
-            "image3": "Snorkling Tour Nusa Lembongan",
-            "image4": "Snorkling Tour Nusa Lembongan",
-            "image5": "Blue Lagoon Nusa Lembongan",
-            "image6": "Tigerlillys Beach Shack Nusa Lembongan",
-            "image7": "Tigerlillys Beach Shack Nusa Lembongan",
-            "image8": "Tigerlillys Beach Shack Nusa Lembongan",
-            "image9": "Ohana's Beach Club Nusa Lembongan",
-            "image10": "Ohana's Beach Club Nusa Lembongan",
-            "image11": "Kelingking Beach Nusa Lembongan"
-          }
-        },
-        "carousel": true
-      }
-    ],
     "Ubud (Bali)": [
       {
         "id": 5,
@@ -417,6 +286,201 @@
             "image8": "Jatiluwih Rijstvelden Ubud Bali",
             "image9": "Dolfijnen Spotten Tour Lovina Bali",
             "image10": "Dolfijnen Spotten Tour Lovina Bali"
+          }
+        },
+        "carousel": true
+      }
+    ],
+    "Uluwatu (Bali)": [
+      {
+        "id": 8,
+        "metaTitle": "Wat te doen in Uluwatu? Leuke tips!",
+        "metaDesc": "Leuke activiteiten in Uluwatu: Bezoek de mooiste stranden van Bali | Relaxen bij een beachclub | Surfen | Eten bij de lekkerste restaurants | Karang Boma Cliff",
+        "date": "27 februari, 2024",
+        "href": "wat-te-doen-in-uluwatu",
+        "coverImage": {
+          "src": "wat-te-doen-in-uluwatu/padang-padang-beach.webp",
+          "alt": "Padang Padang Beach Uluwatu Bali"
+        },
+        "title": "Wat te doen in Uluwatu?",
+        "headers": [
+          "Bezoek de mooiste stranden van Bali",
+          "Relaxen bij Palmilla Beachclub",
+          "Ga surfen of kijken bij surfers",
+          "Ga eten bij één van de vele restaurants",
+          "Geniet van een prachtig uitzicht bij Karang Boma Cliff"
+        ],
+        "content": {
+          "section1": {
+            "text": "<p class='font-semibold'>In het Zuiden van Bali vind je de plaats Uluwatu. Waar je bij andere plaatsen een duidelijk centrum hebt, is dit bij Uluwatu anders. Uluwatu is erg uitgestrekt, waardoor je op verschillende plekken leuke eettentjes en winkels vindt. Het meest populaire gebied om te verblijven in Uluwatu is ‘Bingin’. In dit gebied zitten veel leuke hotspots en prachtige hotels.</p>//<image1>//<h3>Bezoek de mooiste stranden van Bali</h3>//<p>Uluwatu staat bekend om de mooie witte stranden en het blauwe water, iets wat je op de rest van Bali niet echt hebt. Er zijn dan ook verschillende stranden die je kan bezoeken.</p>//<h4>Suluban Beach</h4>//<p>Suluban Beach valt zeker onder één van onze favorieten in Uluwatu. Ondanks dat je hier niet lekker kan liggen op het strand, is het prachtig om naar surfers te kijken of zelf te surfen. Mocht je hier willen surfen, moet je wel echt ervaren zijn. Ook vind je hier wat restaurantjes met mooi uitzicht en zelfs één met een infinity pool!</p>//<image2>//<image3>//<h4>Padang Padang Beach</h4>//<p>In tegenstelling tot Suluban Beach, kan je bij Padang Padang Beach wel op het strand liggen en genieten van de zee. Je gaat door middel van een rotsachtige trap naar beneden, maar het is het zeker waard! Ook deze plek is populair onder surfers.</p>//<image4>//<h4>Bingin Beach</h4>//<p>Ook bij Bingin Beach moet je een flink stuk afdalen om op het strand te komen. Je kan hier je handdoek op het strand leggen en genieten van de prachtige rustige zee. Dit strand is dan ook erg geschikt om te zwemmen en te relaxen.</p>//<image5>//<h4>Nyang Nyang Beach</h4>//<p>Nyang Nyang Beach ligt helemaal aan de Zuidkust en je vindt hier een lang stuk strand. Dit strand is een stuk rustiger dan de andere stranden en ook hier moet je een stuk naar beneden lopen. Een voordeel is dat je het eerste stuk met de scooter kan afdalen, waardoor je niet heel lang hoeft te lopen.</p>//<p>Ook kan je bij dit strand het verlaten vliegtuig spotten. Deze staat boven op de klif bij dit strand. Tegenwoordig is het vliegtuig omgebouwd tot een hotel en kan je hier dus slapen, al moet je er wel een aardig bedrag voor neerleggen. Mocht je een drone hebben, is dit een prachtige plek om te vliegen en het vliegtuig van boven te zien.</p>//<image6>//<image7>//<h3>Ga surfen of kijken bij surfers</h3>//<p>Zoals je bij de stranden al kon lezen, is Uluwatu de perfecte plek om te surfen. Echter is het wel belangrijk dat je al wat ervaring hebt, omdat de golven hier hoger zijn dan in andere gebieden op Bali. Ook heb je hier te maken met rotsen in het water, waar je je lelijk aan kan openhalen. Mocht je wel ervaring hebben, is dit dé plek om het water op te gaan en te gaan surfen.</p>//<p>Als je nog nooit hebt gesurft of dit hier niet ziet zitten, is het ook fantastisch om naar de surfers te kijken. Aangezien Uluwatu voor meer ervaren surfers is, zie je de vetste dingen voorbijkomen. Een leuke plek om dit goed te bekijken is Suluban Beach. Hier heb je een aantal restaurants die goed uitzicht bieden op de zee en dus de surfers.</p>",
+            "image": {
+              "src": "wat-te-doen-in-uluwatu/surfing.webp",
+              "alt": "Surfen strand Uluwatu Bali"
+            }
+          },
+          "section2": {
+            "text": "<h3>Relaxen bij Palmilla Beachclub</h3>//<p>Bij deze idyllische beachclub kan je genieten van zon, zee, een zwembad en heerlijk eten. Je betaalt bij binnenkomst 125K entree en daarnaast kan je kiezen voor de plek die je wil. Voor sommige plekken heb je geen minimum spend (een bedrag wat je minimaal moet uitgeven) en voor andere plekken wel. Dit bedrag betaal je meteen bij binnenkomst en kan je dus uitgeven aan eten en drinken in de beachclub. Mocht je kiezen voor een bedje, krijg je hier ook gratis een handdoek bij om te gebruiken.</p>//<image8>//<div class='blogImage-container'><image9><image10></div>//<h3>Ga eten bij één van de vele restaurants</h3>//<p>In Uluwatu vind je ontzettend veel leuke en lekkere restaurants. Om een klein inzicht te geven in het enorme aanbod, zullen wij hieronder een aantal van onze favorieten vertellen.</p>//<h4>Ontbijt</h4>//<p>Bij The Bakery verkopen ze verschillende zoete en hartige broodjes. Als je hierheen gaat moet je de cinnamon roll bestellen, want deze is echt heerlijk! Ook kan je hier verschillende soorten drankjes bestellen. Een ander lekker adresje is Suka Espresso. Ze hebben hier een heerlijke menukaart en in de ochtend hebben ze een aantal gerechten die 55K (€3,50) kosten.</p>//<image11>//<h4>Lunch</h4>//<p>Een van de gezelligste plekken om te lunchen (of dineren) is Ulu Garden. De naam zegt het al een beetje, want bij dit restaurant zit je in een grote tuin en kan je een gerecht kiezen van de uitgebreide menukaart. Ze organiseren hier vaak thema-avonden qua eten en ook is er vaak live muziek in de avond.</p>//<p>Mocht je op pad zijn en wat verder uit de buurt zijn van Bingin, is het zeker een aanrader om langs Tasty Turkish te gaan. Van de buitenkant ziet dit restaurant er niet persé heel gezellig uit, maar het eten is heerlijk en heel goedkoop! De eigenaar is erg aardig en laat je graag kennis maken met de Turkse keuken.</p>//<h4>Diner</h4>//<p>Op Bali kan je heerlijk lokaal eten en bij Warung Local is dit helemaal een feestje. Het is een ruim opgezet restaurant met ontzettend veel keuze in lokale gerechten. Je kan hier zelf je bordje samenstellen of een gerecht van de kaart kiezen. Hier moet je wel een keer gegeten hebben!</p>//<h3>Geniet van een prachtig uitzicht bij Karang Boma Cliff</h3>//<p>Het is even een tochtje om er te komen, maar het is het meer dan waard. Deze plek is nog niet drukbezocht door toeristen, waardoor je echt kan genieten van het uitzicht. Je kijkt uit over de zee en de grote kliffen eromheen. Ook is de zonsondergang vanaf hier prachtig.</p>//<image12>"
+          }
+        },
+        "images": {
+          "src": {
+            "image1": "wat-te-doen-in-uluwatu/intro.jpg",
+            "image2": "wat-te-doen-in-uluwatu/suluban-beach-1.jpg",
+            "image3": "wat-te-doen-in-uluwatu/suluban-beach-2.jpg",
+            "image4": "wat-te-doen-in-uluwatu/padang-padang-beach.webp",
+            "image5": "wat-te-doen-in-uluwatu/bingin-beach.webp",
+            "image6": "wat-te-doen-in-uluwatu/nyang-nyang-beach-1.webp",
+            "image7": "wat-te-doen-in-uluwatu/nyang-nyang-beach-2.webp",
+            "image8": "wat-te-doen-in-uluwatu/palmilla-beachclub-1.webp",
+            "image9": "wat-te-doen-in-uluwatu/palmilla-beachclub-2.jpg",
+            "image10": "wat-te-doen-in-uluwatu/palmilla-beachclub-3.webp",
+            "image11": "wat-te-doen-in-uluwatu/the-bakery.webp",
+            "image12": "wat-te-doen-in-uluwatu/cliff-view.jpg"
+          },
+          "alt": {
+            "image1": "Padang Padang Beach Uluwatu Bali",
+            "image2": "Suluban Beach Uluwatu Bali",
+            "image3": "Suluban Beach Uluwatu Bali",
+            "image4": "Padang Padang Beach Uluwatu Bali",
+            "image5": "Bingin Beach Uluwatu Bali",
+            "image6": "Nyang Nyang Beach Uluwatu Bali",
+            "image7": "Nyang Nyang Beach Uluwatu Bali",
+            "image8": "Palmilla Beachclub Uluwatu Bali",
+            "image9": "Palmilla Beachclub Uluwatu Bali",
+            "image10": "Palmilla Beachclub Uluwatu Bali",
+            "image11": "The Bakery Restaurant Uluwatu Bali",
+            "image12": "Karang Boma Cliff Uitzicht Uluwatu Bali"
+          }
+        },
+        "carousel": true
+      }
+    ],
+    "Nusa eilanden": [
+      {
+        "id": 1,
+        "metaTitle": "Een dagtrip op Nusa Penida: de mooiste plekjes!",
+        "metaDesc": "Tips voor Nusa Penida | Mooie bezienswaardigheden op Nusa Penida: Kelingking Beach | Angel’s Billabong | Broken Beach | Peguyangan Waterval | lunchen bij AMARTA",
+        "href": "nusa-penida-tips",
+        "date": "22 januari, 2024",
+        "coverImage": {
+          "src": "een-dagtrip-op-nusa-penida/broken-beach-1.jpg",
+          "alt": "Broken Beach Nusa Penida"
+        },
+        "title": "Een dagtrip op Nusa Penida",
+        "headers": [
+          "Peguyangan Waterval",
+          "Het bekende Kelingking Beach",
+          "AMARTA",
+          "Angel’s Billabong",
+          "Broken Beach"
+        ],
+        "content": {
+          "section1": {
+            "text": "<p class='font-semibold'>Nusa Penida is een eiland naast Bali en met ongeveer 30 minuten varen begeef je je in een hele andere omgeving. Waar Bali op sommige plekken heel druk kan zijn, is Nusa Penida nog een stuk rustiger en zijn er veel minder toeristen. Toch kunnen er op de toeristische trekpleisters van het eiland nog best druk zijn, omdat er veel dagtrips vanuit Bali worden georganiseerd. Zorg er dan ook voor dat je vroeg start en het liefst verblijft op het eiland zelf of op het naastgelegen Nusa Lembongan. In deze blog lichten wij een aantal mooie en leuke plekken uit die je in één dag zou kunnen bezoeken. Mocht je hier verblijven en meer willen zien, dan heeft Nusa Penida nog veel meer moois te bieden!</p>//<div class='blogText-anchor tip'><p class='font-medium'>Tip:</p><p> Trek goede schoenen aan als je op pad gaat op Nusa Penida. Veel plekken zijn rotsachtig en soms moet je best een stukje lopen. Doe dit dan ook niet op slippers, want dit kan soms erg gevaarlijk en oncomfortabel zijn.</p></div>//<div class='blogImage-container'><image1><image2></div>//<h3>Peguyangan Waterval</h3>//<p>Probeer deze stop zo vroeg mogelijk te plannen, want je zal heel wat inspanning moeten leveren om naar benden en weer omhoog te komen. Je gaat een steile blauwe trap naar beneden en hebt de meest prachtige uitzichten. Soms kan je zelfs zo goed de zee inkijken dat je manta’s ziet zwemmen. Zoals de naam je misschien laat denken, is het geen echte waterval. Als je beneden komt heb je wel wat kleine waterbronnen waar je in zou kunnen afkoelen.</p>//<div class='blogImage-container'><image3><image4></div>//<image5>//<h3>Het bekende Kelingking Beach</h3>//<p>Een plek die veel mensen kennen van de foto’s is Kelingking Beach. Een uitzichtpunt waar je van bovenaf een rots ziet in de vorm van een T-Rex, maar waar je ook een afdaling naar beneden kan maken om het strand te zien. Deze afdaling is niet geheel risico vrij, dus trek goede schoenen aan en zorg dat je goed oplet tijdens het lopen. Mocht je niet naar benden gaan, is de plek nog steeds prachtig om te zien.</p>",
+            "image": {
+              "src": "een-dagtrip-op-nusa-penida/kelingking.webp",
+              "alt": "Kelingking Beach Nusa Penida"
+            }
+          },
+          "section2": {
+            "text": "<h3>AMARTA</h3>//<p>Tijdens de dagtour moet er natuurlijk ook geluncht worden. AMARTA is een hele leuke plek met een prachtig uitzicht en heerlijk eten. Toen wij hier kwamen heette het nog ‘Greenkubu’, maar ze hebben recent een naamsverandering gehad. Mocht je even willen afkoelen, kan je ook nog gebruik maken van het zwembad wat bij dit restaurant zit.</p>//<image6>//<div class='blogImage-container'><image7><image8></div>//<h3>Angel’s Billabong</h3><p>Angel’s Billabong is een natuurlijke infinity pool die je kan zien wanneer het eb is. Je kan hier dan zelfs het water even in. Doe wel voorzichtig, want het kan glad zijn en door de rotsen kan je je echt bezeren. Ook moet je goed opletten wanneer het weer vloed wordt, want dan kan het gevaarlijk worden. Als er een golf de infinity pool inkomt en je meetrekt in de zee, kan dit niet goed aflopen. Lees je daarom goed in over eb en vloed.</p>//<image9>//<h3>Broken Beach</h3>//<p>Dicht bij Angel’s Billabong vind je Broken Beach. Dit is zo’n mooie plek, dat wij hier uren naar kunnen kijken. Je kan een rondje lopen over de boog die je aan de andere kant kan zien, zodat je ook het strand goed kan bekijken. Ook kan je hier prachtige drone beelden maken.</p>//<image10>"
+          }
+        },
+        "images": {
+          "src": {
+            "image1": "een-dagtrip-op-nusa-penida/intro-1.jpg",
+            "image2": "een-dagtrip-op-nusa-penida/intro-2.jpg",
+            "image3": "een-dagtrip-op-nusa-penida/peguyangan-1.jpg",
+            "image4": "een-dagtrip-op-nusa-penida/peguyangan-2.jpg",
+            "image5": "een-dagtrip-op-nusa-penida/peguyangan-3.jpg",
+            "image6": "een-dagtrip-op-nusa-penida/amarta-1.jpg",
+            "image7": "een-dagtrip-op-nusa-penida/amarta-2.jpg",
+            "image8": "een-dagtrip-op-nusa-penida/amarta-3.jpg",
+            "image9": "een-dagtrip-op-nusa-penida/angel-billabong-1.jpg",
+            "image10": "een-dagtrip-op-nusa-penida/broken-beach-1.jpg"
+          },
+          "alt": {
+            "image1": "Kelingking Beach Nusa Penida",
+            "image2": "Broken Beach Nusa Penida",
+            "image3": "Peguyangan Waterfall Nusa Penida",
+            "image4": "Peguyangan Waterfall Nusa Penida",
+            "image5": "Peguyangan Waterfall Nusa Penida",
+            "image6": "AMARTA Nusa Penida",
+            "image7": "AMARTA Nusa Penida",
+            "image8": "AMARTA Nusa Penida",
+            "image9": "Angel's Billabong Nusa Penida",
+            "image10": "Broken Beach Nusa Penida"
+          }
+        }
+      },
+      {
+        "id": 2,
+        "metaTitle": "Wat te doen op Nusa Lembongan: de leukste tips!",
+        "metaDesc": "Tips voor Nusa Lembongan | Leuke activiteiten op Nusa Lembongan: Blue Lagoon | Devil’s Tear | Snorkelen met manta’s | Beachclub Ohana’s | Touren over het eiland",
+        "href": "wat-te-doen-op-nusa-lembongan",
+        "date": "23 januari, 2024",
+        "coverImage": {
+          "src": "wat-te-doen-op-nusa-lembongan/cover.webp",
+          "alt": "Beach Nusa Lembongan"
+        },
+        "title": "Wat te doen op Nusa Lembongan",
+        "headers": [
+          "Devil's Tear",
+          "Schildpadden en manta’s spotten met een snorkeltour",
+          "Yellow Bridge",
+          "Blue Lagoon",
+          "Chillen bij Tigerlillys Beach Shack",
+          "Souvenir shoppen bij Ketut Souvenir Shop",
+          "Zwemmen bij Ohana’s beachclub",
+          "Touren over het eiland",
+          "Ontspannen bij Spring Spa",
+          "Dagtrip naar Nusa Penida"
+        ],
+        "content": {
+          "section1": {
+            "text": "<p class='font-semibold'>Nusa Lembongan is een prachtig klein eiland naast Bali. Vanaf Bali kan je de boot pakken en met 20 tot 30 minuten sta je op dit geweldige eiland. Als je hier aankomt, zie je gelijk de witte stranden en het mooie blauwe water. Wat ons betreft is dit eiland echt de moeite en staat het dan ook zeker op ons favorieten lijstje in Indonesië. Op Nusa Lembongan kan je heerlijk een paar dagen relaxen, genieten van lekker eten bij de leukste restaurants en tijdens het touren de leukste plekjes ontdekken. Naast relaxen kan je hier ook een aantal activiteiten doen en mooie plekken bezoeken. In deze blog vind je 10 leuke dingen die je kan doen op Nusa Lembongan!</p>//<image1>//<h3>Devil's Tear</h3>//<p>Aan de westkant van Nusa Lembongan vind je Devil’s Tear, een plek waar de golven tegen de rotsen slaan en je een prachtig uitzicht hebt op de zonsondergang. De golven zijn soms zo hoog dat je moet oppassen om niet nat te worden (al is dit helemaal niet erg als het zo warm is). Een paar jaar geleden stond hier nog geen afbakening omheen, maar voor de veiligheid kan je tegenwoordig niet meer tot de rand lopen. De entree is 25K per persoon en dit kaartje kan je onbeperkt gebruiken.</p>//<image2>//<h3>Schildpadden en manta’s spotten met een snorkeltour</h3>//<p>De snorkeltour is echt een activiteit die je niet mag missen als je op Nusa Lembongan verblijft. Wij hebben deze tour al twee keer met de organisatie Aquaman gedaan en dit is 100% een aanrader! Je vertrekt ’s ochtends om 8 uur vanaf het strand waarna je drie snorkelspots bezoekt. Het kan per dag verschillen, maar je gaat in ieder geval op zoek naar manta roggen, schildpadden en mooie tropische vissen. Ook is er altijd een gids mee in het water en maakt deze ook mooie onderwaterfoto’s die je na de tour toegestuurd krijgt.</p>//<p>Op de boot krijg je een handdoek, water, snacks en snorkelmateriaal mocht je dit zelf niet hebben. Wij betaalde voor deze tour 250K per persoon inclusief alles wat wij hierboven hebben benoemd.</p>//<image3>//<image4>//<h3>Yellow Bridge</h3>//<p>De Yellow Brigde is de brug die de eilanden Nusa Lembongan en Nusa Ceningan met elkaar verbindt. Je kan alleen als voetganger, met de fiets of met een scooter over deze brug heen, want hij is te smal voor auto’s. De brug is niet alleen functioneel, maar ook een plaatje om te zien.</p>",
+            "image": {
+              "src": "wat-te-doen-op-nusa-lembongan/yellow-bridge.webp",
+              "alt": "Yellow Bridge Nusa Lembongan"
+            }
+          },
+          "section2": {
+            "text": "<h3>Blue Lagoon</h3>//<p>Om bij de Blue Lagoon te komen, moet je de Yellow Bridge over naar het eiland Nusa Ceningan. Vanaf de Yellow Bridge ben je ongeveer 10 minuutjes onderweg en kan je je scooter parkeren voor de ingang. Dit is gewoon een stuk zand, dus verwacht geen fancy parkeerplek. Eenmaal bij de Blue Lagoon aangekomen kijk je uit over het blauwste water van het eiland. Hoe verleidelijk het er ook uit ziet om er in te zwemmen, is dit helaas niet mogelijk door alle rotsen en de sterke stroming.</p>//<image5>//<h3>Chillen bij Tigerlillys Beach Shack</h3>//<p>Wil je een paar uurtjes (of de hele dag) relaxen op het strand? Dan is deze plek echt een aanrader. Je hoeft hier geen minimaal bedrag uit te geven en kan plaatsnemen op één van de heerlijke ligbedjes, zitzakken of normale stoelen. Je kan hier heerlijk eten, drinken en zwemmen in de zee. Ons favoriete ontbijt was hier zeker de French Toast Bites!</p>//<image6>//<div class='blogImage-container'><image7><image8></div>//<h3>Souvenir shoppen bij Ketut Souvenir Shop</h3>//<div class='blogText-anchor'><p>De eigenaar van deze winkel is zo lief en gepassioneerd over zijn winkel, dat ik deze wel moest benoemen in deze blog. Je kan hier echt leuke souvenirs kopen voor een lage prijs en bijna alles is handgemaakt. De eigenaar vertelt graag over het maken van de souvenirs en laat het ook aan je zien. Dit winkeltje is dus zeker een bezoekje waard! Je kan het winkeltje </p>//<a href='https://maps.app.goo.gl/kg1aMYzGztj78cCq7?g_st=iw' target='_blank'>hier</a>//<p> vinden.</p></div>//<h3>Zwemmen bij Ohana’s beachclub</h3>//<p>Ohana’s Beachclub is wat aan de duurdere kant, maar je kan hier heerlijk genieten van de muziek, een zwembad en een goede menukaart. Je hebt hier verschillende soorten bedjes en zitzakken, waarbij je soms wel een bepaald bedrag moet besteden om hier te mogen liggen.</p>//<div class='blogImage-container'><image9><image10></div>//<h3>Touren over het eiland</h3>//<p>Soms kom je de leukste plekjes tegen door gewoon een rondje op de scooter te rijden. Ook als je op zoek bent naar een leuk restaurantje of een leuke plek om even aan het strand te liggen, kan het soms leuker zijn om dit gewoon op de bonnefooi te doen. Je kan bijna niet verdwalen op deze eilanden, dus pak je scooter en ga erop uit.</p>",
+            "image": {
+              "src": "wat-te-doen-op-nusa-lembongan/touren.webp",
+              "alt": "Uitzicht Nusa Lembongan"
+            }
+          },
+          "section3": {
+            "text": "<h3>Ontspannen bij Spring Spa</h3>//<p>Dit is één van de mooiste locaties voor een spa die wij ooit hebben gezien. Met uitzicht op zee en een prachtig interieur is dit een heerlijke plek om even te ontspannen. Je kan hier een massage nemen, je nagels laten doen of verschillende facials proberen. Om hier te komen moet je wel een stukje lopen, want je kan hier niet met de scooter naartoe.</p>//<h3>Dagtrip naar Nusa Penida</h3>//<div class='blogText-anchor'><p>Als je op Nusa Lembongan verblijft, kan je ook een dag tour doen op Nusa Penida. Op dit eiland zijn namelijk een aantal prachtige plekken die je eigenlijk niet mag missen. Denk bijvoorbeeld aan Kelingking Beach, Angel’s Billabong en Broken Beach. Vanaf Nusa Lembongan kan je een boot nemen die je binnen 10 minuten naar Nusa Penida brengt. Hier kan je zelf een scooter huren en het eiland ontdekken of een privéchauffeur huren die je het hele eiland rondrijdt. In </p>//<a href='/indonesie/nusa-penida-tips'>deze blog</a>//<p> kan je meer lezen over een leuke dag tour op Nusa Penida.</p></div>//<image11>"
+          }
+        },
+        "images": {
+          "src": {
+            "image1": "wat-te-doen-op-nusa-lembongan/intro.webp",
+            "image2": "wat-te-doen-op-nusa-lembongan/devils-tear.webp",
+            "image3": "wat-te-doen-op-nusa-lembongan/snorkling-1.webp",
+            "image4": "wat-te-doen-op-nusa-lembongan/snorkling-2.webp",
+            "image5": "wat-te-doen-op-nusa-lembongan/blue-lagoon.webp",
+            "image6": "wat-te-doen-op-nusa-lembongan/tigerlillys-1.webp",
+            "image7": "wat-te-doen-op-nusa-lembongan/tigerlillys-2.webp",
+            "image8": "wat-te-doen-op-nusa-lembongan/tigerlillys-3.webp",
+            "image9": "wat-te-doen-op-nusa-lembongan/ohana-1.webp",
+            "image10": "wat-te-doen-op-nusa-lembongan/ohana-2.webp",
+            "image11": "een-dagtrip-op-nusa-penida/kelingking.webp"
+          },
+          "alt": {
+            "image1": "Nusa Lembongan Beach",
+            "image2": "Devil's Tear Nusa Lembongan",
+            "image3": "Snorkling Tour Nusa Lembongan",
+            "image4": "Snorkling Tour Nusa Lembongan",
+            "image5": "Blue Lagoon Nusa Lembongan",
+            "image6": "Tigerlillys Beach Shack Nusa Lembongan",
+            "image7": "Tigerlillys Beach Shack Nusa Lembongan",
+            "image8": "Tigerlillys Beach Shack Nusa Lembongan",
+            "image9": "Ohana's Beach Club Nusa Lembongan",
+            "image10": "Ohana's Beach Club Nusa Lembongan",
+            "image11": "Kelingking Beach Nusa Lembongan"
           }
         },
         "carousel": true
