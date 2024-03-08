@@ -11,7 +11,7 @@ import { Destination } from "../../../pages/indonesie/index";
 import Image from "next/image";
 
 export interface CarouselProps {
-  items: Destination[];
+  items: { fields: Destination }[];
 }
 
 const Carousel: React.FC<CarouselProps> = ({ items }) => {
@@ -19,8 +19,8 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
   const sliderRef = useRef<Slider>(null);
   const [autoplaySpeed, setAutoplaySpeed] = useState(2500);
   items.sort((a, b) => {
-    const dateA = new Date(a.date).getTime();
-    const dateB = new Date(b.date).getTime();
+    const dateA = new Date(a.fields.date).getTime();
+    const dateB = new Date(b.fields.date).getTime();
 
     return dateB - dateA;
   });
@@ -106,11 +106,14 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
       }`}
     >
       {items.map((item, index) => {
-        const image = require(`../../../assets/pages/blogposts/${item.coverImage.src}`);
+        const blog = item.fields;
+
+        const imageSrc = `https:${blog.coverImage.fields.file.url}`;
+        const imageAlt = `Slide ${index + 1} ${blog.coverImage.fields.title}`;
 
         return (
           <Link
-            href={`/indonesie/${item.href}`}
+            href={`/indonesie/${blog.href}`}
             className="relative"
             key={index}
           >
@@ -118,8 +121,8 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
             <Image
               width={500}
               height={500}
-              src={image}
-              alt={`Slide ${index + 1} ${item.coverImage.alt}`}
+              src={imageSrc}
+              alt={imageAlt}
               className={`w-full object-cover object-center rounded-2xl ${
                 screenSize < 750
                   ? "h-96"
@@ -130,7 +133,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
             />
 
             <H3 color="white" className="absolute bottom-6 w-[90%] left-[5%]">
-              {item.title}
+              {blog.title}
             </H3>
           </Link>
         );

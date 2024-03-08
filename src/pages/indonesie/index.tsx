@@ -18,7 +18,6 @@ import AccessTimeFilledRoundedIcon from "@mui/icons-material/AccessTimeFilledRou
 import FlightRoundedIcon from "@mui/icons-material/FlightRounded";
 import React, { useEffect, useState } from "react";
 import { GetStaticProps } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import { MetadataProps } from "..";
 
@@ -29,8 +28,12 @@ export interface Destination {
   date: string;
   href: string;
   coverImage: {
-    src: string;
-    alt: string;
+    fields: {
+      title: string;
+      file: {
+        url: string;
+      };
+    };
   };
   title: string;
   headers: string[];

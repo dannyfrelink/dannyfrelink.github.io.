@@ -72,15 +72,3 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   );
 }
-
-export const getServerSideProps = async (context: any) => {
-  const blogData = require("../data/blogs.json");
-  const allMetaData = require("../data/metaData.json");
-
-  return {
-    props: {
-      blogData,
-      allMetaData,
-    },
-  };
-};

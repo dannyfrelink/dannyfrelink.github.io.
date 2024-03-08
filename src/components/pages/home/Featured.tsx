@@ -13,7 +13,8 @@ export interface FeaturedProps {
 
 const Featured: React.FC<FeaturedProps> = ({ blog }) => {
   const { screenSize } = useAppContext();
-  const image = require(`../../../assets/pages/blogposts/${blog.coverImage.src}`);
+  const imageSrc = `https:${blog.coverImage.fields.file.url}`;
+  const imageAlt = blog.coverImage.fields.title;
 
   return (
     <div className="flex items-center relative w-full h-[calc(85vh-(24px*2))]">
@@ -22,8 +23,8 @@ const Featured: React.FC<FeaturedProps> = ({ blog }) => {
         width={1500}
         height={1000}
         className="w-full h-[85vh] absolute -top-6 z-[-2] object-cover object-[50%_65%]"
-        src={image}
-        alt={blog.coverImage.alt}
+        src={imageSrc}
+        alt={imageAlt}
       />
 
       <div

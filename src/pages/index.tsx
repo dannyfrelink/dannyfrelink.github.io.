@@ -18,6 +18,7 @@ import React from "react";
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { GetStaticProps } from "next";
+import { client } from "@/helpers/contentful";
 
 export interface MetadataProps {
   title: string;
@@ -28,27 +29,21 @@ export interface MetadataProps {
 }
 
 interface HomeProps {
-  blogData: {
-    blogs: {
-      [dest: string]: Destination[];
-    };
-  };
+  blogData: { fields: Destination }[];
   metaData: MetadataProps;
 }
 
 const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
   const { screenSize } = useAppContext();
-  const blogs: Destination[] = [];
-  Object.values(blogData.blogs).map((blogArr) =>
-    blogArr.map((blog) => blogs.push(blog))
-  );
-  const carouselBlogs = blogs.filter((blog) => blog.carousel);
-  const featuredBlog = blogs.filter((blog) => blog.featured)[0];
-  const [headerImage, setHeaderImage] = useState<string | StaticImport>("");
+  // const blogs: Destination[] = [];
+  // Object.values(blogData).map((blogArr) =>
+  //   blogArr.map((blog) => blogs.push(blog))
+  // );
+  const carouselBlogs = blogData.filter((blog) => blog.fields.carousel);
+  const featuredBlog = blogData.filter((blog) => blog.fields.featured)[0]
+    .fields;
 
-  useEffect(() => {
-    headerImage !== "" && setHeaderImage(HeaderImage);
-  }, [headerImage]);
+  console.log("featured: ", featuredBlog);
 
   return (
     <ScrollBar>
@@ -139,10 +134,20 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
 });
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-  const blogData = require("../data/blogs.json");
   const allMetaData: {
     [path: string]: MetadataProps;
   } = require("../data/metaData.json");
+
+  const contentfulRes = await client.getEntries({ content_type: "blog" });
+  const blogData = contentfulRes.items.reverse();
+  // .reduce((group: any, blogs: any) => {
+  //   const location = blogs.fields.location;
+  //   group[location] = group[location] ?? [];
+  //   group[location].push(blogs.fields);
+  //   return group;
+  // }, {});
+
+  console.log(blogData);
 
   return {
     props: {
