@@ -16,10 +16,27 @@ import ThermostatRoundedIcon from "@mui/icons-material/ThermostatRounded";
 import AttachMoneyRoundedIcon from "@mui/icons-material/AttachMoneyRounded";
 import AccessTimeFilledRoundedIcon from "@mui/icons-material/AccessTimeFilledRounded";
 import FlightRoundedIcon from "@mui/icons-material/FlightRounded";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { GetStaticProps } from "next";
 import Image from "next/image";
 import { MetadataProps } from "..";
+import { client } from "@/helpers/contentful";
+import { Images } from "@/components/pages/blogs/BlogContent";
+
+export interface Content {
+  fields: {
+    image: {
+      fields: {
+        title: string;
+        file: {
+          url: string;
+        };
+      };
+    };
+    section: string;
+    text: string;
+  };
+}
 
 export interface Destination {
   id: number;
@@ -37,25 +54,8 @@ export interface Destination {
   };
   title: string;
   headers: string[];
-  content: {
-    [section: string]:
-      | {
-          text: string;
-          image?: {
-            src: string;
-            alt: string;
-          };
-        }
-      | undefined;
-  };
-  images: {
-    src: {
-      [image: string]: string | undefined;
-    };
-    alt: {
-      [image: string]: string | undefined;
-    };
-  };
+  content: Content[];
+  images: Images[];
   featured?: string;
   carousel?: boolean;
 }
@@ -65,20 +65,13 @@ export interface BlogsData {
 }
 
 interface BlogsProps {
-  data: {
-    blogs: BlogsData;
-  };
+  blogData: BlogsData;
   metaData: MetadataProps;
 }
 
-const BlogOverview: React.FC<BlogsProps> = React.memo(({ data }) => {
+const BlogOverview: React.FC<BlogsProps> = React.memo(({ blogData }) => {
   const { screenSize } = useAppContext();
-  const blogs: BlogsData = data.blogs;
-  const destinations = Object.keys(blogs);
-  const [headerImage, setHeaderImage] = useState<string>();
-  useEffect(() => {
-    headerImage !== "" && setHeaderImage("../../assets/header/blogs.jpg");
-  }, [headerImage, setHeaderImage]);
+  const destinations = Object.keys(blogData);
 
   const tags = [
     {
@@ -170,12 +163,13 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ data }) => {
 
           <section className="[&>div:first-child>div]:!mt-0 [&>div:first-child>div]:!pt-0">
             {destinations.map((dest, index) => {
-              const blogsPerDest = blogs[dest];
+              const blogsPerDest = blogData[dest];
 
               return (
                 <ListOverview title="Blogs over" dest={dest} key={index}>
                   {blogsPerDest.map((blog, index) => {
-                    const image = require(`../../assets/pages/blogposts/${blog.coverImage.src}`);
+                    const imageSrc = `https:${blog.coverImage.fields.file.url}`;
+                    const imageAlt = blog.coverImage.fields.title;
 
                     return (
                       <Link
@@ -196,8 +190,8 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ data }) => {
                         <Image
                           width={500}
                           height={500}
-                          src={image}
-                          alt={blog.coverImage.alt}
+                          src={imageSrc}
+                          alt={imageAlt}
                           className="w-screen h-full object-cover object-center rounded-2xl shadow-subtle"
                         />
 
@@ -220,14 +214,23 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ data }) => {
 });
 
 export const getStaticProps: GetStaticProps<BlogsProps> = async () => {
-  const data = require("../../data/blogs.json");
   const allMetaData: {
     [path: string]: MetadataProps;
   } = require("../../data/metaData.json");
 
+  const contentfulRes = await client.getEntries({ content_type: "blog" });
+  const blogData = contentfulRes.items
+    .reverse()
+    .reduce((group: any, blogs: any) => {
+      const location = blogs.fields.location;
+      group[location] = group[location] ?? [];
+      group[location].push(blogs.fields);
+      return group;
+    }, {});
+
   return {
     props: {
-      data,
+      blogData,
       metaData: allMetaData["/indonesie"],
     },
   };

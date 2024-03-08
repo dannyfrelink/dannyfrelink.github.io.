@@ -9,7 +9,7 @@ import {
   Footer,
   ScrollBar,
 } from "@/helpers/dynamicImports";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { MetadataProps } from ".";
 import { GetStaticProps } from "next";
@@ -20,10 +20,6 @@ interface AboutProps {
 
 const About: React.FC<AboutProps> = React.memo(() => {
   const { screenSize } = useAppContext();
-  const [headerImage, setHeaderImage] = useState<string>();
-  useEffect(() => {
-    headerImage !== "" && setHeaderImage("../assets/header/about.webp");
-  }, [headerImage, setHeaderImage]);
 
   return (
     <ScrollBar>

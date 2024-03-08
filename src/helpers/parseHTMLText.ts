@@ -46,9 +46,7 @@ function parseHTMLText(text: string | undefined, images: any) {
 
       if (tagName === "img") {
         // If the element is an <img/> tag, replace it with <BlogImage>
-        const src =
-          require(`../assets/pages/blogposts/${element.getAttribute("src")}`) ||
-          "";
+        const src = element.getAttribute("src") || "";
         const alt = element.getAttribute("alt") || "";
 
         return React.createElement(BlogImage, {

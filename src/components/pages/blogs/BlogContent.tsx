@@ -8,23 +8,20 @@ import TableOfContents from "./TableOfContents";
 import { Destination } from "../../../pages/indonesie/index";
 import Image from "next/image";
 
-interface Images {
-  src: {
-    [image: string]: string | undefined;
-  };
-  alt: {
-    [image: string]: string | undefined;
+export interface Images {
+  fields: {
+    title: string;
+    file: {
+      url: string;
+    };
   };
 }
 
 export interface BlogContentProps {
   index: number;
-  image?: {
-    src: string;
-    alt: string;
-  };
+  image?: Images;
   text: string | undefined;
-  images: Images;
+  images: Images[];
   blog: Destination;
 }
 
@@ -36,7 +33,8 @@ const BlogContent: React.FC<BlogContentProps> = ({
   blog,
 }) => {
   const { screenSize } = useAppContext();
-  const img = image && require(`../../../assets/pages/blogposts/${image.src}`);
+  const imageSrc = image && `https:${image.fields.file.url}`;
+  const imageAlt = image && image.fields.title;
 
   const parsedImg = replaceImageTag(text, images);
   const parsedText = parseHTMLText(parsedImg, images);
@@ -71,7 +69,7 @@ const BlogContent: React.FC<BlogContentProps> = ({
           {parsedText}
         </article>
       </Container>
-      {img && (
+      {imageSrc && imageAlt && (
         <div
           className={`w-full relative ${
             screenSize < 550
@@ -91,8 +89,8 @@ const BlogContent: React.FC<BlogContentProps> = ({
                 ? "h-[calc(75vh+48px)]"
                 : "h-[calc(85vh+48px)]"
             }`}
-            src={img}
-            alt={image.alt}
+            src={imageSrc}
+            alt={imageAlt}
           />
         </div>
       )}

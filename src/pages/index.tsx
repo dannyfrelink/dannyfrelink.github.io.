@@ -13,10 +13,8 @@ import { useAppContext } from "../config/AppContext";
 import HeaderImage from "../assets/header/home.webp";
 import AboutImage from "../assets/pages/about/couple.jpg";
 import { Destination } from "./indonesie/index";
-import { useEffect, useState } from "react";
 import React from "react";
 import Image from "next/image";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { GetStaticProps } from "next";
 import { client } from "@/helpers/contentful";
 
@@ -35,15 +33,9 @@ interface HomeProps {
 
 const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
   const { screenSize } = useAppContext();
-  // const blogs: Destination[] = [];
-  // Object.values(blogData).map((blogArr) =>
-  //   blogArr.map((blog) => blogs.push(blog))
-  // );
   const carouselBlogs = blogData.filter((blog) => blog.fields.carousel);
   const featuredBlog = blogData.filter((blog) => blog.fields.featured)[0]
     .fields;
-
-  console.log("featured: ", featuredBlog);
 
   return (
     <ScrollBar>
@@ -140,14 +132,6 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
 
   const contentfulRes = await client.getEntries({ content_type: "blog" });
   const blogData = contentfulRes.items.reverse();
-  // .reduce((group: any, blogs: any) => {
-  //   const location = blogs.fields.location;
-  //   group[location] = group[location] ?? [];
-  //   group[location].push(blogs.fields);
-  //   return group;
-  // }, {});
-
-  console.log(blogData);
 
   return {
     props: {
