@@ -70,8 +70,6 @@ const BlogPost: React.FC<BlogProps> = React.memo(({ blog, allBlogs }) => {
                 const content = section.fields;
                 const text = section && content.text;
 
-                console.log(images);
-
                 return (
                   <BlogContent
                     key={index}
