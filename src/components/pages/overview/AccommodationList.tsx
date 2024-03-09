@@ -1,7 +1,7 @@
 import React from "react";
 import H3 from "../../typography/H3";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
-import { AccommodationsData } from "../../../pages/accommodaties";
+import { AccommodationsProps } from "../../../pages/accommodaties";
 import BaseText from "../../typography/BaseText";
 import { useAppContext } from "../../../config/AppContext";
 import ListOverview from "./ListOverview";
@@ -9,7 +9,7 @@ import ButtonLink from "../../general/ButtonLink";
 import Image from "next/image";
 
 export interface AccommodationListProps {
-  accommodations: AccommodationsData;
+  accommodations: AccommodationsProps["accommodations"];
   destinations: string[];
 }
 
@@ -31,7 +31,8 @@ const AccommodationList: React.FC<AccommodationListProps> = ({
             key={index}
           >
             {accoms.map((accom: any, index: number) => {
-              const image = require(`../../../assets/pages/accommodations/${accom.image.src}`);
+              const imageSrc = `https:${accom.image.fields.file.url}`;
+              const imageAlt = accom.image.fields.title;
 
               return (
                 <section
@@ -43,8 +44,8 @@ const AccommodationList: React.FC<AccommodationListProps> = ({
                   <Image
                     width={500}
                     height={500}
-                    src={image}
-                    alt={accom.image.alt}
+                    src={imageSrc}
+                    alt={imageAlt}
                     className={`mb-4 object-cover object-center rounded-2xl shadow-subtle ${
                       screenSize < 900
                         ? "w-full max-w-[550px] h-[56vw] max-h-[325px]"
@@ -78,12 +79,12 @@ const AccommodationList: React.FC<AccommodationListProps> = ({
 
                     <article>
                       <BaseText className="font-medium">Laagseizoen</BaseText>
-                      <BaseText>Prijzen vanaf €{accom.prices.low}</BaseText>
+                      <BaseText>Prijzen vanaf €{accom.priceLow}</BaseText>
                     </article>
 
                     <article>
                       <BaseText className="font-medium">Hoogseizoen</BaseText>
-                      <BaseText>Prijzen vanaf €{accom.prices.high}</BaseText>
+                      <BaseText>Prijzen vanaf €{accom.priceHigh}</BaseText>
                     </article>
 
                     <ButtonLink link={accom.link} blank>
