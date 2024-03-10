@@ -19,7 +19,6 @@
     "@types/react-dom": "^18.2.18",
     "@types/react-scroll": "^1.8.10",
     "@types/react-slick": "^0.23.13",
-    "contentful": "^10.8.0",
     "next": "^14.1.0",
     "next-seo": "^6.5.0",
     "next-transpile-modules": "^10.0.1",
