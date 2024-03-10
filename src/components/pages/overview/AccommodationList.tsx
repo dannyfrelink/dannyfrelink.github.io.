@@ -1,7 +1,7 @@
 import React from "react";
 import H3 from "../../typography/H3";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
-import { AccommodationsProps } from "../../../pages/accommodaties";
+import { AccommodationsData } from "../../../pages/accommodaties";
 import BaseText from "../../typography/BaseText";
 import { useAppContext } from "../../../config/AppContext";
 import ListOverview from "./ListOverview";
@@ -9,7 +9,7 @@ import ButtonLink from "../../general/ButtonLink";
 import Image from "next/image";
 
 export interface AccommodationListProps {
-  accommodations: AccommodationsProps["accommodations"];
+  accommodations: AccommodationsData;
   destinations: string[];
 }
 
@@ -31,8 +31,8 @@ const AccommodationList: React.FC<AccommodationListProps> = ({
             key={index}
           >
             {accoms.map((accom: any, index: number) => {
-              const imageSrc = `https:${accom.image.fields.file.url}`;
-              const imageAlt = accom.image.fields.title;
+              const imageSrc = require(`../../../assets/pages/accommodations/${accom.image.src}`);
+              const imageAlt = accom.image.alt;
 
               return (
                 <section
@@ -79,12 +79,12 @@ const AccommodationList: React.FC<AccommodationListProps> = ({
 
                     <article>
                       <BaseText className="font-medium">Laagseizoen</BaseText>
-                      <BaseText>Prijzen vanaf €{accom.priceLow}</BaseText>
+                      <BaseText>Prijzen vanaf €{accom.prices.low}</BaseText>
                     </article>
 
                     <article>
                       <BaseText className="font-medium">Hoogseizoen</BaseText>
-                      <BaseText>Prijzen vanaf €{accom.priceHigh}</BaseText>
+                      <BaseText>Prijzen vanaf €{accom.prices.high}</BaseText>
                     </article>
 
                     <ButtonLink link={accom.link} blank>
