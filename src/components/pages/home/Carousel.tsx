@@ -11,7 +11,7 @@ import { Destination } from "../../../pages/indonesie/index";
 import Image from "next/image";
 
 export interface CarouselProps {
-  items: { fields: Destination }[];
+  items: Destination[];
 }
 
 const Carousel: React.FC<CarouselProps> = ({ items }) => {
@@ -19,8 +19,8 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
   const sliderRef = useRef<Slider>(null);
   const [autoplaySpeed, setAutoplaySpeed] = useState(2500);
   items.sort((a, b) => {
-    const dateA = new Date(a.fields.date).getTime();
-    const dateB = new Date(b.fields.date).getTime();
+    const dateA = new Date(a.date).getTime();
+    const dateB = new Date(b.date).getTime();
 
     return dateB - dateA;
   });
@@ -106,14 +106,12 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
       }`}
     >
       {items.map((item, index) => {
-        const blog = item.fields;
-
-        const imageSrc = `https:${blog.coverImage.fields.file.url}`;
-        const imageAlt = `Slide ${index + 1} ${blog.coverImage.fields.title}`;
+        const imageSrc = require(`../../../assets/pages/blogposts/${item.coverImage.src}`);
+        const imageAlt = `Slide ${index + 1} ${item.coverImage.alt}`;
 
         return (
           <Link
-            href={`/indonesie/${blog.href}`}
+            href={`/indonesie/${item.href}`}
             className="relative"
             key={index}
           >
@@ -133,7 +131,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
             />
 
             <H3 color="white" className="absolute bottom-6 w-[90%] left-[5%]">
-              {blog.title}
+              {item.title}
             </H3>
           </Link>
         );

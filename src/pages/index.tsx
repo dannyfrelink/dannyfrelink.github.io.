@@ -16,7 +16,6 @@ import { Destination } from "./indonesie/index";
 import React from "react";
 import Image from "next/image";
 import { GetStaticProps } from "next";
-import { client } from "@/helpers/contentful";
 
 export interface MetadataProps {
   title: string;
@@ -27,15 +26,22 @@ export interface MetadataProps {
 }
 
 interface HomeProps {
-  blogData: { fields: Destination }[];
+  blogData: {
+    blogs: {
+      [dest: string]: Destination[];
+    };
+  };
   metaData: MetadataProps;
 }
 
 const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
   const { screenSize } = useAppContext();
-  const carouselBlogs = blogData.filter((blog) => blog.fields.carousel);
-  const featuredBlog = blogData.filter((blog) => blog.fields.featured)[0]
-    .fields;
+  const blogs: Destination[] = [];
+  Object.values(blogData.blogs).map((blogArr) =>
+    blogArr.map((blog) => blogs.push(blog))
+  );
+  const carouselBlogs = blogs.filter((blog) => blog.carousel);
+  const featuredBlog = blogs.filter((blog) => blog.featured)[0];
 
   return (
     <ScrollBar>
@@ -126,12 +132,11 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
 });
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+  const blogData = require("../data/blogs.json");
+
   const allMetaData: {
     [path: string]: MetadataProps;
   } = require("../data/metaData.json");
-
-  const contentfulRes = await client.getEntries({ content_type: "blog" });
-  const blogData = contentfulRes.items.reverse();
 
   return {
     props: {
