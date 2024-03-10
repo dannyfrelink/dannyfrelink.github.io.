@@ -20,23 +20,6 @@ import React from "react";
 import { GetStaticProps } from "next";
 import Image from "next/image";
 import { MetadataProps } from "..";
-import { client } from "@/helpers/contentful";
-import { Images } from "@/components/pages/blogs/BlogContent";
-
-export interface Content {
-  fields: {
-    image: {
-      fields: {
-        title: string;
-        file: {
-          url: string;
-        };
-      };
-    };
-    section: string;
-    text: string;
-  };
-}
 
 export interface Destination {
   id: number;
@@ -45,17 +28,30 @@ export interface Destination {
   date: string;
   href: string;
   coverImage: {
-    fields: {
-      title: string;
-      file: {
-        url: string;
-      };
-    };
+    src: string;
+    alt: string;
   };
   title: string;
   headers: string[];
-  content: Content[];
-  images: Images[];
+  content: {
+    [section: string]:
+      | {
+          text: string;
+          image?: {
+            src: string;
+            alt: string;
+          };
+        }
+      | undefined;
+  };
+  images: {
+    src: {
+      [image: string]: string | undefined;
+    };
+    alt: {
+      [image: string]: string | undefined;
+    };
+  };
   featured?: string;
   carousel?: boolean;
 }
@@ -65,13 +61,16 @@ export interface BlogsData {
 }
 
 interface BlogsProps {
-  blogData: BlogsData;
+  data: {
+    blogs: BlogsData;
+  };
   metaData: MetadataProps;
 }
 
-const BlogOverview: React.FC<BlogsProps> = React.memo(({ blogData }) => {
+const BlogOverview: React.FC<BlogsProps> = React.memo(({ data }) => {
   const { screenSize } = useAppContext();
-  const destinations = Object.keys(blogData);
+  const blogs: BlogsData = data.blogs;
+  const destinations = Object.keys(blogs);
 
   const tags = [
     {
@@ -163,13 +162,13 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ blogData }) => {
 
           <section className="[&>div:first-child>div]:!mt-0 [&>div:first-child>div]:!pt-0">
             {destinations.map((dest, index) => {
-              const blogsPerDest = blogData[dest];
+              const blogsPerDest = blogs[dest];
 
               return (
                 <ListOverview title="Blogs over" dest={dest} key={index}>
                   {blogsPerDest.map((blog, index) => {
-                    const imageSrc = `https:${blog.coverImage.fields.file.url}`;
-                    const imageAlt = blog.coverImage.fields.title;
+                    const imageSrc = require(`../../assets/pages/blogposts/${blog.coverImage.src}`);
+                    const imageAlt = blog.coverImage.alt;
 
                     return (
                       <Link
@@ -214,23 +213,14 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ blogData }) => {
 });
 
 export const getStaticProps: GetStaticProps<BlogsProps> = async () => {
+  const data = require("../../data/blogs.json");
   const allMetaData: {
     [path: string]: MetadataProps;
   } = require("../../data/metaData.json");
 
-  const contentfulRes = await client.getEntries({ content_type: "blog" });
-  const blogData = contentfulRes.items
-    .reverse()
-    .reduce((group: any, blogs: any) => {
-      const location = blogs.fields.location;
-      group[location] = group[location] ?? [];
-      group[location].push(blogs.fields);
-      return group;
-    }, {});
-
   return {
     props: {
-      blogData,
+      data,
       metaData: allMetaData["/indonesie"],
     },
   };

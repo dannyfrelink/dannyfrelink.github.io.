@@ -1,4 +1,4 @@
-import { Destination } from "./index";
+import { BlogsData, Destination } from "./index";
 import {
   Header,
   SideBar,
@@ -12,7 +12,6 @@ import React from "react";
 import Image from "next/image";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { MetadataProps } from "..";
-import { client } from "@/helpers/contentful";
 
 interface BlogProps {
   blog: Destination;
@@ -22,8 +21,8 @@ interface BlogProps {
 
 const BlogPost: React.FC<BlogProps> = React.memo(({ blog, allBlogs }) => {
   const { screenSize } = useAppContext();
-  const imageSrc = `https:${blog.coverImage.fields.file.url}`;
-  const imageAlt = blog.coverImage.fields.title;
+  const imageSrc = require(`../../assets/pages/blogposts/${blog.coverImage.src}`);
+  const imageAlt = blog.coverImage.alt;
   const images = blog.images;
   const sections = Object.values(blog.content);
 
@@ -67,14 +66,13 @@ const BlogPost: React.FC<BlogProps> = React.memo(({ blog, allBlogs }) => {
               }`}
             >
               {sections.map((section, index) => {
-                const content = section.fields;
-                const text = section && content.text;
+                const text = section && section.text;
 
                 return (
                   <BlogContent
                     key={index}
                     index={index}
-                    image={section && content.image}
+                    image={section && section.image}
                     text={text}
                     images={images}
                     blog={blog}
@@ -100,18 +98,22 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     };
   }
 
-  const contentfulRes = await client.getEntries({ content_type: "blog" });
-  const data = contentfulRes.items;
-  const allBlogs = data.map((b: { fields: Destination }) => b.fields);
+  const data: { blogs: BlogsData } = require("../../data/blogs.json");
   const { blog } = params;
-  const blogData = allBlogs.find((b: Destination) => b.href === blog);
+  const allBlogs: Destination[] = [];
+  Object.values(data).map((blogArr: any) =>
+    Object.values(blogArr).map((blog: any) =>
+      blog.map((b: any) => allBlogs.push(b))
+    )
+  );
+  const blogData = allBlogs.find((b) => b.href === blog);
 
-  let metaImage = `https:${blogData.coverImage.fields.file.url}`;
+  let metaImage = require(`../../assets/pages/blogposts/${blogData?.coverImage.src}`);
   const metaData = {
     title: blogData?.metaTitle,
     description: blogData?.metaDesc,
     url: `https://www.reisfeeld.nl/indonesie/${blogData?.href}`,
-    image: metaImage,
+    image: metaImage.default.src,
     fbAppID: blogData?.href,
   };
 
@@ -125,14 +127,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const contentfulRes = await client.getEntries({ content_type: "blog" });
-  const data = contentfulRes.items;
-  const allBlogs = data.map((b: { fields: Destination }) => b.fields);
+  const data: { blogs: BlogsData } = require("../../data/blogs.json");
 
-  const paths = allBlogs.flatMap((blog: Destination) => {
-    return {
-      params: { blog: blog.href },
-    };
+  const paths = Object.values(data.blogs).flatMap((blog) => {
+    return blog.map((b) => ({
+      params: { blog: b.href },
+    }));
   });
 
   return {

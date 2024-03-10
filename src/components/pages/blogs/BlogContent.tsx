@@ -9,19 +9,22 @@ import { Destination } from "../../../pages/indonesie/index";
 import Image from "next/image";
 
 export interface Images {
-  fields: {
-    title: string;
-    file: {
-      url: string;
-    };
+  src: {
+    [image: string]: string | undefined;
+  };
+  alt: {
+    [image: string]: string | undefined;
   };
 }
 
 export interface BlogContentProps {
   index: number;
-  image?: Images;
+  image?: {
+    src: string;
+    alt: string;
+  };
   text: string | undefined;
-  images: Images[];
+  images: Images;
   blog: Destination;
 }
 
@@ -33,8 +36,9 @@ const BlogContent: React.FC<BlogContentProps> = ({
   blog,
 }) => {
   const { screenSize } = useAppContext();
-  const imageSrc = image && `https:${image.fields.file.url}`;
-  const imageAlt = image && image.fields.title;
+  const imageSrc =
+    image && require(`../../../assets/pages/blogposts/${image.src}`);
+  const imageAlt = image && image.alt;
 
   const parsedImg = replaceImageTag(text, images);
   const parsedText = parseHTMLText(parsedImg, images);

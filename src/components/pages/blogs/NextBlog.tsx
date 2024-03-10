@@ -13,8 +13,8 @@ export interface NextBlogProps {
 
 const NextBlog: React.FC<NextBlogProps> = ({ blog, size = "small" }) => {
   const { screenSize } = useAppContext();
-  const imageSrc = `https:${blog.coverImage.fields.file.url}`;
-  const imageAlt = blog.coverImage.fields.title;
+  const imageSrc = require(`../../../assets/pages/blogposts/${blog.coverImage.src}`);
+  const imageAlt = blog.coverImage.alt;
 
   return (
     <Link href={`/indonesie/${blog.href}`} className="relative block">
