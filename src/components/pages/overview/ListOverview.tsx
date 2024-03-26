@@ -44,7 +44,7 @@ const ListOverview: React.FC<ListOverviewProps> = ({
       <section
         className={`grid max-w-[1500px] mx-auto ${
           screenSize < 900
-            ? "justify-center flex-col [&>*:not(:last-child)]:mb-5 gap-y-12"
+            ? "justify-center flex-col [&>*:not(:last-child)]:mb-5 gap-y-2"
             : `grid-cols-2 ${screenSize < 1250 ? "gap-y-14" : "gap-y-20"}`
         }`}
       >
