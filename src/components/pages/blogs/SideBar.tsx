@@ -2,17 +2,18 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import Container from "../../general/Container";
 import { useAppContext } from "../../../config/AppContext";
 import NextBlogs from "./NextBlogs";
-import { Destination } from "../../../pages/indonesie/index";
+import { Destination } from "../../../pages/[country]/index";
 import H3 from "../../typography/H3";
 import TableOfContents from "./TableOfContents";
 import Socials from "./Socials";
 
 export interface SideBarProps {
+  country: string;
   blogs: Destination[];
   href: string | undefined;
 }
 
-const SideBar: React.FC<SideBarProps> = ({ blogs, href }) => {
+const SideBar: React.FC<SideBarProps> = ({ country, blogs, href }) => {
   const { screenSize } = useAppContext();
   const activeBlog = blogs.filter((blog) => blog.href === href)[0];
   const sidebarRef = useRef<HTMLDivElement>(null);
@@ -127,7 +128,7 @@ const SideBar: React.FC<SideBarProps> = ({ blogs, href }) => {
             Ontdek meer
           </H3>
 
-          <NextBlogs blogs={blogs} href={href} />
+          <NextBlogs country={country} blogs={blogs} href={href} />
         </section>
       </div>
     </Container>

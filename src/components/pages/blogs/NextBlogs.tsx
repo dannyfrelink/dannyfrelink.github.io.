@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import NextBlog from "./NextBlog";
-import { Destination } from "../../../pages/indonesie/index";
+import { Destination } from "../../../pages/[country]/index";
 import { getRandomBlogs } from "../../../helpers/getRandomBlogs";
 
 export interface NextBlogsProps {
+  country: string;
   blogs: Destination[];
   href: string | undefined;
 }
 
-const NextBlogs: React.FC<NextBlogsProps> = ({ blogs, href }) => {
+const NextBlogs: React.FC<NextBlogsProps> = ({ country, blogs, href }) => {
   const optionalBlogs = blogs.filter((blog) => blog.href !== href);
   const [blogArr, setBlogArr] = useState<NextBlogsProps["blogs"]>([]);
   const [oldHref, setOldHref] = useState<string | undefined>("");
@@ -23,7 +24,7 @@ const NextBlogs: React.FC<NextBlogsProps> = ({ blogs, href }) => {
       className={`grid gap-y-6 grid-rows-[1fr_1fr_1fr_1fr] [&_img]:max-h-[200px]`}
     >
       {blogArr.map((blog, index) => (
-        <NextBlog key={index} blog={blog} />
+        <NextBlog key={index} country={country} blog={blog} />
       ))}
     </article>
   );

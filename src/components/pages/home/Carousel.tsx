@@ -7,11 +7,14 @@ import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRound
 import H3 from "../../typography/H3";
 import { useAppContext } from "../../../config/AppContext";
 import Link from "next/link";
-import { Destination } from "../../../pages/indonesie/index";
+import { Destination } from "../../../pages/[country]/index";
 import Image from "next/image";
 
 export interface CarouselProps {
-  items: Destination[];
+  items: {
+    country: string;
+    blog: Destination;
+  }[];
 }
 
 const Carousel: React.FC<CarouselProps> = ({ items }) => {
@@ -19,8 +22,8 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
   const sliderRef = useRef<Slider>(null);
   const [autoplaySpeed, setAutoplaySpeed] = useState(2500);
   items.sort((a, b) => {
-    const dateA = new Date(a.date).getTime();
-    const dateB = new Date(b.date).getTime();
+    const dateA = new Date(a.blog.date).getTime();
+    const dateB = new Date(b.blog.date).getTime();
 
     return dateB - dateA;
   });
@@ -106,12 +109,12 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
       }`}
     >
       {items.map((item, index) => {
-        const imageSrc = require(`../../../assets/pages/blogposts/${item.coverImage.src}`);
-        const imageAlt = `Slide ${index + 1} ${item.coverImage.alt}`;
+        const imageSrc = require(`../../../assets/pages/blogposts/${item.blog.coverImage.src}`);
+        const imageAlt = `Slide ${index + 1} ${item.blog.coverImage.alt}`;
 
         return (
           <Link
-            href={`/indonesie/${item.href}`}
+            href={`/${item.country}/${item.blog.href}`}
             className="relative"
             key={index}
           >
@@ -131,7 +134,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
             />
 
             <H3 color="white" className="absolute bottom-6 w-[90%] left-[5%]">
-              {item.title}
+              {item.blog.title}
             </H3>
           </Link>
         );

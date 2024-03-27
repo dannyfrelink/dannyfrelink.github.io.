@@ -3,18 +3,21 @@ import { useAppContext } from "../../../config/AppContext";
 import H2 from "../../typography/H2";
 import BaseText from "../../typography/BaseText";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
-import { Destination } from "../../../pages/indonesie/index";
+import { Destination } from "../../../pages/[country]/index";
 import ButtonLink from "../../general/ButtonLink";
 import Image from "next/image";
 
 export interface FeaturedProps {
-  blog: Destination;
+  blog: {
+    country: string;
+    blog: Destination;
+  };
 }
 
 const Featured: React.FC<FeaturedProps> = ({ blog }) => {
   const { screenSize } = useAppContext();
-  const imageSrc = require(`../../../assets/pages/blogposts/${blog.coverImage.src}`);
-  const imageAlt = blog.coverImage.alt;
+  const imageSrc = require(`../../../assets/pages/blogposts/${blog.blog.coverImage.src}`);
+  const imageAlt = blog.blog.coverImage.alt;
 
   return (
     <div className="flex items-center relative w-full h-[calc(85vh-(24px*2))]">
@@ -53,11 +56,11 @@ const Featured: React.FC<FeaturedProps> = ({ blog }) => {
             >
               Uitgelicht
             </p>
-            <H2>{blog.title}</H2>
+            <H2>{blog.blog.title}</H2>
           </div>
-          <BaseText className="max-w-[650px]">{blog.featured}</BaseText>
+          <BaseText className="max-w-[650px]">{blog.blog.featured}</BaseText>
 
-          <ButtonLink link={`/indonesie/${blog.href}`}>
+          <ButtonLink link={`/${blog.country}/${blog.blog.href}`}>
             Ontdek ervaring{" "}
             <ArrowForwardRoundedIcon
               fontSize={screenSize < 750 ? "small" : "medium"}

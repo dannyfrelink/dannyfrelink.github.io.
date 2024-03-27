@@ -5,7 +5,7 @@ import replaceImageTag from "../../../helpers/replaceImageTag";
 import parseHTMLText from "../../../helpers/parseHTMLText";
 import H2 from "../../typography/H2";
 import TableOfContents from "./TableOfContents";
-import { Destination } from "../../../pages/indonesie/index";
+import { Destination } from "../../../pages/[country]/index";
 import Image from "next/image";
 
 export interface Images {

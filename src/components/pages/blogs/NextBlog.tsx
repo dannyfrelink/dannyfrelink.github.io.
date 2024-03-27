@@ -1,5 +1,5 @@
 import React from "react";
-import { Destination } from "../../../pages/indonesie/index";
+import { Destination } from "../../../pages/[country]/index";
 import { useAppContext } from "../../../config/AppContext";
 import Link from "next/link";
 import BaseText from "../../typography/BaseText";
@@ -7,17 +7,22 @@ import H3 from "../../typography/H3";
 import Image from "next/image";
 
 export interface NextBlogProps {
+  country: string;
   blog: Destination;
   size?: "small" | "large";
 }
 
-const NextBlog: React.FC<NextBlogProps> = ({ blog, size = "small" }) => {
+const NextBlog: React.FC<NextBlogProps> = ({
+  country,
+  blog,
+  size = "small",
+}) => {
   const { screenSize } = useAppContext();
   const imageSrc = require(`../../../assets/pages/blogposts/${blog.coverImage.src}`);
   const imageAlt = blog.coverImage.alt;
 
   return (
-    <Link href={`/indonesie/${blog.href}`} className="relative block">
+    <Link href={`/${country}/${blog.href}`} className="relative block">
       <div className="absolute bottom-0 w-full rounded-2xl h-full opacity-60 bg-gradient-to-t from-gray-700 via-transparent via-80% to-gray-400"></div>
       <Image
         width={500}

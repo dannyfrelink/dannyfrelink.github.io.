@@ -1,4 +1,4 @@
-import HeaderImage from "../../assets/header/blogs.jpg";
+// import HeaderImage from "../../assets/header/blogs/indonesie.jpg";
 import { useAppContext } from "../../config/AppContext";
 import {
   Header,
@@ -17,7 +17,7 @@ import AttachMoneyRoundedIcon from "@mui/icons-material/AttachMoneyRounded";
 import AccessTimeFilledRoundedIcon from "@mui/icons-material/AccessTimeFilledRounded";
 import FlightRoundedIcon from "@mui/icons-material/FlightRounded";
 import React from "react";
-import { GetStaticProps } from "next";
+import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 import { MetadataProps } from "..";
 
@@ -62,36 +62,55 @@ export interface BlogsData {
 
 interface BlogsProps {
   data: {
+    pageContent: {
+      image: {
+        src: string;
+        alt: string;
+      };
+      title: string;
+      subTitle: string;
+      intro: {
+        bestSeason: string;
+        currency: string;
+        timeDifference: string;
+        travelTime: string;
+        title: string;
+        content: string;
+      };
+    };
     blogs: BlogsData;
   };
   metaData: MetadataProps;
+  country: string | string[];
 }
 
-const BlogOverview: React.FC<BlogsProps> = React.memo(({ data }) => {
+const BlogOverview: React.FC<BlogsProps> = React.memo(({ data, country }) => {
   const { screenSize } = useAppContext();
   const blogs: BlogsData = data.blogs;
   const destinations = Object.keys(blogs);
+  const pageContent = data.pageContent;
+  const HeaderImage = require(`../../assets/header/blogs/${pageContent.image.src}`);
 
   const tags = [
     {
       icon: <ThermostatRoundedIcon />,
       title: "Beste reistijd",
-      value: "April - Oktober",
+      value: pageContent.intro.bestSeason,
     },
     {
       icon: <AttachMoneyRoundedIcon />,
       title: "Valuta",
-      value: "Indonesische Rupiah",
+      value: pageContent.intro.currency,
     },
     {
       icon: <AccessTimeFilledRoundedIcon />,
       title: "Tijdsverschil",
-      value: "6/7 uur",
+      value: pageContent.intro.timeDifference,
     },
     {
       icon: <FlightRoundedIcon />,
       title: "Vliegtijd",
-      value: "16 uur",
+      value: pageContent.intro.travelTime,
     },
   ];
 
@@ -104,13 +123,11 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ data }) => {
               width={2000}
               height={1300}
               src={HeaderImage}
-              alt="Rijstvelden Indonesië"
+              alt={pageContent.image.alt}
             />
           )}
-          title="Indonesië"
-          subTitle={
-            "Waar gastvrijheid, cultuur, lekker eten en prachtige natuur allemaal samen komen."
-          }
+          title={pageContent.title}
+          subTitle={pageContent.subTitle}
         />
 
         <Overview destinations={destinations}>
@@ -137,7 +154,7 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ data }) => {
             <H2
               className={`text-center ${screenSize < 1250 ? "mb-4" : "mb-6"}`}
             >
-              Reizen naar Indonesië
+              {pageContent.intro.title}
             </H2>
             <article
               className={`text-center ${
@@ -146,17 +163,7 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ data }) => {
                   : "[&>*:not(:last-child)]:mb-4"
               }`}
             >
-              <BaseText>
-                Indonesië is echt onze favoriete reisbestemming! Je kunt hier
-                alles vinden, van prachtige stranden tot groene jungles en van
-                helderblauw water tot een interessante cultuur. Ook kan je
-                ervoor kiezen om goedkoop te reizen, een mooie middenweg te
-                nemen of uit te pakken met mega luxe verblijven. De bevolking is
-                ontzettend gastvrij en behulpzaam en voor de Indische keuken kan
-                je ons echt wakker maken. In de natuur kan je hier van alles
-                vinden, denk aan watervallen, vulkanen, mooie uitzichtpunten en
-                niet te vergeten: rijstvelden!
-              </BaseText>
+              <BaseText>{pageContent.intro.content}</BaseText>
             </article>
           </section>
 
@@ -172,7 +179,7 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ data }) => {
 
                     return (
                       <Link
-                        href={`/indonesie/${blog.href}`}
+                        href={`/${country}/${blog.href}`}
                         className={`relative ${
                           screenSize < 900
                             ? "w-full max-w-[550px] h-[56vw] max-h-[325px] [&>*:not(:nth-child[1])]:mt-2 mt-5"
@@ -212,8 +219,18 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ data }) => {
   );
 });
 
-export const getStaticProps: GetStaticProps<BlogsProps> = async () => {
-  const data = require("../../data/blogs.json");
+export const getStaticProps: GetStaticProps<BlogsProps> = async ({
+  params,
+}) => {
+  if (!params || !params.country) {
+    return {
+      notFound: true,
+    };
+  }
+
+  const { country } = params;
+  const blogData = require("../../data/blogs.json");
+  const data = blogData[country.toString()];
   const allMetaData: {
     [path: string]: MetadataProps;
   } = require("../../data/metaData.json");
@@ -222,7 +239,21 @@ export const getStaticProps: GetStaticProps<BlogsProps> = async () => {
     props: {
       data,
       metaData: allMetaData["/indonesie"],
+      country,
     },
+  };
+};
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const data: { blogs: BlogsData } = require("../../data/blogs.json");
+
+  const paths = Object.keys(data).map((country: string) => ({
+    params: { country },
+  }));
+
+  return {
+    paths,
+    fallback: false,
   };
 };
 

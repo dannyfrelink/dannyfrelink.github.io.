@@ -12,7 +12,7 @@ import {
 import { useAppContext } from "../config/AppContext";
 import HeaderImage from "../assets/header/home.webp";
 import AboutImage from "../assets/pages/about/couple.jpg";
-import { Destination } from "./indonesie/index";
+import { Destination } from "./[country]/index";
 import React from "react";
 import Image from "next/image";
 import { GetStaticProps } from "next";
@@ -27,8 +27,10 @@ export interface MetadataProps {
 
 interface HomeProps {
   blogData: {
-    blogs: {
-      [dest: string]: Destination[];
+    [country: string]: {
+      blogs: {
+        [dest: string]: Destination[];
+      };
     };
   };
   metaData: MetadataProps;
@@ -36,12 +38,15 @@ interface HomeProps {
 
 const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
   const { screenSize } = useAppContext();
-  const blogs: Destination[] = [];
-  Object.values(blogData.blogs).map((blogArr) =>
-    blogArr.map((blog) => blogs.push(blog))
+  const blogs: { country: string; blog: Destination }[] = [];
+  Object.keys(blogData).map((country) =>
+    Object.values(blogData[country].blogs).map((blog) =>
+      blog.map((b) => blogs.push({ country, blog: b }))
+    )
   );
-  const carouselBlogs = blogs.filter((blog) => blog.carousel);
-  const featuredBlog = blogs.filter((blog) => blog.featured)[0];
+
+  const carouselBlogs = blogs.filter((blog) => blog.blog.carousel);
+  const featuredBlog = blogs.filter((blog) => blog.blog.featured)[0];
 
   return (
     <ScrollBar>

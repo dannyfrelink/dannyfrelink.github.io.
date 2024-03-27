@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from "react";
 import Container from "../../general/Container";
-import { Destination } from "../../../pages/indonesie/index";
+import { Destination } from "../../../pages/[country]/index";
 import { useAppContext } from "../../../config/AppContext";
 import { getRandomBlogs } from "../../../helpers/getRandomBlogs";
 import NextBlog from "./NextBlog";
 import H2 from "../../typography/H2";
 
 export interface BottomBarProps {
+  country: string;
   blogs: Destination[];
   href: string | undefined;
 }
 
-const BottomBar: React.FC<BottomBarProps> = ({ blogs, href }) => {
+const BottomBar: React.FC<BottomBarProps> = ({ country, blogs, href }) => {
   const { screenSize } = useAppContext();
   const optionalBlogs = blogs.filter((blog) => blog.href !== href);
   const [blogArr, setBlogArr] = useState<BottomBarProps["blogs"]>([]);
@@ -42,7 +43,7 @@ const BottomBar: React.FC<BottomBarProps> = ({ blogs, href }) => {
           }`}
         >
           {blogArr.map((blog, index) => (
-            <NextBlog key={index} blog={blog} size="large" />
+            <NextBlog key={index} country={country} blog={blog} size="large" />
           ))}
         </article>
       </div>
