@@ -12,8 +12,6 @@ export interface OverviewProps {
 const Overview: React.FC<OverviewProps> = ({ children, destinations }) => {
   const { screenSize, destFilter, setDestFilter } = useAppContext();
 
-  console.log(destFilter);
-
   return (
     <main>
       <Container>{children[0]}</Container>
@@ -40,10 +38,7 @@ const Overview: React.FC<OverviewProps> = ({ children, destinations }) => {
               onClick={() =>
                 destFilter == dest ? setDestFilter("") : setDestFilter(dest)
               }
-              className={`!bg-tertair ${
-                destFilter == dest &&
-                "!outline-secondary !outline-[3px] !outline"
-              }`}
+              className={`!bg-tertair ${destFilter == dest && "!bg-secondary"}`}
             >
               {dest}
             </Button>
