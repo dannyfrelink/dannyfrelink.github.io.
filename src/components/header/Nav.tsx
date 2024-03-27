@@ -122,7 +122,7 @@ const Nav: React.FC = () => {
         </li>
 
         <li>
-          <Link className={checkActive("/indonesie")} href="/indonesie">
+          <Link className={checkActive("/[country]")} href="/indonesie">
             Indonesië
           </Link>
         </li>
