@@ -1,14 +1,15 @@
 import React from "react";
-import { Destination } from "../../../pages/[country]/index";
+// import { Destination } from "../../../pages/[country]/index";
 import { useAppContext } from "../../../config/AppContext";
 import Link from "next/link";
 import BaseText from "../../typography/BaseText";
 import H3 from "../../typography/H3";
 import Image from "next/image";
+import { BlogProps } from "@/helpers/types";
 
 export interface NextBlogProps {
   country: string;
-  blog: Destination;
+  blog: BlogProps;
   size?: "small" | "large";
 }
 

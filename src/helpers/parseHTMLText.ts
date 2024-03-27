@@ -5,6 +5,7 @@ import H4 from "@/components/typography/H4";
 import BlogImage from "@/components/pages/blogs/BlogImage";
 import { Element } from "react-scroll";
 import Link from "next/link";
+import { ImageProps } from "./types";
 
 interface TextProps {
   children: React.ReactNode;
@@ -14,11 +15,6 @@ interface TextProps {
 
 interface AnchorProps {
   href: string | null;
-}
-
-interface ImageProps {
-  src: string;
-  alt: string;
 }
 
 interface TagToComponentMap {

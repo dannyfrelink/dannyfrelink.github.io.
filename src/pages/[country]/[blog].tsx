@@ -1,4 +1,4 @@
-import { BlogsData, Destination } from "./index";
+// import { BlogsData, Destination } from "./index";
 import {
   Header,
   SideBar,
@@ -12,15 +12,16 @@ import React from "react";
 import Image from "next/image";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { MetadataProps } from "..";
+import { BlogDataProps, BlogProps } from "@/helpers/types";
 
-interface BlogProps {
-  blog: Destination;
-  allBlogs: Destination[];
+interface BlogPostProps {
+  blog: BlogProps;
+  allBlogs: BlogProps[];
   metaData: MetadataProps;
   params: { country: string; blog: string };
 }
 
-const BlogPost: React.FC<BlogProps> = React.memo(
+const BlogPost: React.FC<BlogPostProps> = React.memo(
   ({ blog, allBlogs, params }) => {
     const { screenSize } = useAppContext();
     const imageSrc = require(`../../assets/pages/blogposts/${blog.coverImage.src}`);
@@ -109,11 +110,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     };
   }
 
-  const data: {
-    [country: string]: { blogs: BlogsData };
-  } = require("../../data/blogs.json");
+  const data: BlogDataProps = require("../../data/blogs.json");
   const { blog } = params;
-  const allBlogs: Destination[] = [];
+  const allBlogs: BlogProps[] = [];
   Object.values(data[params?.country.toString()].blogs).map((blogs) =>
     blogs.map((blog) => allBlogs.push(blog))
   );
@@ -139,9 +138,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const data: {
-    [country: string]: { blogs: BlogsData };
-  } = require("../../data/blogs.json");
+  const data: BlogDataProps = require("../../data/blogs.json");
   let paths: { params: { country: string; blog: string } }[] = [];
 
   Object.keys(data).map((country) =>

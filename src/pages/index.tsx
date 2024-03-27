@@ -12,10 +12,11 @@ import {
 import { useAppContext } from "../config/AppContext";
 import HeaderImage from "../assets/header/home.webp";
 import AboutImage from "../assets/pages/about/couple.jpg";
-import { Destination } from "./[country]/index";
+// import { Destination } from "./[country]/index";
 import React from "react";
 import Image from "next/image";
 import { GetStaticProps } from "next";
+import { BlogCountryProps, BlogDataProps, BlogProps } from "@/helpers/types";
 
 export interface MetadataProps {
   title: string;
@@ -26,19 +27,13 @@ export interface MetadataProps {
 }
 
 interface HomeProps {
-  blogData: {
-    [country: string]: {
-      blogs: {
-        [dest: string]: Destination[];
-      };
-    };
-  };
+  blogData: BlogDataProps;
   metaData: MetadataProps;
 }
 
 const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
   const { screenSize } = useAppContext();
-  const blogs: { country: string; blog: Destination }[] = [];
+  const blogs: BlogCountryProps[] = [];
   Object.keys(blogData).map((country) =>
     Object.values(blogData[country].blogs).map((blog) =>
       blog.map((b) => blogs.push({ country, blog: b }))

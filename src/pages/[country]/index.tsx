@@ -20,73 +20,17 @@ import React from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 import { MetadataProps } from "..";
-
-export interface Destination {
-  id: number;
-  metaTitle: string;
-  metaDesc: string;
-  date: string;
-  href: string;
-  coverImage: {
-    src: string;
-    alt: string;
-  };
-  title: string;
-  headers: string[];
-  content: {
-    [section: string]:
-      | {
-          text: string;
-          image?: {
-            src: string;
-            alt: string;
-          };
-        }
-      | undefined;
-  };
-  images: {
-    src: {
-      [image: string]: string | undefined;
-    };
-    alt: {
-      [image: string]: string | undefined;
-    };
-  };
-  featured?: string;
-  carousel?: boolean;
-}
-
-export interface BlogsData {
-  [destination: string]: Destination[];
-}
+import { BlogDataProps } from "@/helpers/types";
 
 interface BlogsProps {
-  data: {
-    pageContent: {
-      image: {
-        src: string;
-        alt: string;
-      };
-      title: string;
-      subTitle: string;
-      intro: {
-        bestSeason: string;
-        currency: string;
-        timeDifference: string;
-        travelTime: string;
-        title: string;
-        content: string;
-      };
-    };
-    blogs: BlogsData;
-  };
+  data: BlogDataProps["country"];
   metaData: MetadataProps;
   country: string | string[];
 }
 
 const BlogOverview: React.FC<BlogsProps> = React.memo(({ data, country }) => {
   const { screenSize } = useAppContext();
-  const blogs: BlogsData = data.blogs;
+  const blogs: BlogsProps["data"]["blogs"] = data.blogs;
   const destinations = Object.keys(blogs);
   const pageContent = data.pageContent;
   const HeaderImage = require(`../../assets/header/blogs/${pageContent.image.src}`);
@@ -245,7 +189,7 @@ export const getStaticProps: GetStaticProps<BlogsProps> = async ({
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const data: { blogs: BlogsData } = require("../../data/blogs.json");
+  const data: BlogDataProps = require("../../data/blogs.json");
 
   const paths = Object.keys(data).map((country: string) => ({
     params: { country },

@@ -12,12 +12,10 @@ import React from "react";
 import { GetStaticProps } from "next";
 import Image from "next/image";
 import { MetadataProps } from ".";
+import { ImageProps } from "@/helpers/types";
 
-export interface Destination {
-  image: {
-    src: string;
-    alt: string;
-  };
+export interface AccommodationProps {
+  image: ImageProps;
   name: string;
   description: string;
   prices: {
@@ -28,7 +26,7 @@ export interface Destination {
 }
 
 export interface AccommodationsData {
-  [destination: string]: Destination[];
+  [destination: string]: AccommodationProps[];
 }
 
 interface AccommodationsProps {

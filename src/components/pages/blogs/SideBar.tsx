@@ -2,14 +2,15 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import Container from "../../general/Container";
 import { useAppContext } from "../../../config/AppContext";
 import NextBlogs from "./NextBlogs";
-import { Destination } from "../../../pages/[country]/index";
+// import { Destination } from "../../../pages/[country]/index";
 import H3 from "../../typography/H3";
 import TableOfContents from "./TableOfContents";
 import Socials from "./Socials";
+import { BlogProps } from "@/helpers/types";
 
 export interface SideBarProps {
   country: string;
-  blogs: Destination[];
+  blogs: BlogProps[];
   href: string | undefined;
 }
 

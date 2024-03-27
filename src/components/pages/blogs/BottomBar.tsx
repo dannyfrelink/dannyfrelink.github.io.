@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Container from "../../general/Container";
-import { Destination } from "../../../pages/[country]/index";
+// import { Destination } from "../../../pages/[country]/index";
 import { useAppContext } from "../../../config/AppContext";
 import { getRandomBlogs } from "../../../helpers/getRandomBlogs";
 import NextBlog from "./NextBlog";
 import H2 from "../../typography/H2";
+import { BlogProps } from "@/helpers/types";
 
 export interface BottomBarProps {
   country: string;
-  blogs: Destination[];
+  blogs: BlogProps[];
   href: string | undefined;
 }
 

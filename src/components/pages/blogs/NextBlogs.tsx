@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import NextBlog from "./NextBlog";
-import { Destination } from "../../../pages/[country]/index";
+// import { Destination } from "../../../pages/[country]/index";
 import { getRandomBlogs } from "../../../helpers/getRandomBlogs";
+import { BlogProps } from "@/helpers/types";
 
 export interface NextBlogsProps {
   country: string;
-  blogs: Destination[];
+  blogs: BlogProps[];
   href: string | undefined;
 }
 

@@ -3,15 +3,13 @@ import { useAppContext } from "../../../config/AppContext";
 import H2 from "../../typography/H2";
 import BaseText from "../../typography/BaseText";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
-import { Destination } from "../../../pages/[country]/index";
+// import { Destination } from "../../../pages/[country]/index";
 import ButtonLink from "../../general/ButtonLink";
 import Image from "next/image";
+import { BlogCountryProps, BlogProps } from "@/helpers/types";
 
 export interface FeaturedProps {
-  blog: {
-    country: string;
-    blog: Destination;
-  };
+  blog: BlogCountryProps;
 }
 
 const Featured: React.FC<FeaturedProps> = ({ blog }) => {

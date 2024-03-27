@@ -17,7 +17,7 @@ import { DetailsProps } from "@/components/general/Details";
 import { ScrollBarProps } from "@/components/general/ScrollBar";
 
 import { BlogContentProps } from "@/components/pages/blogs/BlogContent";
-import { BlogImageProps } from "@/components/pages/blogs/BlogImage";
+import { ImageProps } from "./types";
 import { BottomBarProps } from "@/components/pages/blogs/BottomBar";
 import { CountryTagProps } from "@/components/pages/blogs/CountryTag";
 import { NextBlogProps } from "@/components/pages/blogs/NextBlog";
@@ -133,7 +133,7 @@ export const BlogContent = dynamic<BlogContentProps>(
     ssr: false,
   }
 );
-export const BlogImage = dynamic<BlogImageProps>(
+export const BlogImage = dynamic<ImageProps>(
   () => import(`../components/pages/blogs/BlogImage`),
   {
     ssr: false,

@@ -5,27 +5,16 @@ import replaceImageTag from "../../../helpers/replaceImageTag";
 import parseHTMLText from "../../../helpers/parseHTMLText";
 import H2 from "../../typography/H2";
 import TableOfContents from "./TableOfContents";
-import { Destination } from "../../../pages/[country]/index";
+// import { Destination } from "../../../pages/[country]/index";
 import Image from "next/image";
-
-export interface Images {
-  src: {
-    [image: string]: string | undefined;
-  };
-  alt: {
-    [image: string]: string | undefined;
-  };
-}
+import { BlogProps, ImageProps, ImagesProps } from "@/helpers/types";
 
 export interface BlogContentProps {
   index: number;
-  image?: {
-    src: string;
-    alt: string;
-  };
+  image?: ImageProps;
   text: string | undefined;
-  images: Images;
-  blog: Destination;
+  images: ImagesProps;
+  blog: BlogProps;
 }
 
 const BlogContent: React.FC<BlogContentProps> = ({

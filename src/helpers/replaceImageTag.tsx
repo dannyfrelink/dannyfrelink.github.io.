@@ -1,13 +1,6 @@
-interface Image {
-  src: {
-    [image: string]: string | undefined;
-  };
-  alt: {
-    [image: string]: string | undefined;
-  };
-}
+import { ImagesProps } from "./types";
 
-const replaceImageTag = (text: string | undefined, images: Image) => {
+const replaceImageTag = (text: string | undefined, images: ImagesProps) => {
   // Use a regular expression to find all occurrences of <imageX> tags
   const regex = /<image(\d+)>/g;
 
