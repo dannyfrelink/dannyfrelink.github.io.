@@ -8,11 +8,12 @@ import {
   ScrollBar,
 } from "@/helpers/dynamicImports";
 import HeaderImage from "../assets/header/accommodations.jpg";
-import React from "react";
+import React, { useEffect } from "react";
 import { GetStaticProps } from "next";
 import Image from "next/image";
 import { MetadataProps } from ".";
 import { ImageProps } from "@/helpers/types";
+import { useAppContext } from "@/config/AppContext";
 
 export interface AccommodationProps {
   image: ImageProps;
@@ -37,8 +38,13 @@ interface AccommodationsProps {
 }
 
 const Accommodations: React.FC<AccommodationsProps> = React.memo(({ data }) => {
+  const { setDestFilter } = useAppContext();
   const accommodations: AccommodationsData = data.accommodations;
   const destinations = Object.keys(accommodations);
+
+  useEffect(() => {
+    setDestFilter("");
+  }, []);
 
   return (
     <ScrollBar>

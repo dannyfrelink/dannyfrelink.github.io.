@@ -10,6 +10,8 @@ interface AppContextProps {
   screenSize: number;
   navOpen: boolean;
   setNavOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  destFilter: string;
+  setDestFilter: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const AppContext = createContext<AppContextProps | undefined>(undefined);
@@ -23,6 +25,7 @@ export const AppProvider: React.FC<AppProps> = ({ children }) => {
     typeof window !== "undefined" ? window.innerWidth : 0
   );
   const [navOpen, setNavOpen] = useState<boolean>(false);
+  const [destFilter, setDestFilter] = useState<string>("");
 
   const handleWindowResize = useCallback(() => {
     setScreenSize(window.innerWidth);
@@ -40,6 +43,8 @@ export const AppProvider: React.FC<AppProps> = ({ children }) => {
     screenSize,
     navOpen,
     setNavOpen,
+    destFilter,
+    setDestFilter,
   };
 
   return (

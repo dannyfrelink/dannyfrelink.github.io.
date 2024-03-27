@@ -2,7 +2,6 @@ import React from "react";
 import Container from "../../general/Container";
 import H2 from "../../typography/H2";
 import Button from "../../general/Button";
-import { Link } from "react-scroll";
 import { useAppContext } from "../../../config/AppContext";
 
 export interface OverviewProps {
@@ -11,7 +10,9 @@ export interface OverviewProps {
 }
 
 const Overview: React.FC<OverviewProps> = ({ children, destinations }) => {
-  const { screenSize } = useAppContext();
+  const { screenSize, destFilter, setDestFilter } = useAppContext();
+
+  console.log(destFilter);
 
   return (
     <main>
@@ -34,14 +35,18 @@ const Overview: React.FC<OverviewProps> = ({ children, destinations }) => {
           }`}
         >
           {destinations.map((dest, index) => (
-            <Link
-              to={dest.toLowerCase().split(" ").join("-")}
-              smooth={true}
-              duration={500}
+            <Button
               key={index}
+              onClick={() =>
+                destFilter == dest ? setDestFilter("") : setDestFilter(dest)
+              }
+              className={`!bg-tertair ${
+                destFilter == dest &&
+                "!outline-secondary !outline-[3px] !outline"
+              }`}
             >
-              <Button className="!bg-tertair">{dest}</Button>
-            </Link>
+              {dest}
+            </Button>
           ))}
         </div>
       </section>

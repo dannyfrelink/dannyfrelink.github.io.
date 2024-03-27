@@ -16,11 +16,11 @@ import ThermostatRoundedIcon from "@mui/icons-material/ThermostatRounded";
 import AttachMoneyRoundedIcon from "@mui/icons-material/AttachMoneyRounded";
 import AccessTimeFilledRoundedIcon from "@mui/icons-material/AccessTimeFilledRounded";
 import FlightRoundedIcon from "@mui/icons-material/FlightRounded";
-import React from "react";
+import React, { useEffect } from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 import { MetadataProps } from "..";
-import { BlogDataProps } from "@/helpers/types";
+import { BlogDataProps, BlogProps } from "@/helpers/types";
 
 interface BlogsProps {
   data: BlogDataProps["country"];
@@ -29,11 +29,26 @@ interface BlogsProps {
 }
 
 const BlogOverview: React.FC<BlogsProps> = React.memo(({ data, country }) => {
-  const { screenSize } = useAppContext();
+  const { screenSize, destFilter, setDestFilter } = useAppContext();
   const blogs: BlogsProps["data"]["blogs"] = data.blogs;
+  const allBlogs: BlogProps[] = [];
+
+  if (destFilter == "") {
+    Object.values(blogs).map((blog) => blog.map((b) => allBlogs.push(b)));
+  } else {
+    Object.keys(blogs).map(
+      (location) =>
+        location == destFilter && blogs[location].map((b) => allBlogs.push(b))
+    );
+  }
+
   const destinations = Object.keys(blogs);
   const pageContent = data.pageContent;
   const HeaderImage = require(`../../assets/header/blogs/${pageContent.image.src}`);
+
+  useEffect(() => {
+    setDestFilter("");
+  }, []);
 
   const tags = [
     {
@@ -111,47 +126,45 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ data, country }) => {
             </article>
           </section>
 
-          <section className="[&>div:first-child>div]:!mt-0 [&>div:first-child>div]:!pt-0">
-            {destinations.map((dest, index) => {
-              const blogsPerDest = blogs[dest];
+          <section
+            className={`grid max-w-[1500px] mx-auto ${
+              screenSize < 900
+                ? "justify-center flex-col [&>*:not(:last-child)]:mb-5 gap-y-2"
+                : `grid-cols-2 ${screenSize < 1250 ? "gap-y-14" : "gap-y-20"}`
+            }`}
+          >
+            {allBlogs.map((blog, index) => {
+              const imageSrc = require(`../../assets/pages/blogposts/${blog.coverImage.src}`);
+              const imageAlt = blog.coverImage.alt;
 
               return (
-                <ListOverview title="Blogs over" dest={dest} key={index}>
-                  {blogsPerDest.map((blog, index) => {
-                    const imageSrc = require(`../../assets/pages/blogposts/${blog.coverImage.src}`);
-                    const imageAlt = blog.coverImage.alt;
+                <Link
+                  key={index}
+                  href={`/${country}/${blog.href}`}
+                  className={`relative ${
+                    screenSize < 900
+                      ? "w-full max-w-[550px] h-[56vw] max-h-[325px] [&>*:not(:nth-child[1])]:mt-2 mt-5"
+                      : `w-[36vw] max-w-[650px] h-[24vw] max-h-[375px] mx-auto ${
+                          screenSize < 1250
+                            ? "[&>*:not(:nth-child[1])]:mt-2.5"
+                            : "[&>*:not(:nth-child[1])]:mt-3"
+                        }`
+                  }`}
+                >
+                  <div className="absolute bottom-0 w-full rounded-2xl h-full opacity-60 bg-gradient-to-t from-gray-700 via-transparent via-80% to-gray-400"></div>
 
-                    return (
-                      <Link
-                        href={`/${country}/${blog.href}`}
-                        className={`relative ${
-                          screenSize < 900
-                            ? "w-full max-w-[550px] h-[56vw] max-h-[325px] [&>*:not(:nth-child[1])]:mt-2 mt-5"
-                            : `w-[36vw] max-w-[650px] h-[24vw] max-h-[375px] mx-auto ${
-                                screenSize < 1250
-                                  ? "[&>*:not(:nth-child[1])]:mt-2.5"
-                                  : "[&>*:not(:nth-child[1])]:mt-3"
-                              }`
-                        }`}
-                        key={index}
-                      >
-                        <div className="absolute bottom-0 w-full rounded-2xl h-full opacity-60 bg-gradient-to-t from-gray-700 via-transparent via-80% to-gray-400"></div>
+                  <Image
+                    width={500}
+                    height={500}
+                    src={imageSrc}
+                    alt={imageAlt}
+                    className="w-screen h-full object-cover object-center rounded-2xl shadow-subtle"
+                  />
 
-                        <Image
-                          width={500}
-                          height={500}
-                          src={imageSrc}
-                          alt={imageAlt}
-                          className="w-screen h-full object-cover object-center rounded-2xl shadow-subtle"
-                        />
-
-                        <H3 className="absolute w-[90%] left-[5%] text-primary bottom-4">
-                          {blog.title}
-                        </H3>
-                      </Link>
-                    );
-                  })}
-                </ListOverview>
+                  <H3 className="absolute w-[90%] left-[5%] text-primary bottom-4">
+                    {blog.title}
+                  </H3>
+                </Link>
               );
             })}
           </section>

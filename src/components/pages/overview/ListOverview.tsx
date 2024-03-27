@@ -5,7 +5,7 @@ import BaseText from "../../typography/BaseText";
 import H2 from "../../typography/H2";
 
 export interface ListOverviewProps {
-  title: string;
+  title?: string;
   dest: string;
   children: React.ReactNode;
 }
@@ -20,26 +20,18 @@ const ListOverview: React.FC<ListOverviewProps> = ({
 
   return (
     <div>
-      <Element
-        className={`text-center ${
+      <H2
+        className={`text-tertair text-center ${
           screenSize < 900
             ? "mt-5 pt-5"
             : screenSize < 1250
             ? "mt-8 pt-8 pb-8"
             : "mt-10 pt-10 pb-10"
         }`}
-        name={destId}
+        id={destId}
       >
-        <BaseText>{title}</BaseText>
-        <H2
-          className={`text-tertair ${
-            screenSize < 900 ? "mt-0.5" : screenSize < 1250 ? "mt-1.5" : "mt-2"
-          }`}
-          id={destId}
-        >
-          {dest}
-        </H2>
-      </Element>
+        {dest}
+      </H2>
 
       <section
         className={`grid max-w-[1500px] mx-auto ${
