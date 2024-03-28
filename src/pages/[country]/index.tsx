@@ -130,7 +130,7 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ data, country }) => {
             className={`grid max-w-[1500px] mx-auto ${
               screenSize < 900
                 ? "justify-center flex-col [&>*:not(:last-child)]:mb-5 gap-y-2"
-                : `grid-cols-2 ${screenSize < 1250 ? "gap-y-14" : "gap-y-20"}`
+                : `grid-cols-2 ${screenSize < 1250 ? "gap-y-14" : "gap-y-16"}`
             }`}
           >
             {allBlogs.map((blog, index) => {
