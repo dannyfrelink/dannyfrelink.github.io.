@@ -38,7 +38,7 @@ const Overview: React.FC<OverviewProps> = ({ children, destinations }) => {
               onClick={() =>
                 destFilter == dest ? setDestFilter("") : setDestFilter(dest)
               }
-              className={`!bg-tertair ${destFilter == dest && "!bg-secondary"}`}
+              className={destFilter == dest ? "!bg-secondary" : "!bg-tertair"}
             >
               {dest}
             </Button>
