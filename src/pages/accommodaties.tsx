@@ -11,8 +11,7 @@ import HeaderImage from "../assets/header/accommodations.jpg";
 import React, { useEffect } from "react";
 import { GetStaticProps } from "next";
 import Image from "next/image";
-import { MetadataProps } from ".";
-import { ImageProps } from "@/helpers/types";
+import { ImageProps, MetadataProps } from "@/helpers/types";
 import { useAppContext } from "@/config/AppContext";
 
 export interface AccommodationProps {

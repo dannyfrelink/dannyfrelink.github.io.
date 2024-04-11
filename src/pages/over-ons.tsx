@@ -11,8 +11,8 @@ import {
 } from "@/helpers/dynamicImports";
 import React from "react";
 import Image from "next/image";
-import { MetadataProps } from ".";
 import { GetStaticProps } from "next";
+import { MetadataProps } from "@/helpers/types";
 
 interface AboutProps {
   metaData: MetadataProps;

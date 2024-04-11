@@ -17,8 +17,7 @@ import FlightRoundedIcon from "@mui/icons-material/FlightRounded";
 import React, { useEffect } from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
-import { MetadataProps } from "..";
-import { BlogDataProps, BlogProps } from "@/helpers/types";
+import { BlogDataProps, BlogProps, MetadataProps } from "@/helpers/types";
 
 interface BlogsProps {
   data: BlogDataProps["country"];

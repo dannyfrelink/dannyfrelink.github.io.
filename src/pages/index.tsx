@@ -15,15 +15,11 @@ import AboutImage from "../assets/pages/about/couple.jpg";
 import React from "react";
 import Image from "next/image";
 import { GetStaticProps } from "next";
-import { BlogCountryProps, BlogDataProps } from "@/helpers/types";
-
-export interface MetadataProps {
-  title: string;
-  description: string;
-  url: string;
-  image: string;
-  fbAppID: string;
-}
+import {
+  BlogCountryProps,
+  BlogDataProps,
+  MetadataProps,
+} from "@/helpers/types";
 
 interface HomeProps {
   blogData: BlogDataProps;

@@ -1,3 +1,11 @@
+export interface MetadataProps {
+  title: string;
+  description: string;
+  url: string;
+  image: string;
+  fbAppID: string;
+}
+
 export interface ImageProps {
   src: string;
   alt: string;

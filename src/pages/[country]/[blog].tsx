@@ -10,8 +10,7 @@ import { useAppContext } from "../../config/AppContext";
 import React from "react";
 import Image from "next/image";
 import { GetStaticPaths, GetStaticProps } from "next";
-import { MetadataProps } from "..";
-import { BlogDataProps, BlogProps } from "@/helpers/types";
+import { BlogDataProps, BlogProps, MetadataProps } from "@/helpers/types";
 
 interface BlogPostProps {
   blog: BlogProps;
