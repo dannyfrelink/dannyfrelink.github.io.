@@ -2,7 +2,6 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import Container from "../../general/Container";
 import { useAppContext } from "../../../config/AppContext";
 import NextBlogs from "./NextBlogs";
-// import { Destination } from "../../../pages/[country]/index";
 import H3 from "../../typography/H3";
 import TableOfContents from "./TableOfContents";
 import Socials from "./Socials";

@@ -5,7 +5,6 @@ import replaceImageTag from "../../../helpers/replaceImageTag";
 import parseHTMLText from "../../../helpers/parseHTMLText";
 import H2 from "../../typography/H2";
 import TableOfContents from "./TableOfContents";
-// import { Destination } from "../../../pages/[country]/index";
 import Image from "next/image";
 import { BlogProps, ImageProps, ImagesProps } from "@/helpers/types";
 

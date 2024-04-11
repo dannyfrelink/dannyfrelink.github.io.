@@ -7,7 +7,6 @@ import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRound
 import H3 from "../../typography/H3";
 import { useAppContext } from "../../../config/AppContext";
 import Link from "next/link";
-// import { Destination } from "../../../pages/[country]/index";
 import Image from "next/image";
 import { BlogProps } from "@/helpers/types";
 

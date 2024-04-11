@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Container from "../../general/Container";
-// import { Destination } from "../../../pages/[country]/index";
 import { useAppContext } from "../../../config/AppContext";
 import { getRandomBlogs } from "../../../helpers/getRandomBlogs";
 import NextBlog from "./NextBlog";

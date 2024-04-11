@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import NextBlog from "./NextBlog";
-// import { Destination } from "../../../pages/[country]/index";
 import { getRandomBlogs } from "../../../helpers/getRandomBlogs";
 import { BlogProps } from "@/helpers/types";
 

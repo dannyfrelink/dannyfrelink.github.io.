@@ -1,5 +1,4 @@
 import React from "react";
-// import { Destination } from "../../../pages/[country]/index";
 import { useAppContext } from "../../../config/AppContext";
 import Link from "next/link";
 import BaseText from "../../typography/BaseText";

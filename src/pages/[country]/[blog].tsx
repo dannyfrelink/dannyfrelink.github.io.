@@ -1,4 +1,3 @@
-// import { BlogsData, Destination } from "./index";
 import {
   Header,
   SideBar,

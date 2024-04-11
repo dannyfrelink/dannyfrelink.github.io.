@@ -1,10 +1,8 @@
-// import HeaderImage from "../../assets/header/blogs/indonesie.jpg";
 import { useAppContext } from "../../config/AppContext";
 import {
   Header,
   Overview,
   BaseText,
-  ListOverview,
   H3,
   Footer,
   H2,

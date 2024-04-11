@@ -12,11 +12,10 @@ import {
 import { useAppContext } from "../config/AppContext";
 import HeaderImage from "../assets/header/home.webp";
 import AboutImage from "../assets/pages/about/couple.jpg";
-// import { Destination } from "./[country]/index";
 import React from "react";
 import Image from "next/image";
 import { GetStaticProps } from "next";
-import { BlogCountryProps, BlogDataProps, BlogProps } from "@/helpers/types";
+import { BlogCountryProps, BlogDataProps } from "@/helpers/types";
 
 export interface MetadataProps {
   title: string;
