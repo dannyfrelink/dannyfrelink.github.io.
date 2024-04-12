@@ -11,5 +11,9 @@ const nextConfig = {
 };
 
 const withTM = require("next-transpile-modules")(["tailwindcss"]);
+const withPWA = require("next-pwa")({
+  dest: "public",
+  disable: process.env.NODE_ENV === "development",
+});
 
-module.exports = withTM(nextConfig);
+module.exports = withTM(withPWA(nextConfig));

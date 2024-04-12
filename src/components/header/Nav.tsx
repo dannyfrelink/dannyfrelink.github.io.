@@ -3,12 +3,17 @@ import Link from "next/link";
 import { useAppContext } from "../../config/AppContext";
 import CloseButton from "../general/CloseButton";
 import LogoBlack from "../../assets/logo/Logo-ReisFeeld-black.svg";
+import LogoMainBlack from "../../assets/logo/Logo-ReisFeeld-main-black.svg";
 import LogoPrimary from "../../assets/logo/Logo-ReisFeeld-primary.svg";
 import Socials from "../pages/blogs/Socials";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-const Nav: React.FC = () => {
+interface NavProps {
+  textColor?: "black" | "primary";
+}
+
+const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
   const { screenSize, navOpen, setNavOpen } = useAppContext();
   const [scrolled, setScrolled] = useState<number>(
     typeof window !== "undefined" ? window.scrollY : 0
@@ -85,9 +90,11 @@ const Nav: React.FC = () => {
           src={
             screenSize < 1000 || (scrolled > 250 && scrolledUp)
               ? LogoBlack
+              : textColor === "black"
+              ? LogoMainBlack
               : LogoPrimary
           }
-          alt="Logo ReisFeeld White"
+          alt="Logo ReisFeeld Wit"
         />
       </Link>
 
@@ -100,7 +107,9 @@ const Nav: React.FC = () => {
             : `flex before:top-0 before:inset-x-0 before:h-[4.5rem] before:z-[-1] [&_a:hover]:!text-[#729172] [&_a:focus]:!text-[#729172] ${
                 scrolled > 250 && scrolledUp
                   ? "fixed before:fixed top-[22px] before:bg-primary before:shadow-subtle"
-                  : "absolute before:absolute top-7 text-primary"
+                  : `absolute before:absolute top-7 ${
+                      textColor === "primary" && "text-primary"
+                    }`
               } ${
                 screenSize < 1250
                   ? "right-[9vw] [&>li:not(:last-child)]:mr-6 [&>div]:mr-4"

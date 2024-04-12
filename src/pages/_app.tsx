@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        {route !== "/_error" && (
+        {route !== "/_error" && route !== "/_offline" && (
           <>
             <title>{metaData.title}</title>
             <meta name="description" content={metaData.description} />
