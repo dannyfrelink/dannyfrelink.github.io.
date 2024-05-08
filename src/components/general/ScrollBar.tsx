@@ -3,7 +3,7 @@ import { useAppContext } from "../../config/AppContext";
 const uaParser = require("ua-parser-js");
 const userAgent =
   typeof navigator !== "undefined" && uaParser(navigator.userAgent);
-const device = userAgent && userAgent.device.model.toLowerCase();
+const device = userAgent.device.model && userAgent.device.model.toLowerCase();
 
 export interface ScrollBarProps {
   children: React.ReactNode;

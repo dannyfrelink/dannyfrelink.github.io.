@@ -28,11 +28,13 @@ interface HomeProps {
 
 const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
   const { screenSize } = useAppContext();
-  const blogs: BlogCountryProps[] = [];
-  Object.keys(blogData).map((country) =>
-    Object.values(blogData[country].blogs).map((blog) =>
-      blog.map((b) => blogs.push({ country, blog: b }))
-    )
+  const blogs: BlogCountryProps[] = Object.keys(blogData).flatMap((country) =>
+    Object.values(blogData[country].blogs)
+      .flat()
+      .map((blog) => ({
+        country,
+        blog,
+      }))
   );
 
   const carouselBlogs = blogs.filter((blog) => blog.blog.carousel);

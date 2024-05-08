@@ -2,15 +2,20 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.overflow-y-scroll,
+/* Hide scrollbar for Edge */
 body {
   -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
+/* Hide scrollbar for Chrome, Safari, and Opera */
 .overflow-y-scroll::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
+}
+
+/* Hide scrollbar for Firefox 64 and later */
+.overflow-y-scroll {
+  scrollbar-width: none;
 }
 
 body {
