@@ -30,12 +30,12 @@ const Featured: React.FC<FeaturedProps> = ({ blog }) => {
       <div
         className={`w-full ${
           screenSize > 750 && screenSize < 1250
-            ? "pl-[9vw]"
-            : screenSize < 1750 && "pl-[10vw]"
+            ? "px-[9vw]"
+            : screenSize < 1750 && "px-[10vw]"
         }`}
       >
         <section
-          className={`text-primary w-[85vw]  ${
+          className={`text-primary w-full ${
             screenSize < 750
               ? "[&>*:not(:last-child)]:mb-4 mx-auto"
               : screenSize < 1250
