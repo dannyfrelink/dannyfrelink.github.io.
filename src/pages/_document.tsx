@@ -19,6 +19,8 @@ const Document = () => {
           rel="stylesheet"
         />
 
+        <meta name="agd-partner-manual-verification" />
+
         <link rel="manifest" href="/manifest.json" />
 
         <meta property="og:image:width" content="2500" />
