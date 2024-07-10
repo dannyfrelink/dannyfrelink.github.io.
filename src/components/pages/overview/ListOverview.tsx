@@ -1,7 +1,5 @@
 import React from "react";
-import { Element } from "react-scroll";
 import { useAppContext } from "../../../config/AppContext";
-import BaseText from "../../typography/BaseText";
 import H2 from "../../typography/H2";
 
 export interface ListOverviewProps {
