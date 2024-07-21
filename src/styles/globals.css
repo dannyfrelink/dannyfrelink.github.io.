@@ -38,10 +38,8 @@ code {
 }
 
 .blogText-anchor a {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   text-decoration: underline;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .blogImage-container {
@@ -118,8 +116,8 @@ code {
   }
 
   .blogText-anchor a {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .tip {
@@ -182,11 +180,6 @@ code {
 
   .blogText-container > *:not(:last-child) {
     margin-bottom: 1rem;
-  }
-
-  .blogText-anchor a {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .tip {
