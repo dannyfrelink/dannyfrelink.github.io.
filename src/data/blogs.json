@@ -228,8 +228,7 @@
               "image19": "La Sol Beachclub Canggu Bali",
               "image20": "Boheme Beachclub/Poolclub Canggu Bali"
             }
-          },
-          "carousel": true
+          }
         },
         {
           "id": 3,
@@ -611,6 +610,52 @@
               "image12": "Karang Boma Cliff Uitzicht Uluwatu Bali"
             }
           }
+        },
+        {
+          "id": 15,
+          "metaTitle": "8 leukste restaurants in Uluwatu: hier moet je zijn!",
+          "metaDesc": "Eettentjes in Uluwatu | 8 leuke restaurants in Uluwatu: Lola’s Cantina | Warung Local | Suka Espresso | Tarabelle | Ulu Garden | The Bakery",
+          "date": "5 september, 2024",
+          "href": "leukste-restaurants-uluwatu",
+          "coverImage": {
+            "src": "de-leukste-restaurants-in-uluwatu/cover.webp",
+            "alt": "Bingin Beach Strand Uluwatu Bali"
+          },
+          "title": "8x de leukste restaurants in Uluwatu!",
+          "headers": [
+            "Yeobi Hansik",
+            "Lola’s Cantina Mexicana",
+            "Tarabelle",
+            "Warung Local",
+            "Suka Espresso",
+            "Waroeng Kampoeng",
+            "Ulu Garden",
+            "The Bakery"
+          ],
+          "content": {
+            "section1": {
+              "text": "<p class='font-semibold'>In Uluwatu vind je veel verschillende restaurants in een redelijk uitgestrekt gebied. In Uluwatu heb je dan ook niet echt een duidelijk centrum, maar de meeste mensen zien het gebied ‘Bingin’ als het centrum. Hier vind je dan ook een straat waar veel restaurants en winkels zitten, maar ook in de andere gebieden zitten leuke restaurants! In deze blog staan onze 8 favoriete restaurants in Uluwatu.</p>//<h3>Yeobi Hansik</h3>//<p>Hou je van Koreaans eten? Dan ben je hier aan het goede adres! Ze verkopen veel verschillende Koreaanse gerechten en snacks en ook kan je hier allerlei speciale drankjes bestellen. Wij zijn erg fan van de soy garlic boneless chicken! Naast het restaurant in Uluwatu, hebben ze ook nog een filiaal in Seminyak en kan je bestellen via GoJek of Grab.</p>//<h3>Lola’s Cantina Mexicana</h3>//<p>Dit gezellig aangeklede Mexicaanse restaurant heeft zowel een locatie in Uluwatu als in Canggu. Je kan hier verschillende Mexicaanse gerechten bestellen, zoals burrito’s, taco's, nacho’s en enchiladas. Daarnaast organiseren ze ook verschillende evenementen en krijg je korting op speciale dagen, zoals taco Tuesday. Wij hebben hier verschillende gerechten gegeten en zijn nog nooit teleurgesteld.</p>//<div class='blogImage-container'><image1><image2></div>//<h3>Tarabelle</h3>//<p>Een restaurant die wat meer uit het centrum zit, maar zeker de moeite waard is, is Tarabelle. Het restaurant is prachtig ingericht en je kan zowel binnen als buiten zitten. Buiten hebben ze zelfs een kleine speelplek voor kinderen. Je kan hier van ‘s ochtends tot ‘s avonds terecht en ze hebben veel keuze op de menukaart, zoals burgers, rijstgerechten, pasta, broodjes en smoothie bowls. De Korean rice bowl is een echte aanrader!</p>//<div class='blogImage-container'><image3><image4></div>//<h3>Warung Local</h3>//<p>Zoals meerdere restaurants in deze blog, heeft ook Warung Local twee locaties, Uluwatu en Canggu. Het restaurant in Uluwatu is wel een stuk groter dan die in Canggu en deze heeft dan ook onze voorkeur. Je kan hier heerlijk lokaal eten voor een lage prijs, maar je zit nog steeds in een gezellig restaurant met fijne zitplekken. Je kan hier zelf je bordje samenstellen met verschillende gerechten of een gerecht van de kaart kiezen.</p>//<h3>Suka Espresso</h3>//<p>Suka Espresso is onderdeel van een groter bedrijf met meerdere restaurants op Bali. Wij zijn bij bijna alle vestigingen geweest en ze staan allemaal tussen onze favorieten! Het restaurant in Uluwatu ligt dicht bij het centrum en is heel erg gezellig. Het personeel is erg lief en je kan hier kiezen uit veel verschillende gerechten en drankjes. De chicken katsu sando en buttermilk fried chicken burger zijn hier echt 10/10.</p>//<image5>//<h3>Waroeng Kampoeng</h3>//<p>Waroeng Kampoeng ligt eigenlijk in Jimbaran, maar deze mag zeker niet ontbreken op deze lijst. Vanuit Uluwatu is het ongeveer 30 minuten rijden, afhankelijk van waar je verblijft. Bij dit restaurant zie je bijna alleen maar lokale mensen en dat is voor ons altijd een goed teken. Je kan hier allerlei verschillende vlees, vis en vegetarische gerechten bestellen. Je bestelt hier alles los. Als je dus een kipgerecht bestelt, krijg je echt alleen de kip, de rijst moet je er los bij bestellen. Je kan je hier echt vol eten voor een heel laag bedrag. Wij bestelde 3 vleesgerechten, rijst, kroepoek en 2 drankjes voor ongeveer €7.</p>//<h3>Ulu Garden</h3>//<p>Ulu Garden is misschien wel de meest gezellige plek van allemaal. Je hebt hier een hele grote tuin met allemaal zitplekken en op sommige avonden wordt er ook livemuziek gespeeld op het podium. Ook met kinderen is dit een fijne plek, want ze hebben veel ruimte om te spelen en ze kunnen ook bijvoorbeeld lekker tekenen. Het eten is ook erg lekker en er is veel keuze.</p>//<h3>The Bakery</h3>//<p>Bij deze bakkerij haal je de lekkerste broodjes en zoetigheden. Je hebt helaas niet veel zitplaatsen, dus met een grote groep kan je het beter meenemen. Ze staan bekend om de beste cinnamon rolls in de omgeving en die zijn dan ook echt heel lekker! Ze zijn elke dag open vanaf 6 uur in de ochtend.</p>//<image6>"
+            }
+          },
+          "images": {
+            "src": {
+              "image1": "de-leukste-restaurants-in-uluwatu/lola-cantina-1.webp",
+              "image2": "de-leukste-restaurants-in-uluwatu/lola-cantina-2.webp",
+              "image3": "de-leukste-restaurants-in-uluwatu/tarabelle-1.webp",
+              "image4": "de-leukste-restaurants-in-uluwatu/tarabelle-2.webp",
+              "image5": "de-leukste-restaurants-in-uluwatu/suka-espresso.webp",
+              "image6": "de-leukste-restaurants-in-uluwatu/the-bakery.webp"
+            },
+            "alt": {
+              "image1": "Lola's Cantina Mexicana Restaurant Uluwatu Bali",
+              "image2": "Lola's Cantina Mexicana Restaurant Uluwatu Bali",
+              "image3": "Tarabelle Restaurant Uluwatu Bali",
+              "image4": "Tarabelle Restaurant Uluwatu Bali",
+              "image5": "Suka Espresso Restaurant Uluwatu Bali",
+              "image6": "The Bakery Restaurant Uluwatu Bali"
+            }
+          },
+          "carousel": true
         }
       ],
       "Amed (Bali)": [

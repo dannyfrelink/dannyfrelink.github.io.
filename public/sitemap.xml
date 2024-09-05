@@ -69,6 +69,11 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+        <url>
+        <loc>https://reisfeeld.nl/indonesie/leukste-restaurants-uluwatu</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
     <url>
         <loc>https://reisfeeld.nl/indonesie/wat-te-doen-in-amed</loc>
         <changefreq>weekly</changefreq>
