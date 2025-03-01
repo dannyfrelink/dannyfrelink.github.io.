@@ -2,28 +2,28 @@
   "/": {
     "title": "ReisFeeld | Jouw avontuur, ons verhaal!",
     "description": "Beleef de reis van jouw dromen met al onze tips en tricks. Ontdek de leukste activiteiten, mooiste plekjes en beste restaurants!",
-    "url": "https://www.reisfeeld.nl",
+    "url": "https://reisfeeld.nl",
     "image": "/_next/static/media/home.4771d7e1.webp",
     "fbAppID": "Home"
   },
   "/indonesie": {
     "title": "Reizen naar Indonesië",
     "description": "Indonesië is een prachtige reisbestemming. Je kunt hier alles vinden, zoals prachtige stranden, groene jungles en een interessante cultuur.",
-    "url": "https://www.reisfeeld.nl/indonesie",
+    "url": "https://reisfeeld.nl/indonesie",
     "image": "/_next/static/media/blogs.ad8ccf12.jpg",
     "fbAppID": "Indonesië"
   },
   "/accommodaties": {
     "title": "Slaap op de leukste plekken in Indonesië!",
     "description": "In Indonesië kan je echt van alles vinden: een guesthouse met lieve eigenaren, een luxe privé villa en alles wat hier tussenin zit.",
-    "url": "https://www.reisfeeld.nl/accommodaties",
+    "url": "https://reisfeeld.nl/accommodaties",
     "image": "/_next/static/media/accommodations.45a96198.jpg",
     "fbAppID": "Accommodaties"
   },
   "/over-ons": {
     "title": "Reisfeeld | Over ons",
     "description": "Met onze tips en ervaringen hopen wij jouw voorbereidingen én reis een stukje leuker te maken. En wij zijn nog lang niet klaar met reizen!",
-    "url": "https://www.reisfeeld.nl/over-ons",
+    "url": "https://reisfeeld.nl/over-ons",
     "image": "/_next/static/media/about.fc28791c.webp",
     "fbAppID": "Over ons"
   }
