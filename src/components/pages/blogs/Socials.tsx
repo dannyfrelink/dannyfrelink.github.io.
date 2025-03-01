@@ -10,7 +10,7 @@ const Socials: React.FC = () => {
     },
     {
       src: "icons8-tiktok.svg",
-      link: "https://www.tiktok.com/@reis.feeld",
+      link: "https://www.tiktok.com/@reisfeeld",
     },
     {
       src: "icons8-youtube.svg",
