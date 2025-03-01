@@ -34,7 +34,7 @@ const About: React.FC<AboutProps> = React.memo(() => {
             />
           )}
           imageHeight="small"
-          title="Over ReisFeeld"
+          title="Over Reisfeeld"
         />
 
         <Container>
@@ -77,7 +77,7 @@ const About: React.FC<AboutProps> = React.memo(() => {
 
               <BaseText>
                 We zullen al onze reizen, tips, accommodaties en veel meer gaan
-                delen op Reisfeeld.nl.
+                delen op Reisfeeld.
               </BaseText>
 
               {screenSize >= 1250 && (

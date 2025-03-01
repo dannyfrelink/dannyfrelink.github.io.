@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
                 height={500}
                 className="h-12 w-auto"
                 src={LogoBlack}
-                alt="Logo ReisFeeld"
+                alt="Logo Reisfeeld"
               />
             </Link>
 
@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
           </nav>
         </div>
 
-        <BaseText className="mt-8 text-center">© 2024 ReisFeeld</BaseText>
+        <BaseText className="mt-8 text-center">© 2024 Reisfeeld</BaseText>
       </div>
     </div>
   );

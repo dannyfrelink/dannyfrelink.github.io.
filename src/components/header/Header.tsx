@@ -94,7 +94,7 @@ const Header: React.FC<HeaderProps> = ({
             screenSize < 750 ? "!h-12" : "!h-[52px]"
           }`}
           src={LogoPrimary}
-          alt="Logo ReisFeeld Wit"
+          alt="Logo Reisfeeld Wit"
         />
       </Link>
 

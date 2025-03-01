@@ -110,7 +110,7 @@ const Home: React.FC<HomeProps> = React.memo(({ blogData }) => {
                   reis geweest en hebben wij ontdekt dat dit is wat wij het
                   liefste doen. Vele reizen verder hebben wij besloten al onze
                   reizen, tips, accommodaties en veel meer te gaan delen op
-                  Reisfeeld.nl. Met onze tips en ervaringen hopen wij jouw
+                  Reisfeeld. Met onze tips en ervaringen hopen wij jouw
                   voorbereidingen én reis een stukje leuker te maken! We zijn
                   nog lang niet klaar met reizen, dus houd ook onze socials in
                   de gaten voor leuke reiscontent!

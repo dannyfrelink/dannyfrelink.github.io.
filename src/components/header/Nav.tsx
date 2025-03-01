@@ -94,7 +94,7 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
               ? LogoMainBlack
               : LogoPrimary
           }
-          alt="Logo ReisFeeld Wit"
+          alt="Logo Reisfeeld Wit"
         />
       </Link>
 

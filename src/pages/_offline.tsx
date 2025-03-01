@@ -41,7 +41,7 @@ const Offline: React.FC = () => {
                 screenSize < 750 ? "!h-12" : "!h-[52px]"
               }`}
               src={LogoBlack}
-              alt="Logo ReisFeeld Zwart"
+              alt="Logo Reisfeeld Zwart"
             />
           </Link>
 
