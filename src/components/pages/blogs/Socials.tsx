@@ -18,7 +18,7 @@ const Socials: React.FC = () => {
     },
     {
       src: "icons8-facebook.svg",
-      link: "https://www.facebook.com/ReisFeeld.nl/",
+      link: "https://www.facebook.com/Reisfeeld/",
     },
   ];
 
