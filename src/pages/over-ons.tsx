@@ -124,7 +124,7 @@ const About: React.FC<AboutProps> = React.memo(() => {
                 }`}
               >
                 <BaseText>
-                  De naam heeft eigenlijk drie betekenissen. Natuurlijk staat
+                  Reisfeeld heeft eigenlijk drie betekenissen. Natuurlijk staat
                   het woord ‘reis’ erin, wat doelt op onze reisverhalen.
                   Daarnaast kan je dit woord op zijn Engels uitspreken, waardoor
                   ‘Ricefield’ ontstaat. Dit verwijst naar de prachtige

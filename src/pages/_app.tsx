@@ -64,6 +64,30 @@ export default function App({ Component, pageProps }: AppProps) {
             `,
           }}
         />
+
+        {/* Google Knowledge Panel */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Reisfeeld",
+              url: "https://reisfeeld.nl",
+              logo: `https://reisfeeld.nl/favicon.ico`,
+              image:
+                "https://reisfeeld.nl/_next/static/media/home.4771d7e1.webp",
+              sameAs: [
+                "https://www.instagram.com/reis.feeld/",
+                "https://www.tiktok.com/@reisfeeld",
+                "https://www.facebook.com/Reisfeeld",
+                "https://www.youtube.com/@LisatenHoope",
+              ],
+              description:
+                "Reisfeeld is een reisblog van Danny & Lisa. Zij delen persoonlijke ervaringen in het buitenland en geven tips over wat je wel en niet moet doen. Ook de fijnste accommodaties waar zij hebben verbleven worden hierop vermeld.",
+            }),
+          }}
+        />
       </Head>
 
       <AppProvider>
