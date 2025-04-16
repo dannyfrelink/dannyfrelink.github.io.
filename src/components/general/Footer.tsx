@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
             }`}
           >
             <ButtonLink link="/">Home</ButtonLink>
-            <ButtonLink link="/indonesie">Indonesië</ButtonLink>
+            <ButtonLink link="/bestemmingen/indonesie">Indonesië</ButtonLink>
             <ButtonLink link="/accommodaties">Accommodaties</ButtonLink>
             <ButtonLink link="/over-ons">Over ons</ButtonLink>
           </nav>

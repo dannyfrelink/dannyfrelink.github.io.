@@ -6,7 +6,7 @@ import {
   BottomBar,
   ScrollBar,
 } from "@/helpers/dynamicImports";
-import { useAppContext } from "../../config/AppContext";
+import { useAppContext } from "../../../config/AppContext";
 import React from "react";
 import Image from "next/image";
 import { GetStaticPaths, GetStaticProps } from "next";
@@ -22,7 +22,7 @@ interface BlogPostProps {
 const BlogPost: React.FC<BlogPostProps> = React.memo(
   ({ blog, allBlogs, params }) => {
     const { screenSize } = useAppContext();
-    const imageSrc = require(`../../assets/pages/blogposts/${blog.coverImage.src}`);
+    const imageSrc = require(`../../../assets/pages/blogposts/${blog.coverImage.src}`);
     const imageAlt = blog.coverImage.alt;
     const images = blog.images;
     const sections = Object.values(blog.content);
@@ -108,7 +108,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     };
   }
 
-  const data: BlogDataProps = require("../../data/blogs.json");
+  const data: BlogDataProps = require("../../../data/blogs.json");
   const { blog } = params;
   const allBlogs: BlogProps[] = [];
   Object.values(data[params?.country.toString()].blogs).map((blogs) =>
@@ -116,11 +116,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   );
   const blogData = allBlogs.find((b) => b.href === blog);
 
-  let metaImage = require(`../../assets/pages/blogposts/${blogData?.coverImage.src}`);
+  let metaImage = require(`../../../assets/pages/blogposts/${blogData?.coverImage.src}`);
   const metaData = {
     title: blogData?.metaTitle,
     description: blogData?.metaDesc,
-    url: `https://reisfeeld.nl/indonesie/${blogData?.href}`,
+    url: `https://reisfeeld.nl/bestemmingen/indonesie/${blogData?.href}`,
     image: metaImage.default.src,
     fbAppID: blogData?.href,
   };
@@ -136,7 +136,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const data: BlogDataProps = require("../../data/blogs.json");
+  const data: BlogDataProps = require("../../../data/blogs.json");
   let paths: { params: { country: string; blog: string } }[] = [];
 
   Object.keys(data).map((country) =>

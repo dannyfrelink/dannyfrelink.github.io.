@@ -11,16 +11,17 @@ export interface H1Props {
 const H1: React.FC<H1Props> = ({ children, subTitle, isBlog }) => {
   const { screenSize } = useAppContext();
   const router = useRouter();
-  const checkAccom = router.pathname === "/accommodaties";
+  const checkH1Small =
+    router.pathname === "/accommodaties" || router.pathname === "/bestemmingen";
   const title = children?.toString().toUpperCase();
 
   return (
     <h1
       className={`font-bold max-w-[1000px] ${
         screenSize < 750
-          ? `${checkAccom && "!text-3xl"} ${isBlog ? "text-xl" : "text-5xl"} ${
-              subTitle !== "" && "mb-3"
-            }`
+          ? `${checkH1Small && "!text-3xl"} ${
+              isBlog ? "text-xl" : "text-5xl"
+            } ${subTitle !== "" && "mb-3"}`
           : screenSize < 1250
           ? `${isBlog ? "text-5xl" : "text-[75px] leading-[85px]"} ${
               subTitle !== "" && "mb-6"

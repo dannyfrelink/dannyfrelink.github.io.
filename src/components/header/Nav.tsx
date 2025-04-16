@@ -131,7 +131,10 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
         </li>
 
         <li>
-          <Link className={checkActive("/[country]")} href="/indonesie">
+          <Link
+            className={checkActive("/bestemmingen")}
+            href="/bestemmingen/indonesie"
+          >
             Indonesië
           </Link>
         </li>

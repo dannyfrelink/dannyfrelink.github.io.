@@ -1,4 +1,4 @@
-import { useAppContext } from "../../config/AppContext";
+import { useAppContext } from "../../../config/AppContext";
 import {
   Header,
   Overview,
@@ -41,7 +41,7 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ data, country }) => {
 
   const destinations = Object.keys(blogs);
   const pageContent = data.pageContent;
-  const HeaderImage = require(`../../assets/header/blogs/${pageContent.image.src}`);
+  const HeaderImage = require(`../../../assets/header/blogs/${pageContent.image.src}`);
 
   useEffect(() => {
     setDestFilter("");
@@ -131,13 +131,13 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ data, country }) => {
             }`}
           >
             {allBlogs.map((blog, index) => {
-              const imageSrc = require(`../../assets/pages/blogposts/${blog.coverImage.src}`);
+              const imageSrc = require(`../../../assets/pages/blogposts/${blog.coverImage.src}`);
               const imageAlt = blog.coverImage.alt;
 
               return (
                 <Link
                   key={index}
-                  href={`/${country}/${blog.href}`}
+                  href={`/bestemmingen/${country}/${blog.href}`}
                   className={`relative ${
                     screenSize < 900
                       ? "w-full max-w-[550px] h-[56vw] max-h-[325px] [&>*:not(:nth-child[1])]:mt-2 mt-5"
@@ -183,23 +183,25 @@ export const getStaticProps: GetStaticProps<BlogsProps> = async ({
   }
 
   const { country } = params;
-  const blogData = require("../../data/blogs.json");
+  const blogData = require("../../../data/blogs.json");
   const data = blogData[country.toString()];
   const allMetaData: {
-    [path: string]: MetadataProps;
-  } = require("../../data/metaData.json");
+    [path: string]: {
+      [path: string]: MetadataProps;
+    };
+  } = require("../../../data/metaData.json");
 
   return {
     props: {
       data,
-      metaData: allMetaData["/indonesie"],
+      metaData: allMetaData["/bestemmingen"]["/indonesie"],
       country,
     },
   };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const data: BlogDataProps = require("../../data/blogs.json");
+  const data: BlogDataProps = require("../../../data/blogs.json");
 
   const paths = Object.keys(data).map((country: string) => ({
     params: { country },

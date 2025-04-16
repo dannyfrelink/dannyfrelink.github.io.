@@ -1,6 +1,7 @@
 {
   "indonesie": {
     "pageContent": {
+      "country": "Indonesië",
       "image": {
         "src": "indonesie.jpg",
         "alt": "Rijstvelden Ubud Indonesië"
@@ -767,7 +768,7 @@
               }
             },
             "section3": {
-              "text": "<h3>Ontspannen bij Spring Spa</h3>//<p>Dit is één van de mooiste locaties voor een spa die wij ooit hebben gezien. Met uitzicht op zee en een prachtig interieur is dit een heerlijke plek om even te ontspannen. Je kan hier een massage nemen, je nagels laten doen of verschillende facials proberen. Om hier te komen moet je wel een stukje lopen, want je kan hier niet met de scooter naartoe.</p>//<h3>Dagtrip naar Nusa Penida</h3>//<div class='blogText-anchor'><p>Als je op Nusa Lembongan verblijft, kan je ook een dag tour doen op Nusa Penida. Op dit eiland zijn namelijk een aantal prachtige plekken die je eigenlijk niet mag missen. Denk bijvoorbeeld aan Kelingking Beach, Angel’s Billabong en Broken Beach. Vanaf Nusa Lembongan kan je een boot nemen die je binnen 10 minuten naar Nusa Penida brengt. Hier kan je zelf een scooter huren en het eiland ontdekken of een privéchauffeur huren die je het hele eiland rondrijdt. In </p>//<a href='/indonesie/nusa-penida-tips'>deze blog</a>//<p> kan je meer lezen over een leuke dag tour op Nusa Penida.</p></div>//<image11>"
+              "text": "<h3>Ontspannen bij Spring Spa</h3>//<p>Dit is één van de mooiste locaties voor een spa die wij ooit hebben gezien. Met uitzicht op zee en een prachtig interieur is dit een heerlijke plek om even te ontspannen. Je kan hier een massage nemen, je nagels laten doen of verschillende facials proberen. Om hier te komen moet je wel een stukje lopen, want je kan hier niet met de scooter naartoe.</p>//<h3>Dagtrip naar Nusa Penida</h3>//<div class='blogText-anchor'><p>Als je op Nusa Lembongan verblijft, kan je ook een dag tour doen op Nusa Penida. Op dit eiland zijn namelijk een aantal prachtige plekken die je eigenlijk niet mag missen. Denk bijvoorbeeld aan Kelingking Beach, Angel’s Billabong en Broken Beach. Vanaf Nusa Lembongan kan je een boot nemen die je binnen 10 minuten naar Nusa Penida brengt. Hier kan je zelf een scooter huren en het eiland ontdekken of een privéchauffeur huren die je het hele eiland rondrijdt. In </p>//<a href='/bestemmingen/indonesie/nusa-penida-tips'>deze blog</a>//<p> kan je meer lezen over een leuke dag tour op Nusa Penida.</p></div>//<image11>"
             }
           },
           "images": {
@@ -1040,6 +1041,99 @@
             }
           },
           "carousel": true
+        }
+      ]
+    }
+  },
+  "sri-lanka": {
+    "pageContent": {
+      "country": "Sri Lanka",
+      "image": {
+        "src": "indonesie.jpg",
+        "alt": "Uitzicht Sri Lanka"
+      },
+      "title": "Indonesië",
+      "subTitle": "Waar gastvrijheid, cultuur, lekker eten en prachtige natuur allemaal samen komen.",
+      "intro": {
+        "bestSeason": "April - Oktober",
+        "currency": "Indonesische Rupiah",
+        "timeDifference": "6/7 uur",
+        "travelTime": "16 uur",
+        "title": "Reizen naar Indonesië",
+        "content": "Indonesië is echt onze favoriete reisbestemming! Je kunt hier alles vinden, van prachtige stranden tot groene jungles en van helderblauw water tot een interessante cultuur. Ook kan je ervoor kiezen om goedkoop te reizen, een mooie middenweg te nemen of uit te pakken met mega luxe verblijven. De bevolking is ontzettend gastvrij en behulpzaam en voor de Indische keuken kan je ons echt wakker maken. In de natuur kan je hier van alles vinden, denk aan watervallen, vulkanen, mooie uitzichtpunten en niet te vergeten: rijstvelden!"
+      }
+    },
+    "blogs": {
+      "sriLankaInfo": [
+        {
+          "id": 16,
+          "metaTitle": "",
+          "metaDesc": "",
+          "date": "15 april, 2025",
+          "href": "",
+          "coverImage": {
+            "src": "",
+            "alt": ""
+          },
+          "title": "",
+          "headers": ["", "", "", "", "", "", "", "", ""],
+          "content": {
+            "section1": {
+              "text": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            "section2": {
+              "text": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            "section3": {
+              "text": ""
+            }
+          },
+          "images": {
+            "src": {
+              "image1": "",
+              "image2": "",
+              "image3": "",
+              "image4": "",
+              "image5": "",
+              "image6": "",
+              "image7": "",
+              "image8": "",
+              "image9": "",
+              "image10": "",
+              "image11": "",
+              "image12": "",
+              "image13": "",
+              "image14": "",
+              "image15": "",
+              "image16": ""
+            },
+            "alt": {
+              "image1": "",
+              "image2": "",
+              "image3": "",
+              "image4": "",
+              "image5": "",
+              "image6": "",
+              "image7": "",
+              "image8": "",
+              "image9": "",
+              "image10": "",
+              "image11": "",
+              "image12": "",
+              "image13": "",
+              "image14": "",
+              "image15": "",
+              "image16": ""
+            }
+          }
         }
       ]
     }

@@ -6,12 +6,19 @@
     "image": "/_next/static/media/home.4771d7e1.webp",
     "fbAppID": "Home"
   },
-  "/indonesie": {
-    "title": "Reizen naar Indonesië",
-    "description": "Indonesië is een prachtige reisbestemming. Je kunt hier alles vinden, zoals prachtige stranden, groene jungles en een interessante cultuur.",
-    "url": "https://reisfeeld.nl/indonesie",
-    "image": "/_next/static/media/blogs.ad8ccf12.jpg",
-    "fbAppID": "Indonesië"
+  "/bestemmingen": {
+    "title": "",
+    "description": "",
+    "url": "https://reisfeeld.nl/bestemmingen",
+    "image": "",
+    "fbAppID": "",
+    "/indonesie": {
+      "title": "Reizen naar Indonesië",
+      "description": "Indonesië is een prachtige reisbestemming. Je kunt hier alles vinden, zoals prachtige stranden, groene jungles en een interessante cultuur.",
+      "url": "https://reisfeeld.nl/bestemmingen/indonesie",
+      "image": "/_next/static/media/blogs.ad8ccf12.jpg",
+      "fbAppID": "Indonesië"
+    }
   },
   "/accommodaties": {
     "title": "Slaap op de leukste plekken in Indonesië!",

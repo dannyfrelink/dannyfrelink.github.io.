@@ -22,7 +22,10 @@ const NextBlog: React.FC<NextBlogProps> = ({
   const imageAlt = blog.coverImage.alt;
 
   return (
-    <Link href={`/${country}/${blog.href}`} className="relative block">
+    <Link
+      href={`/bestemmingen/${country}/${blog.href}`}
+      className="relative block"
+    >
       <div className="absolute bottom-0 w-full rounded-2xl h-full opacity-60 bg-gradient-to-t from-gray-700 via-transparent via-80% to-gray-400"></div>
       <Image
         width={500}
