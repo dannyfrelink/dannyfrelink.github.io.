@@ -8,9 +8,12 @@ import LogoPrimary from "../../assets/logo/Logo-ReisFeeld-primary.svg";
 import Socials from "../pages/blogs/Socials";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import MenuDropdown from "../general/MenuDropdown";
+import { GetStaticProps } from "next";
 
 interface NavProps {
   textColor?: "black" | "primary";
+  countries: string[];
 }
 
 const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
@@ -60,15 +63,17 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
       onClick={handleClick}
       className={`z-[99] ${scrolled > 250 && scrolledUp && "fixed"} ${
         screenSize < 1000 &&
-        `fixed h-screen before:fixed before:w-screen before:bg-[#707070] before:opacity-75 ${
-          navOpen ? "left-0 before:inset-0" : "-left-[100vw]"
+        `fixed h-[100dvh] before:fixed before:w-[200vw] before:bg-[#707070] before:opacity-75 ${
+          navOpen
+            ? "left-0 before:inset-0 animate-[menuFadeIn_0.5s_ease-out_forwards] !block"
+            : "-left-[100vw]"
         }`
       }`}
     >
       <Link
-        className={`absolute z-[99] top-4 ${
+        className={`absolute z-[99] ${
           screenSize < 1000
-            ? `left-6 hidden ${navOpen && "!block"}`
+            ? `left-6 hidden bg-primary py-4 pr-10 ${navOpen && "!block"}`
             : `${scrolled > 250 && scrolledUp && "!fixed !top-3.5"} ${
                 screenSize < 1250 ? "left-[9vw]" : "left-[10vw]"
               }`
@@ -98,13 +103,19 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
         />
       </Link>
 
+      <CloseButton
+        className={`absolute top-6 right-4 cursor-pointer z-[99] text-black ${
+          screenSize >= 1000 && "hidden"
+        } ${navOpen && "animate-[menuFadeIn_0.5s_ease-out_forwards]"}`}
+        closeMenu={() => setNavOpen(false)}
+      />
+
       <ul
         className={`${
           screenSize < 1000
-            ? `w-[90vw] max-w-[400px] h-full rounded-r-3xl bg-primary pl-6 pr-4 pt-32 [&>li:not(:last-of-type)]:mb-6 [&>li:last-of-type]:mb-12 hidden ${
-                navOpen && "animate-[menuFadeIn_0.5s_ease-out_forwards] !block"
-              }`
-            : `flex before:top-0 before:inset-x-0 before:h-[4.5rem] before:z-[-1] [&_a:hover]:!text-[#729172] [&_a:focus]:!text-[#729172] ${
+            ? `w-[90vw] max-w-[400px] h-full rounded-r-3xl bg-primary pl-6 pr-4 pt-32 pb-14 [&>li:not(:last-of-type)]:mb-6 [&>li:last-of-type]:mb-12 hidden overflow-y-scroll 
+            ${navOpen && "animate-[menuFadeIn_0.5s_ease-out_forwards] !block"}`
+            : `flex before:top-0 before:inset-x-0 before:h-[4.5rem] before:z-[-1] [&_a:hover]:text-[#729172] [&_a:focus]:text-[#729172] ${
                 scrolled > 250 && scrolledUp
                   ? "fixed before:fixed top-[22px] before:bg-primary before:shadow-subtle"
                   : `absolute before:absolute top-7 ${
@@ -117,13 +128,6 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
               }`
         } text-black text-xl [&>li]:font-bold`}
       >
-        <CloseButton
-          className={`absolute top-6 right-4 cursor-pointer ${
-            screenSize >= 1000 && "hidden"
-          }`}
-          closeMenu={() => setNavOpen(false)}
-        />
-
         <li>
           <Link className={checkActive("/")} href="/">
             Home
@@ -131,12 +135,29 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
         </li>
 
         <li>
-          <Link
-            className={checkActive("/bestemmingen")}
-            href="/bestemmingen/indonesie"
-          >
-            Indonesië
-          </Link>
+          <MenuDropdown
+            items={{
+              title: "Bestemmingen",
+              href: "/bestemmingen",
+              boxContent: {
+                title: "Lorem Ipsum",
+                paragraph:
+                  "Est deleniti autem vel nulla vitae ea odit voluptatem et voluptatem voluptas non explicabo reiciendis ut esse ipsa eos ullam minus? Aut accusamus velit At provident quia et sint amet ex dolorem dolorem qui quos soluta.",
+              },
+              children: {
+                Azië: [
+                  {
+                    title: "Indonesië",
+                    route: "/bestemmingen/indonesie",
+                  },
+                  {
+                    title: "Sri Lanka",
+                    route: "/bestemmingen/sri-lanka",
+                  },
+                ],
+              },
+            }}
+          />
         </li>
 
         <li>
