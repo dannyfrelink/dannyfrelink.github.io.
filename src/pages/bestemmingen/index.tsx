@@ -80,6 +80,7 @@ const Destinations: React.FC<DestinationsProps> = ({ countries }) => {
 
             return (
               <Link
+                key={countryUrl}
                 href={`/bestemmingen/${countryUrl}`}
                 className={`relative ${
                   screenSize < 900
