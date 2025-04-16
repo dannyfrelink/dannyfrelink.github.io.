@@ -11,7 +11,7 @@ import {
 } from "@/helpers/dynamicImports";
 import { useAppContext } from "../config/AppContext";
 import HeaderImage from "../assets/header/home.webp";
-import AboutImage from "../assets/pages/about/couple.jpg";
+import AboutImage from "../assets/pages/about/couple.webp";
 import React from "react";
 import Image from "next/image";
 import { GetStaticProps } from "next";

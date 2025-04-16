@@ -1,5 +1,5 @@
 import HeaderImage from "../assets/header/about.webp";
-import AboutImage from "../assets/pages/about/couple.jpg";
+import AboutImage from "../assets/pages/about/couple.webp";
 import { useAppContext } from "../config/AppContext";
 import {
   Header,
@@ -105,7 +105,7 @@ const About: React.FC<AboutProps> = React.memo(() => {
               height={500}
               className={`w-full max-w-[500px] max-h-[400px] object-cover object-[50%_75%] mx-auto rounded-2xl shadow-subtle ${
                 screenSize >= 1250 &&
-                `mr-0 my-auto max-h-[500px] ${
+                `mr-0 my-auto h-[500px] max-h-[none] ${
                   screenSize < 1400 ? "ml-16" : "ml-16"
                 } `
               }`}
