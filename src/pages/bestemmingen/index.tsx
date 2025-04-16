@@ -50,16 +50,15 @@ const Destinations: React.FC<DestinationsProps> = ({ countries }) => {
       <Container className="text-center">
         <div className="max-w-[1000px] mx-auto">
           <H2 className={`${screenSize < 1250 ? "mb-4" : "mb-6"}`}>
-            Lorem ipsum soluica
+            De leukste reisbestemmingen
           </H2>
           <BaseText>
-            Lorem ipsum dolor sit amet. Id laboriosam impedit eum architecto
-            suscipit At omnis quaerat et iusto autem. Sit doloribus dolorem ut
-            libero eaque ut numquam beatae At vitae dignissimos ab nihil
-            consequatur! Lorem ipsum dolor sit amet. Id laboriosam impedit eum
-            architecto suscipit At omnis quaerat et iusto autem. Sit doloribus
-            dolorem ut libero eaque ut numquam beatae At vitae dignissimos ab
-            nihil consequatur!
+            De voorpret van je reis begint bij het uitkiezen van een bestemming.
+            Dit kan soms best lastig zijn, omdat er ontzettend veel keuze is en
+            je vaak ook rekening moet houden met bepaalde seizoenen. Om een
+            handje te helpen met het uitkiezen van de perfecte reisbestemming,
+            vind je op deze pagina verschillende reizen die wij hebben gemaakt
+            met al onze tips en tricks. Veel plezier met de voorpret!
           </BaseText>
         </div>
 
