@@ -55,10 +55,7 @@ const MenuDropdown: React.FC<MenuDropdownProps> = ({ items }) => {
         onMouseLeave={() => screenSize >= 1000 && toggle(false)}
       >
         {screenSize < 1000 ? (
-          <button
-            className={isOpen ? "text-[#729172]" : ""}
-            onClick={() => setIsOpen((old) => !old)}
-          >
+          <button onClick={() => setIsOpen((old) => !old)}>
             {items.title}{" "}
             <KeyboardArrowDownRoundedIcon
               className="!max-h-6 w-fit mb-1"
