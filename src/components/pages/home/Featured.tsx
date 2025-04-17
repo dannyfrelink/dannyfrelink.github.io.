@@ -57,7 +57,7 @@ const Featured: React.FC<FeaturedProps> = ({ blog }) => {
           </div>
           <BaseText className="max-w-[650px]">{blog.blog.featured}</BaseText>
 
-          <ButtonLink link={`/${blog.country}/${blog.blog.href}`}>
+          <ButtonLink link={`/bestemmingen/${blog.country}/${blog.blog.href}`}>
             Ontdek ervaring{" "}
             <ArrowForwardRoundedIcon
               fontSize={screenSize < 750 ? "small" : "medium"}
