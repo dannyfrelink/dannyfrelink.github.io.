@@ -40,7 +40,15 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
   }, [handleScroll]);
 
   const checkActive = (path: string) => {
-    return route == path ? "font-bold text-[#729172]" : "";
+    const activeState = "font-bold !text-[#729172]";
+
+    if (path === "/") {
+      return route == path ? activeState : "";
+    } else if (path.includes("[country]")) {
+      return path.includes(window.location.pathname) ? activeState : "";
+    } else {
+      return route.includes(path) ? activeState : "";
+    }
   };
 
   const handleClick = (e: any) => {
@@ -55,8 +63,6 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
       setNavOpen(false);
     }
   };
-
-  console.log("screenSize", screenSize);
 
   return (
     <nav
@@ -145,6 +151,7 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
 
         <li>
           <MenuDropdown
+            checkActive={checkActive}
             items={{
               title: "Bestemmingen",
               href: "/bestemmingen",

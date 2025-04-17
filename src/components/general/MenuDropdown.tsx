@@ -9,6 +9,7 @@ interface MenuDropdownChildrenProps {
 }
 
 interface MenuDropdownProps {
+  checkActive: (e: string) => void;
   items: {
     title: string;
     href: string;
@@ -22,7 +23,7 @@ interface MenuDropdownProps {
   };
 }
 
-const MenuDropdown: React.FC<MenuDropdownProps> = ({ items }) => {
+const MenuDropdown: React.FC<MenuDropdownProps> = ({ checkActive, items }) => {
   const { screenSize } = useAppContext();
   const navElementRef = useRef<HTMLInputElement>(null);
   const dropdownRef = useRef<HTMLInputElement>(null);
@@ -67,7 +68,9 @@ const MenuDropdown: React.FC<MenuDropdownProps> = ({ items }) => {
           <Link
             href={items.href}
             onMouseEnter={() => toggle(true)}
-            className={isOpen ? "text-[#729172]" : ""}
+            className={`${checkActive("/bestemmingen")} ${
+              isOpen ? "text-[#729172]" : ""
+            }`}
           >
             {items.title}{" "}
             <KeyboardArrowDownRoundedIcon
@@ -82,7 +85,7 @@ const MenuDropdown: React.FC<MenuDropdownProps> = ({ items }) => {
           <div className={`${isOpen ? "" : "hidden"}`}>
             <Link
               href={items.href}
-              className="underline block w-fit text-sm font-normal mt-2"
+              className={`underline block w-fit text-sm font-normal mt-2`}
             >
               Alle {items.title.toLowerCase()}
             </Link>
@@ -146,7 +149,9 @@ const MenuDropdown: React.FC<MenuDropdownProps> = ({ items }) => {
                     {menuItems.map((item: MenuDropdownChildrenProps) => (
                       <Link
                         key={item.route}
-                        className="text-black"
+                        className={`${checkActive(
+                          `[country]${item.route}`
+                        )} text-black`}
                         href={item.route}
                         onClick={() => toggle(false)}
                       >
