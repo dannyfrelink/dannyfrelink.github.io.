@@ -9,11 +9,9 @@ import Socials from "../pages/blogs/Socials";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import MenuDropdown from "../general/MenuDropdown";
-import { GetStaticProps } from "next";
 
 interface NavProps {
   textColor?: "black" | "primary";
-  countries: string[];
 }
 
 const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
@@ -58,24 +56,33 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
     }
   };
 
+  console.log("screenSize", screenSize);
+
   return (
     <nav
       onClick={handleClick}
-      className={`z-[99] ${scrolled > 250 && scrolledUp && "fixed"} ${
-        screenSize < 1000 &&
-        `fixed h-[100dvh] before:fixed before:w-[200vw] before:bg-[#707070] before:opacity-75 ${
-          navOpen
-            ? "left-0 before:inset-0 animate-[menuFadeIn_0.5s_ease-out_forwards] !block"
-            : "-left-[100vw]"
-        }`
+      className={`z-[99] ${
+        scrolled > 250 && scrolledUp && "!fixed top-0 inset-x-0 h-[4.5rem]"
+      } ${
+        screenSize < 1000
+          ? `fixed h-[100dvh] before:fixed before:w-[200vw] before:bg-[#707070] before:opacity-75 ${
+              navOpen
+                ? "left-0 before:inset-0 animate-[menuFadeIn_0.5s_ease-out_forwards] !block"
+                : "-left-[100vw]"
+            }`
+          : screenSize > 1500 && "relative max-w-[1400px] mx-auto"
       }`}
     >
       <Link
         className={`absolute z-[99] ${
           screenSize < 1000
             ? `left-6 hidden bg-primary py-4 pr-10 ${navOpen && "!block"}`
-            : `top-4 ${scrolled > 250 && scrolledUp && "!fixed !top-3.5"} ${
-                screenSize < 1250 ? "left-[9vw]" : "left-[10vw]"
+            : `top-4 ${scrolled > 250 && scrolledUp && "!absolute !top-3.5"} ${
+                screenSize < 1250
+                  ? "left-[9vw]"
+                  : screenSize <= 1600
+                  ? "left-[10vw]"
+                  : "left-[140px]"
               }`
         }`}
         href="/"
@@ -117,14 +124,16 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
             ${navOpen && "animate-[menuFadeIn_0.5s_ease-out_forwards] !block"}`
             : `flex before:top-0 before:inset-x-0 before:h-[4.5rem] before:z-[-1] [&_a:hover]:text-[#729172] [&_a:focus]:text-[#729172] ${
                 scrolled > 250 && scrolledUp
-                  ? "fixed before:fixed top-[22px] before:bg-primary before:shadow-subtle"
+                  ? `absolute before:fixed top-[22px] before:bg-primary before:shadow-subtle`
                   : `absolute before:absolute top-7 ${
                       textColor === "primary" && "text-primary"
                     }`
               } ${
                 screenSize < 1250
                   ? "right-[9vw] [&>li:not(:last-child)]:mr-6 [&>div]:mr-4"
-                  : "right-[10vw] [&>li:not(:last-child)]:mr-10 [&>div]:mr-8"
+                  : `[&>li:not(:last-child)]:mr-10 [&>div]:mr-8 ${
+                      screenSize <= 1600 ? "right-[10vw]" : "right-[140px]"
+                    }`
               }`
         } text-black text-xl [&>li]:font-bold`}
       >
