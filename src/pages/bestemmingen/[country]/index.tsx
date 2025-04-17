@@ -119,7 +119,14 @@ const BlogOverview: React.FC<BlogsProps> = React.memo(({ data, country }) => {
                   : "[&>*:not(:last-child)]:mb-4"
               }`}
             >
-              <BaseText>{pageContent.intro.content}</BaseText>
+              <div
+                className={`[&_a]:underline [&_a]:font-[500] ${
+                  screenSize < 750 ? "[&>p+p]:mt-3" : "[&>p+p]:mt-5"
+                }`}
+                dangerouslySetInnerHTML={{
+                  __html: pageContent.intro.content,
+                }}
+              ></div>
             </article>
           </section>
 
