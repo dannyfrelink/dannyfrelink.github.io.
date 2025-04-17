@@ -74,7 +74,7 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
         className={`absolute z-[99] ${
           screenSize < 1000
             ? `left-6 hidden bg-primary py-4 pr-10 ${navOpen && "!block"}`
-            : `${scrolled > 250 && scrolledUp && "!fixed !top-3.5"} ${
+            : `top-4 ${scrolled > 250 && scrolledUp && "!fixed !top-3.5"} ${
                 screenSize < 1250 ? "left-[9vw]" : "left-[10vw]"
               }`
         }`}
