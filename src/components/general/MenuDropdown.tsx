@@ -118,7 +118,7 @@ const MenuDropdown: React.FC<MenuDropdownProps> = ({ items }) => {
               isOpen ? "flex" : "hidden"
             }`}
           >
-            <div className="w-[30%] bg-secondary text-primary m-6 px-6 pt-8 pb-10 rounded-2xl">
+            <div className="w-[30%] bg-secondary text-primary m-6 px-6 pt-7 pb-9 rounded-2xl">
               <h2 className="text-xl">{items.boxContent.title}</h2>
               <p className="text-base font-normal my-3">
                 {items.boxContent.paragraph}

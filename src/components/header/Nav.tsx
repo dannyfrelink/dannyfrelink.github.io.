@@ -149,9 +149,9 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
               title: "Bestemmingen",
               href: "/bestemmingen",
               boxContent: {
-                title: "Lorem Ipsum",
+                title: "Inspriratie voor jouw volgende reis",
                 paragraph:
-                  "Est deleniti autem vel nulla vitae ea odit voluptatem et voluptatem voluptas non explicabo reiciendis ut esse ipsa eos ullam minus? Aut accusamus velit At provident quia et sint amet ex dolorem dolorem qui quos soluta.",
+                  "Alle reistips zijn geschreven vanuit onze eigen ervaringen. Hiermee hopen wij jou te helpen bij het plannen van je volgende reis met de leukste activiteiten, lekkere restaurantjes en handige weetjes!",
               },
               children: {
                 Azië: [
