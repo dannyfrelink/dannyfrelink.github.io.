@@ -45,7 +45,8 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
     if (path === "/") {
       return route == path ? activeState : "";
     } else if (path.includes("[country]")) {
-      return path.includes(window.location.pathname) ? activeState : "";
+      const newPath = path.split("[country]")[1];
+      return newPath == window.location.pathname ? activeState : "";
     } else {
       return route.includes(path) ? activeState : "";
     }
