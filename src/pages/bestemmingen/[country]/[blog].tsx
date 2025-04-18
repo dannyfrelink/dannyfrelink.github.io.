@@ -11,12 +11,13 @@ import React from "react";
 import Image from "next/image";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { BlogDataProps, BlogProps, MetadataProps } from "@/helpers/types";
+import { getRandomBlogs } from "@/helpers/getRandomBlogs";
 
 interface BlogPostProps {
   blog: BlogProps;
   allBlogs: BlogProps[];
   metaData: MetadataProps;
-  params: { country: string; blog: string };
+  params: { country: string };
 }
 
 const BlogPost: React.FC<BlogPostProps> = React.memo(
@@ -110,11 +111,28 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   const data: BlogDataProps = require("../../../data/blogs.json");
   const { blog } = params;
+  const { country } = params;
   const allBlogs: BlogProps[] = [];
-  Object.values(data[params?.country.toString()].blogs).map((blogs) =>
+  Object.values(data[country.toString()].blogs).map((blogs) =>
     blogs.map((blog) => allBlogs.push(blog))
   );
   const blogData = allBlogs.find((b) => b.href === blog);
+
+  if (allBlogs.length < 5) {
+    const newData = data;
+    Object.keys(newData).map((location) => {
+      if (location != country) {
+        const otherBlogs = newData[location].blogs;
+        const otherCountriesBlogs = Object.values(otherBlogs).map(
+          (blog) => blog[0]
+        );
+
+        allBlogs.push(
+          ...getRandomBlogs(otherCountriesBlogs, 5 - allBlogs.length)
+        );
+      }
+    });
+  }
 
   let metaImage = require(`../../../assets/pages/blogposts/${blogData?.coverImage.src}`);
   const metaData = {

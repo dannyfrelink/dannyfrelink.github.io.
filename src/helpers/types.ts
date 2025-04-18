@@ -22,6 +22,7 @@ export interface ImagesProps {
 
 export interface BlogProps {
   id: number;
+  country: string;
   metaTitle: string;
   metaDesc: string;
   date: string;

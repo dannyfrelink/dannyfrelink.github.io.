@@ -21,6 +21,10 @@ const NextBlog: React.FC<NextBlogProps> = ({
   const imageSrc = require(`../../../assets/pages/blogposts/${blog.coverImage.src}`);
   const imageAlt = blog.coverImage.alt;
 
+  if (country != blog.country) {
+    country = blog.country;
+  }
+
   return (
     <Link
       href={`/bestemmingen/${country}/${blog.href}`}
