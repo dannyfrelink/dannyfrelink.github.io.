@@ -67,8 +67,11 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
   return (
     <nav
       onClick={handleClick}
-      className={`z-[99] ${
-        scrolled > 250 && scrolledUp && "!fixed top-0 inset-x-0 h-[4.5rem]"
+      className={`z-[97] ${
+        scrolled > 250 &&
+        scrolledUp &&
+        !navOpen &&
+        `!fixed top-0 inset-x-0 h-[4.5rem]`
       } ${
         screenSize < 1000
           ? `fixed h-[100dvh] before:fixed before:w-[200vw] before:bg-[#707070] before:opacity-75 ${
@@ -117,9 +120,11 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
       </Link>
 
       <CloseButton
-        className={`absolute top-6 right-4 cursor-pointer z-[99] text-black ${
-          screenSize >= 1000 && "hidden"
-        } ${navOpen && "animate-[menuFadeIn_0.5s_ease-out_forwards]"}`}
+        className={` ${
+          navOpen && "absolute top-6 right-4"
+        } cursor-pointer z-[99] text-black ${screenSize >= 1000 && "hidden"} ${
+          navOpen && "animate-[menuFadeIn_0.5s_ease-out_forwards]"
+        }`}
         closeMenu={() => setNavOpen(false)}
       />
 
