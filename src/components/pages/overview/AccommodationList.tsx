@@ -1,7 +1,7 @@
 import React from "react";
 import H3 from "../../typography/H3";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
-import { AccommodationsData } from "../../../pages/accommodaties";
+import { AccommodationsData } from "../../../pages/accommodaties/[country]";
 import BaseText from "../../typography/BaseText";
 import { useAppContext } from "../../../config/AppContext";
 import ListOverview from "./ListOverview";

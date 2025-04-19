@@ -14,7 +14,6 @@ import Link from "next/link";
 import React from "react";
 import HeaderImage from "../../assets/header/destinations.webp";
 import { useAppContext } from "@/config/AppContext";
-import { Dvr } from "@mui/icons-material";
 
 interface CountryProps {
   [country: string]: {

@@ -1,5 +1,18 @@
 {
-  "accommodations": {
+  "indonesie": {
+    "pageContent": {
+      "country": "Indonesië",
+      "image": {
+        "src": "indonesie.jpg",
+        "alt": "Rijstvelden Ubud Indonesië"
+      },
+      "title": "Indonesië",
+      "subTitle": "",
+      "intro": {
+        "title": "Accommodatie tips in Indonesië!",
+        "content": "<p class='countryInfo'>Zelf speuren wij altijd het internet af om op zoek te gaan naar de mooiste verblijven. Soms zoeken wij meer budget opties en af en toe verblijven we op een plek die wat duurder is. In Indonesië kan je echt van alles vinden: een guesthouse met lieve eigenaren, een luxe privé villa en alles wat hier tussenin zit. Een ding is zeker, al deze verblijven hebben onze ervaring een stukje mooier gemaakt. Wij hebben al op heel wat plekken verbleven en onze aanraders kan je op deze pagina vinden.</p><p class='countryInfo'>Omdat Indonesië tegenwoordig heel populair is, is het verstandig van tevoren wat accommodaties vast te leggen. Dit kan vaak met gratis annulering, waardoor je altijd nog je plannen kan wijzigen.</p>"
+      }
+    },
     "Canggu (Bali)": [
       {
         "image": {
@@ -290,6 +303,66 @@
       }
     ],
     "Labuan Bajo (Flores)": [
+      {
+        "image": {
+          "src": "seaesta-komodo-flores.JPG",
+          "alt": "Seaesta Komodo Hotel & Hostel Accommodatie Labuan Bajo Flores"
+        },
+        "name": "Seaesta Komodo Hotel & Hostel",
+        "description": "Dit hostel zit vol met mensen die de Komodo tour gaan doen of hiervan terugkomen. Je kan hier slapen in dorms, maar ook in privé kamers (daar zijn de prijzen op gebasseerd). Je hebt hier alles wat je nodig hebt, een zwembad, lekker restaurant en zelfs een sportschool. Dit hotel is echt heel fijn en krijgt van ons een dikke 10!",
+        "prices": {
+          "high": 65,
+          "low": 60
+        },
+        "link": "https://www.jdoqocy.com/click-101138205-15734897?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Fseaesta-komodo.nl.html%3Faid%3D843227%26label%3Dahangama%26sid%3Daa1d624b677218438c02d0e5d3049076%26all_sr_blocks%3D508337904_288799424_0_0_0_460956%252C508337904_288799424_0_0_0_460956%26checkin%3D2025-03-15%26checkout%3D2025-03-19%26dest_id%3D5083379%26dest_type%3Dhotel%26dist%3D0%26group_adults%3D2%26group_children%3D0%26hapos%3D1%26highlighted_blocks%3D508337904_288799424_0_0_0_460956%252C508337904_288799424_0_0_0_460956%26hpos%3D1%26matching_block_id%3D508337904_288799424_0_0_0_460956%26no_rooms%3D1%26req_adults%3D2%26req_children%3D0%26room1%3DA%252CA%26sb_price_type%3Dtotal%26sr_order%3Dpopularity%26sr_pri_blocks%3D508337904_288799424_0_0_0_460956_89010000%252C508337904_288799424_0_0_0_460956_89010000%26srepoch%3D1741342568%26srpvid%3D9201483130e1000a%26type%3Dtotal%26ucfs%3D1%26%23hotelTmpl"
+      }
+    ]
+  },
+  "sri-lanka": {
+    "pageContent": {
+      "country": "Sri Lanka",
+      "image": {
+        "src": "sri-lanka.jpg",
+        "alt": "Lion Rock Sigiriya Sri Lanka"
+      },
+      "title": "Sri Lanka",
+      "subTitle": "",
+      "intro": {
+        "title": "",
+        "content": ""
+      }
+    },
+    "Ella": [
+      {
+        "image": {
+          "src": "seaesta-komodo-flores.JPG",
+          "alt": "Seaesta Komodo Hotel & Hostel Accommodatie Labuan Bajo Flores"
+        },
+        "name": "Seaesta Komodo Hotel & Hostel",
+        "description": "Dit hostel zit vol met mensen die de Komodo tour gaan doen of hiervan terugkomen. Je kan hier slapen in dorms, maar ook in privé kamers (daar zijn de prijzen op gebasseerd). Je hebt hier alles wat je nodig hebt, een zwembad, lekker restaurant en zelfs een sportschool. Dit hotel is echt heel fijn en krijgt van ons een dikke 10!",
+        "prices": {
+          "high": 65,
+          "low": 60
+        },
+        "link": "https://www.jdoqocy.com/click-101138205-15734897?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Fseaesta-komodo.nl.html%3Faid%3D843227%26label%3Dahangama%26sid%3Daa1d624b677218438c02d0e5d3049076%26all_sr_blocks%3D508337904_288799424_0_0_0_460956%252C508337904_288799424_0_0_0_460956%26checkin%3D2025-03-15%26checkout%3D2025-03-19%26dest_id%3D5083379%26dest_type%3Dhotel%26dist%3D0%26group_adults%3D2%26group_children%3D0%26hapos%3D1%26highlighted_blocks%3D508337904_288799424_0_0_0_460956%252C508337904_288799424_0_0_0_460956%26hpos%3D1%26matching_block_id%3D508337904_288799424_0_0_0_460956%26no_rooms%3D1%26req_adults%3D2%26req_children%3D0%26room1%3DA%252CA%26sb_price_type%3Dtotal%26sr_order%3Dpopularity%26sr_pri_blocks%3D508337904_288799424_0_0_0_460956_89010000%252C508337904_288799424_0_0_0_460956_89010000%26srepoch%3D1741342568%26srpvid%3D9201483130e1000a%26type%3Dtotal%26ucfs%3D1%26%23hotelTmpl"
+      }
+    ],
+    "Sigiriya": [
+      {
+        "image": {
+          "src": "seaesta-komodo-flores.JPG",
+          "alt": "Seaesta Komodo Hotel & Hostel Accommodatie Labuan Bajo Flores"
+        },
+        "name": "Seaesta Komodo Hotel & Hostel",
+        "description": "Dit hostel zit vol met mensen die de Komodo tour gaan doen of hiervan terugkomen. Je kan hier slapen in dorms, maar ook in privé kamers (daar zijn de prijzen op gebasseerd). Je hebt hier alles wat je nodig hebt, een zwembad, lekker restaurant en zelfs een sportschool. Dit hotel is echt heel fijn en krijgt van ons een dikke 10!",
+        "prices": {
+          "high": 65,
+          "low": 60
+        },
+        "link": "https://www.jdoqocy.com/click-101138205-15734897?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Fseaesta-komodo.nl.html%3Faid%3D843227%26label%3Dahangama%26sid%3Daa1d624b677218438c02d0e5d3049076%26all_sr_blocks%3D508337904_288799424_0_0_0_460956%252C508337904_288799424_0_0_0_460956%26checkin%3D2025-03-15%26checkout%3D2025-03-19%26dest_id%3D5083379%26dest_type%3Dhotel%26dist%3D0%26group_adults%3D2%26group_children%3D0%26hapos%3D1%26highlighted_blocks%3D508337904_288799424_0_0_0_460956%252C508337904_288799424_0_0_0_460956%26hpos%3D1%26matching_block_id%3D508337904_288799424_0_0_0_460956%26no_rooms%3D1%26req_adults%3D2%26req_children%3D0%26room1%3DA%252CA%26sb_price_type%3Dtotal%26sr_order%3Dpopularity%26sr_pri_blocks%3D508337904_288799424_0_0_0_460956_89010000%252C508337904_288799424_0_0_0_460956_89010000%26srepoch%3D1741342568%26srpvid%3D9201483130e1000a%26type%3Dtotal%26ucfs%3D1%26%23hotelTmpl"
+      }
+    ],
+    "Hiriketiya": [
       {
         "image": {
           "src": "seaesta-komodo-flores.JPG",

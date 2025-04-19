@@ -12,20 +12,41 @@
     "url": "https://reisfeeld.nl/bestemmingen",
     "image": "",
     "fbAppID": "",
-    "/indonesie": {
+    "indonesie": {
       "title": "Reizen naar Indonesië",
       "description": "Indonesië is een prachtige reisbestemming. Je kunt hier alles vinden, zoals prachtige stranden, groene jungles en een interessante cultuur.",
       "url": "https://reisfeeld.nl/bestemmingen/indonesie",
       "image": "/_next/static/media/blogs.ad8ccf12.jpg",
       "fbAppID": "Indonesië"
+    },
+    "sri-lanka": {
+      "title": "",
+      "description": "",
+      "url": "https://reisfeeld.nl/bestemmingen/sri-lanka",
+      "image": "",
+      "fbAppID": ""
     }
   },
   "/accommodaties": {
-    "title": "Slaap op de leukste plekken in Indonesië!",
-    "description": "In Indonesië kan je echt van alles vinden: een guesthouse met lieve eigenaren, een luxe privé villa en alles wat hier tussenin zit.",
+    "title": "",
+    "description": "",
     "url": "https://reisfeeld.nl/accommodaties",
     "image": "/_next/static/media/accommodations.45a96198.jpg",
-    "fbAppID": "Accommodaties"
+    "fbAppID": "",
+    "indonesie": {
+      "title": "Slaap op de leukste plekken in Indonesië!",
+      "description": "In Indonesië kan je echt van alles vinden: een guesthouse met lieve eigenaren, een luxe privé villa en alles wat hier tussenin zit.",
+      "url": "https://reisfeeld.nl/accommodaties/indonesie",
+      "image": "/_next/static/media/accommodations.45a96198.jpg",
+      "fbAppID": "Accommodaties Indonesië"
+    },
+    "sri-lanka": {
+      "title": "",
+      "description": "",
+      "url": "https://reisfeeld.nl/accommodaties/sri-lanka",
+      "image": "",
+      "fbAppID": ""
+    }
   },
   "/over-ons": {
     "title": "Reisfeeld | Over ons",
