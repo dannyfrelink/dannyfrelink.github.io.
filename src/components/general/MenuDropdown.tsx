@@ -68,7 +68,7 @@ const MenuDropdown: React.FC<MenuDropdownProps> = ({ checkActive, items }) => {
           <Link
             href={items.href}
             onMouseEnter={() => toggle(true)}
-            className={`${checkActive("/bestemmingen")} ${
+            className={`${checkActive(items.href)} ${
               isOpen ? "text-[#729172]" : ""
             }`}
           >

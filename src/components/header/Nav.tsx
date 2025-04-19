@@ -86,7 +86,7 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
       <Link
         className={`absolute z-[99] ${
           screenSize < 1000
-            ? `left-6 hidden bg-primary py-4 pr-10 ${navOpen && "!block"}`
+            ? `left-6 hidden bg-primary py-4 pr-20 ${navOpen && "!block"}`
             : `top-4 ${scrolled > 250 && scrolledUp && "!absolute !top-3.5"} ${
                 screenSize < 1250
                   ? "left-[9vw]"
@@ -183,9 +183,30 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
         </li>
 
         <li>
-          <Link className={checkActive("/accommodaties")} href="/accommodaties">
-            Accommodaties
-          </Link>
+          <MenuDropdown
+            checkActive={checkActive}
+            items={{
+              title: "Accommodaties",
+              href: "/accommodaties",
+              boxContent: {
+                title: "Lorem Ipsum",
+                paragraph:
+                  "Lorem ipsum dolor sit amet. Et vero distinctio ut ullam voluptatem ut quibusdam eaque hic praesentium fuga qui omnis internos et consequuntur voluptatem.",
+              },
+              children: {
+                Azië: [
+                  {
+                    title: "Indonesië",
+                    route: "/accommodaties/indonesie",
+                  },
+                  {
+                    title: "Sri Lanka",
+                    route: "/accommodaties/sri-lanka",
+                  },
+                ],
+              },
+            }}
+          />
         </li>
         <li>
           <Link className={checkActive("/over-ons")} href="/over-ons">

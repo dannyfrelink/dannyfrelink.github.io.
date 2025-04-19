@@ -201,7 +201,7 @@ export const getStaticProps: GetStaticProps<BlogsProps> = async ({
   return {
     props: {
       data,
-      metaData: allMetaData["/bestemmingen"]["/indonesie"],
+      metaData: allMetaData["/bestemmingen"][country.toString()],
       country,
     },
   };

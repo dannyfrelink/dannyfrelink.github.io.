@@ -126,7 +126,7 @@ export const getStaticProps: GetStaticProps<AccommodationsProps> = async ({
   return {
     props: {
       data,
-      metaData: allMetaData["/accommodaties"][`${country}`],
+      metaData: allMetaData["/accommodaties"][country.toString()],
       country,
     },
   };
