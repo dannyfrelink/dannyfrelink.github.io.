@@ -68,7 +68,7 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
   return (
     <nav
       onClick={handleClick}
-      className={`z-[97] ${
+      className={`z-[97] ${navOpen && "z-[99]"} ${
         scrolled > 250 &&
         scrolledUp &&
         !navOpen &&
