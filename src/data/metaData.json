@@ -7,8 +7,8 @@
     "fbAppID": "Home"
   },
   "/bestemmingen": {
-    "title": "",
-    "description": "",
+    "title": "Leukste reisbestemmingen: tips en inspiratie voor jouw reis",
+    "description": "Op zoek naar de perfecte reisbestemming? Ontdek onze favoriete vakantiebestemmingen met waardevolle reistips en ervaringen. Vind jouw volgende reisbestemming!",
     "url": "https://reisfeeld.nl/bestemmingen",
     "image": "/_next/static/media/destinations.a57dce33.webp",
     "fbAppID": "Blog Bestemmingen",
@@ -20,16 +20,16 @@
       "fbAppID": "Blogs Indonesië"
     },
     "sri-lanka": {
-      "title": "",
-      "description": "",
+      "title": "Reizen naar Sri Lanka: tips en inspiratie voor jouw reis",
+      "description": "Ontdek waarom Sri Lanka een prachtige reisbestemming is! Mooie natuur, leuke activiteiten en heerlijk eten. Lees alles wat je moet weten voor jouw reis.",
       "url": "https://reisfeeld.nl/bestemmingen/sri-lanka",
       "image": "/_next/static/media/sri-lanka.6d6fc5a1.jpg",
       "fbAppID": "Blogs Sri Lanka"
     }
   },
   "/accommodaties": {
-    "title": "",
-    "description": "",
+    "title": "Onze favoriete accommodaties: fijne en betaalbare verblijven",
+    "description": "Op zoek naar de mooiste accommodaties? Wij delen onze favoriete verblijven. Budgetopties en unieke plekken op goede locaties. Schoon en met liefde uitgekozen!",
     "url": "https://reisfeeld.nl/accommodaties",
     "image": "/_next/static/media/cover.bed930a9.webp",
     "fbAppID": "Accommodatiepagina",
@@ -41,8 +41,8 @@
       "fbAppID": "Accommodaties Indonesië"
     },
     "sri-lanka": {
-      "title": "",
-      "description": "",
+      "title": "Leuke accommodaties in Sri Lanka: comfortabel en betaalbaar",
+      "description": "Op zoek naar leuke accommodaties in Sri Lanka? Bekijk onze favoriete verblijven op goede locaties. Betaalbare verblijven en schone accommodaties.",
       "url": "https://reisfeeld.nl/accommodaties/sri-lanka",
       "image": "/_next/static/media/sri-lanka.89ba6275.jpg",
       "fbAppID": "Accommodaties Sri Lanka"
