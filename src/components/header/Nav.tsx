@@ -189,9 +189,9 @@ const Nav: React.FC<NavProps> = ({ textColor = "primary" }) => {
               title: "Accommodaties",
               href: "/accommodaties",
               boxContent: {
-                title: "Lorem Ipsum",
+                title: "Onze favoriete plekken om te overnachten",
                 paragraph:
-                  "Lorem ipsum dolor sit amet. Et vero distinctio ut ullam voluptatem ut quibusdam eaque hic praesentium fuga qui omnis internos et consequuntur voluptatem.",
+                  "Voordat wij naar een reisbestemming gaan, doen wij uitgebreid onderzoek naar de leukste plekken om te slapen. Met onze accommodaties tips weet je zeker dat je goed zit!",
               },
               children: {
                 Azië: [

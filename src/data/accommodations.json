@@ -7,16 +7,15 @@
         "alt": "Rijstvelden Ubud Indonesië"
       },
       "title": "Indonesië",
-      "subTitle": "",
       "intro": {
-        "title": "Accommodatie tips in Indonesië!",
-        "content": "<p class='countryInfo'>Zelf speuren wij altijd het internet af om op zoek te gaan naar de mooiste verblijven. Soms zoeken wij meer budget opties en af en toe verblijven we op een plek die wat duurder is. In Indonesië kan je echt van alles vinden: een guesthouse met lieve eigenaren, een luxe privé villa en alles wat hier tussenin zit. Een ding is zeker, al deze verblijven hebben onze ervaring een stukje mooier gemaakt. Wij hebben al op heel wat plekken verbleven en onze aanraders kan je op deze pagina vinden.</p><p class='countryInfo'>Omdat Indonesië tegenwoordig heel populair is, is het verstandig van tevoren wat accommodaties vast te leggen. Dit kan vaak met gratis annulering, waardoor je altijd nog je plannen kan wijzigen.</p>"
+        "title": "Accommodaties in Indonesië!",
+        "content": "<p class='countryInfo'>In Indonesië kan je echt van alles vinden: een guesthouse met lieve eigenaren, een luxe privé villa en alles wat hier tussenin zit. Overnachten in Indonesië kan dan ook vrij goedkoop, maar je kan ook zeker uitpakken en kiezen voor een duurder verblijf. Wij zijn inmiddels al 4 keer in Indonesië geweest, waaronder één keer een half jaar, en hebben heel veel accommodaties kunnen ontdekken. Onze favoriete verblijven in Indonesië kan je op deze pagina vinden.</p><p class='countryInfo'>Tip: Omdat Indonesië tegenwoordig heel populair is, is het verstandig van tevoren wat accommodaties vast te leggen. Dit kan vaak met gratis annulering, waardoor je altijd nog je plannen kan wijzigen.</p>"
       }
     },
     "Canggu (Bali)": [
       {
         "image": {
-          "src": "the-kamare-canggu.jpg",
+          "src": "indonesie/the-kamare-canggu.jpg",
           "alt": "The Kamare Accommodatie Canggu Bali"
         },
         "name": "The Kamare",
@@ -29,7 +28,7 @@
       },
       {
         "image": {
-          "src": "frangipani-canggu.jpeg",
+          "src": "indonesie/frangipani-canggu.jpeg",
           "alt": "Frangipani House and Spa Accommodatie Canggu Bali"
         },
         "name": "Frangipani House and Spa",
@@ -42,7 +41,7 @@
       },
       {
         "image": {
-          "src": "sense-canggu.jpg",
+          "src": "indonesie/sense-canggu.jpg",
           "alt": "Sense Canggu Beach Hotel Accommodatie Bali"
         },
         "name": "Sense Canggu Beach Hotel",
@@ -55,7 +54,7 @@
       },
       {
         "image": {
-          "src": "turtle-villas-canggu.jpg",
+          "src": "indonesie/turtle-villas-canggu.jpg",
           "alt": "Turtle Villas Accommodatie Canggu Bali"
         },
         "name": "Turtle Villas",
@@ -68,7 +67,7 @@
       },
       {
         "image": {
-          "src": "suksma-guesthouse-canggu.JPG",
+          "src": "indonesie/suksma-guesthouse-canggu.JPG",
           "alt": "Suksma Guest House Accommodatie Canggu Bali"
         },
         "name": "Suksma Guest House",
@@ -81,7 +80,7 @@
       },
       {
         "image": {
-          "src": "the-jangkar-canggu.JPG",
+          "src": "indonesie/the-jangkar-canggu.JPG",
           "alt": "The Jangkar Canggu Accommodatie Bali"
         },
         "name": "The Jangkar Canggu",
@@ -96,7 +95,7 @@
     "Ubud (Bali)": [
       {
         "image": {
-          "src": "queen-at-gunung-sari-ubud.jpg",
+          "src": "indonesie/queen-at-gunung-sari-ubud.jpg",
           "alt": "Queen at Gunung Sari Accommodatie Ubud Bali"
         },
         "name": "Queen at Gunung Sari",
@@ -109,7 +108,7 @@
       },
       {
         "image": {
-          "src": "athaya-ubud.jpg",
+          "src": "indonesie/athaya-ubud.jpg",
           "alt": "Athaya Ubud Accommodatie Bali"
         },
         "name": "Athaya Ubud",
@@ -124,7 +123,7 @@
     "Seminyak (Bali)": [
       {
         "image": {
-          "src": "bali-karma-sajtra-seminyak.jpeg",
+          "src": "indonesie/bali-karma-sajtra-seminyak.jpeg",
           "alt": "Bali Karma Sajtra Hotel Accommodatie Seminyak Bali"
         },
         "name": "Bali Karma Sajtra Hotel",
@@ -137,7 +136,7 @@
       },
       {
         "image": {
-          "src": "kamaniiya-seminyak.jpeg",
+          "src": "indonesie/kamaniiya-seminyak.jpeg",
           "alt": "Kamaniiya Petitenget Seminyak Accommodatie Bali"
         },
         "name": "Kamaniiya Petitenget Seminyak",
@@ -152,7 +151,7 @@
     "Amed (Bali)": [
       {
         "image": {
-          "src": "villa-adi-amed.jpg",
+          "src": "indonesie/villa-adi-amed.jpg",
           "alt": "Villa Adi Accommodatie Amed Bali"
         },
         "name": "Villa Adi",
@@ -165,7 +164,7 @@
       },
       {
         "image": {
-          "src": "mejore-beach-hotel-amed.jpg",
+          "src": "indonesie/mejore-beach-hotel-amed.jpg",
           "alt": "Mejore Beach Hotel Accommodatie Amed Bali"
         },
         "name": "Mejore Beach Hotel",
@@ -180,7 +179,7 @@
     "Nusa Lembongan": [
       {
         "image": {
-          "src": "dpuncak-villas-nusa-lembongan.jpg",
+          "src": "indonesie/dpuncak-villas-nusa-lembongan.jpg",
           "alt": "D'Puncak Villas Nusa Lembongan Accommodatie"
         },
         "name": "D'Puncak Villas Lembongan",
@@ -193,7 +192,7 @@
       },
       {
         "image": {
-          "src": "the-parnas-nusa-lembongan.webp",
+          "src": "indonesie/the-parnas-nusa-lembongan.webp",
           "alt": "The Parnas Accommodatie Nusa Lembongan"
         },
         "name": "The Parnas",
@@ -206,7 +205,7 @@
       },
       {
         "image": {
-          "src": "garden-cottage-nusa-lembongan.webp",
+          "src": "indonesie/garden-cottage-nusa-lembongan.webp",
           "alt": "Garden Cottage Nusa Lembongan & Hostel Accommodatie"
         },
         "name": "Lembongan Garden Cottages",
@@ -221,7 +220,7 @@
     "Nusa Penida": [
       {
         "image": {
-          "src": "singabu-bungalows.jpeg",
+          "src": "indonesie/singabu-bungalows.jpeg",
           "alt": "Singabu Bungalows Accommodatie Nusa Penida"
         },
         "name": "Singabu Bungalows",
@@ -236,7 +235,7 @@
     "Gili eilanden": [
       {
         "image": {
-          "src": "royal-regantris-gili-trawangan.jpeg",
+          "src": "indonesie/royal-regantris-gili-trawangan.jpeg",
           "alt": "Royal Regantris Gili Trawangan Accommodatie"
         },
         "name": "Royal Regantris Trawangan",
@@ -249,7 +248,7 @@
       },
       {
         "image": {
-          "src": "villa-pine-tree.jpeg",
+          "src": "indonesie/villa-pine-tree.jpeg",
           "alt": "Villa Pine Tree Accommodatie Gili Trawangan"
         },
         "name": "Villa Pine Tree",
@@ -262,7 +261,7 @@
       },
       {
         "image": {
-          "src": "jago-gili-air.JPG",
+          "src": "indonesie/jago-gili-air.JPG",
           "alt": "Jago Gili Air Accommodatie"
         },
         "name": "Jago Gili Air",
@@ -277,7 +276,7 @@
     "Kuta (Lombok)": [
       {
         "image": {
-          "src": "el-tropico-kuta-lombok.jpeg",
+          "src": "indonesie/el-tropico-kuta-lombok.jpeg",
           "alt": "El Tropico Boutique Hotel Accommodatie Kuta Lombok"
         },
         "name": "El Tropico Boutique Hotel",
@@ -290,7 +289,7 @@
       },
       {
         "image": {
-          "src": "the-habitat-villas-lombok.JPG",
+          "src": "indonesie/the-habitat-villas-lombok.JPG",
           "alt": "The Habitat Villas & Hotel Accommodatie Kuta Lombok"
         },
         "name": "The Habitat Villas & Hotel",
@@ -305,7 +304,7 @@
     "Labuan Bajo (Flores)": [
       {
         "image": {
-          "src": "seaesta-komodo-flores.JPG",
+          "src": "indonesie/seaesta-komodo-flores.JPG",
           "alt": "Seaesta Komodo Hotel & Hostel Accommodatie Labuan Bajo Flores"
         },
         "name": "Seaesta Komodo Hotel & Hostel",
@@ -326,55 +325,99 @@
         "alt": "Lion Rock Sigiriya Sri Lanka"
       },
       "title": "Sri Lanka",
-      "subTitle": "",
       "intro": {
-        "title": "",
-        "content": ""
+        "title": "Accommodaties in Sri Lanka!",
+        "content": "<p class='countryInfo'>Ga je op reis naar Sri Lanka en wil je verblijven in mooie, comfortabele en betaalbare accommodaties? Wij verbleven in verschillende accommodaties en hebben onze favoriete verblijven voor jullie op een rijtje gezet. Wij kiezen altijd voor een schone accommodatie met een fijne ligging. Veel accommodaties in Sri Lanka zijn erg populair en snel volgeboekt (vooral in het hoogseizoen), dus zorg ervoor dat je op tijd je verblijf boekt. Vaak kan dit met gratis annulering, dus mochten je plannen veranderen, is dat geen probleem!</p>"
       }
     },
     "Ella": [
       {
         "image": {
-          "src": "seaesta-komodo-flores.JPG",
-          "alt": "Seaesta Komodo Hotel & Hostel Accommodatie Labuan Bajo Flores"
+          "src": "sri-lanka/sky-garden-ella.jpg",
+          "alt": "Sky Garden Ella Accommodatie Sri Lanka"
         },
-        "name": "Seaesta Komodo Hotel & Hostel",
-        "description": "Dit hostel zit vol met mensen die de Komodo tour gaan doen of hiervan terugkomen. Je kan hier slapen in dorms, maar ook in privé kamers (daar zijn de prijzen op gebasseerd). Je hebt hier alles wat je nodig hebt, een zwembad, lekker restaurant en zelfs een sportschool. Dit hotel is echt heel fijn en krijgt van ons een dikke 10!",
+        "name": "Sky Garden Ella",
+        "description": "Een betaalbaar guesthouse in Sri Lanka met een ontzettend lieve familie! Deze accommodatie voelde als thuiskomen in een warm bad. De kamers hebben geen airco, maar in Ella is het niet erg warm, dus dit was zeker niet nodig. Het ontbijt zit inbegrepen en is fantastisch! Het verblijf ligt op 10 minuten lopen van het centrum en restaurantjes zitten om de hoek.",
         "prices": {
-          "high": 65,
-          "low": 60
+          "high": 45,
+          "low": 45
         },
-        "link": "https://www.jdoqocy.com/click-101138205-15734897?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Fseaesta-komodo.nl.html%3Faid%3D843227%26label%3Dahangama%26sid%3Daa1d624b677218438c02d0e5d3049076%26all_sr_blocks%3D508337904_288799424_0_0_0_460956%252C508337904_288799424_0_0_0_460956%26checkin%3D2025-03-15%26checkout%3D2025-03-19%26dest_id%3D5083379%26dest_type%3Dhotel%26dist%3D0%26group_adults%3D2%26group_children%3D0%26hapos%3D1%26highlighted_blocks%3D508337904_288799424_0_0_0_460956%252C508337904_288799424_0_0_0_460956%26hpos%3D1%26matching_block_id%3D508337904_288799424_0_0_0_460956%26no_rooms%3D1%26req_adults%3D2%26req_children%3D0%26room1%3DA%252CA%26sb_price_type%3Dtotal%26sr_order%3Dpopularity%26sr_pri_blocks%3D508337904_288799424_0_0_0_460956_89010000%252C508337904_288799424_0_0_0_460956_89010000%26srepoch%3D1741342568%26srpvid%3D9201483130e1000a%26type%3Dtotal%26ucfs%3D1%26%23hotelTmpl"
+        "link": "https://www.anrdoezrs.net/click-101138205-15734897?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Flk%2Fsky-garden-ella.nl.html%3Faid%3D843227%26label%3Dahangama%26sid%3Daa1d624b677218438c02d0e5d3049076%26all_sr_blocks%3D318357501_407117756_2_1_0%26checkin%3D2025-07-02%26checkout%3D2025-07-03%26dest_id%3D3183575%26dest_type%3Dhotel%26dist%3D0%26group_adults%3D2%26group_children%3D0%26hapos%3D1%26highlighted_blocks%3D318357501_407117756_2_1_0%26hpos%3D1%26matching_block_id%3D318357501_407117756_2_1_0%26no_rooms%3D1%26req_adults%3D2%26req_children%3D0%26room1%3DA%252CA%26sb_price_type%3Dtotal%26sr_order%3Dpopularity%26sr_pri_blocks%3D318357501_407117756_2_1_0__5000%26srepoch%3D1745507812%26srpvid%3D90126b7125f901b3%26type%3Dtotal%26ucfs%3D1%26%23hotelTmpl"
       }
     ],
     "Sigiriya": [
       {
         "image": {
-          "src": "seaesta-komodo-flores.JPG",
-          "alt": "Seaesta Komodo Hotel & Hostel Accommodatie Labuan Bajo Flores"
+          "src": "sri-lanka/goddess-garden-sigiriya.jpg",
+          "alt": "Goddess Garden Sigiriya Accommodatie Sri Lanka"
         },
-        "name": "Seaesta Komodo Hotel & Hostel",
-        "description": "Dit hostel zit vol met mensen die de Komodo tour gaan doen of hiervan terugkomen. Je kan hier slapen in dorms, maar ook in privé kamers (daar zijn de prijzen op gebasseerd). Je hebt hier alles wat je nodig hebt, een zwembad, lekker restaurant en zelfs een sportschool. Dit hotel is echt heel fijn en krijgt van ons een dikke 10!",
+        "name": "Goddess Garden Sigiriya",
+        "description": "Een hotel midden in de natuur met een heerlijk zwembad, dan zit je hier aan het goede adres! Het hotel ligt op ongeveer 15 minuten rijden van het centrum van Sigiriya en is een oase van rust. De kamers zijn heel erg groot, schoon en je kan hier genieten van een goede nachtrust.",
         "prices": {
-          "high": 65,
-          "low": 60
+          "high": 30,
+          "low": 30
         },
-        "link": "https://www.jdoqocy.com/click-101138205-15734897?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Fseaesta-komodo.nl.html%3Faid%3D843227%26label%3Dahangama%26sid%3Daa1d624b677218438c02d0e5d3049076%26all_sr_blocks%3D508337904_288799424_0_0_0_460956%252C508337904_288799424_0_0_0_460956%26checkin%3D2025-03-15%26checkout%3D2025-03-19%26dest_id%3D5083379%26dest_type%3Dhotel%26dist%3D0%26group_adults%3D2%26group_children%3D0%26hapos%3D1%26highlighted_blocks%3D508337904_288799424_0_0_0_460956%252C508337904_288799424_0_0_0_460956%26hpos%3D1%26matching_block_id%3D508337904_288799424_0_0_0_460956%26no_rooms%3D1%26req_adults%3D2%26req_children%3D0%26room1%3DA%252CA%26sb_price_type%3Dtotal%26sr_order%3Dpopularity%26sr_pri_blocks%3D508337904_288799424_0_0_0_460956_89010000%252C508337904_288799424_0_0_0_460956_89010000%26srepoch%3D1741342568%26srpvid%3D9201483130e1000a%26type%3Dtotal%26ucfs%3D1%26%23hotelTmpl"
+        "link": "https://www.anrdoezrs.net/click-101138205-15734897?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Flk%2Fgoddess-garden.nl.html%3Faid%3D843227%26label%3Dahangama%26sid%3Daa1d624b677218438c02d0e5d3049076%26checkin%3D2025-07-02%26checkout%3D2025-07-03%26dest_id%3D1988589%26dest_type%3Dhotel%26dist%3D0%26group_adults%3D2%26group_children%3D0%26hapos%3D1%26hpos%3D1%26no_rooms%3D1%26req_adults%3D2%26req_children%3D0%26room1%3DA%252CA%26sb_price_type%3Dtotal%26soh%3D1%26sr_order%3Dpopularity%26srepoch%3D1745507774%26srpvid%3Dbd406b5eca0a18b8%26type%3Dtotal%26ucfs%3D1%26%23no_availability_msg"
       }
     ],
     "Hiriketiya": [
       {
         "image": {
-          "src": "seaesta-komodo-flores.JPG",
-          "alt": "Seaesta Komodo Hotel & Hostel Accommodatie Labuan Bajo Flores"
+          "src": "sri-lanka/sunset-bay-hiriketiya.webp",
+          "alt": "Sunset Bay Hiriketiya Accommodatie Sri Lanka"
         },
-        "name": "Seaesta Komodo Hotel & Hostel",
-        "description": "Dit hostel zit vol met mensen die de Komodo tour gaan doen of hiervan terugkomen. Je kan hier slapen in dorms, maar ook in privé kamers (daar zijn de prijzen op gebasseerd). Je hebt hier alles wat je nodig hebt, een zwembad, lekker restaurant en zelfs een sportschool. Dit hotel is echt heel fijn en krijgt van ons een dikke 10!",
+        "name": "Sunset Bay",
+        "description": "Een gloednieuw verblijf op 5 minuten lopen van het centrum van Hiriketiya! Dit hotel heeft 3 ruime en schone kamers en een prachtige tuin waar je heerlijk kan relaxen. Het verblijf ligt op een rustige plek en de kamers zijn heel modern. Wat ons betreft is de prijskwaliteit verhouding hier top!",
         "prices": {
-          "high": 65,
-          "low": 60
+          "high": 45,
+          "low": 40
         },
-        "link": "https://www.jdoqocy.com/click-101138205-15734897?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Fseaesta-komodo.nl.html%3Faid%3D843227%26label%3Dahangama%26sid%3Daa1d624b677218438c02d0e5d3049076%26all_sr_blocks%3D508337904_288799424_0_0_0_460956%252C508337904_288799424_0_0_0_460956%26checkin%3D2025-03-15%26checkout%3D2025-03-19%26dest_id%3D5083379%26dest_type%3Dhotel%26dist%3D0%26group_adults%3D2%26group_children%3D0%26hapos%3D1%26highlighted_blocks%3D508337904_288799424_0_0_0_460956%252C508337904_288799424_0_0_0_460956%26hpos%3D1%26matching_block_id%3D508337904_288799424_0_0_0_460956%26no_rooms%3D1%26req_adults%3D2%26req_children%3D0%26room1%3DA%252CA%26sb_price_type%3Dtotal%26sr_order%3Dpopularity%26sr_pri_blocks%3D508337904_288799424_0_0_0_460956_89010000%252C508337904_288799424_0_0_0_460956_89010000%26srepoch%3D1741342568%26srpvid%3D9201483130e1000a%26type%3Dtotal%26ucfs%3D1%26%23hotelTmpl"
+        "link": "https://www.kqzyfj.com/click-101138205-15734897?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Flk%2Fsunset-bay.nl.html%3Faid%3D843227%26label%3Dahangama%26sid%3Daa1d624b677218438c02d0e5d3049076%26all_sr_blocks%3D1331222201_405653585_2_2_0%26checkin%3D2025-07-02%26checkout%3D2025-07-03%26dist%3D0%26group_adults%3D2%26group_children%3D0%26hapos%3D1%26highlighted_blocks%3D1331222201_405653585_2_2_0%26hpos%3D1%26matching_block_id%3D1331222201_405653585_2_2_0%26no_rooms%3D1%26req_adults%3D2%26req_children%3D0%26room1%3DA%252CA%26sb_price_type%3Dtotal%26sr_order%3Ddistance_from_search%26sr_pri_blocks%3D1331222201_405653585_2_2_0__4658%26srepoch%3D1745507695%26srpvid%3D86ed6b369dff042d%26type%3Dtotal%26ucfs%3D1%26%23hotelTmpl"
+      }
+    ],
+    "Tangalle": [
+      {
+        "image": {
+          "src": "sri-lanka/luaya-beach-tangalle.webp",
+          "alt": "Luaya Beach Tangalle Accommodatie Sri Lanka"
+        },
+        "name": "Luaya Beach",
+        "description": "Deze eenvoudige, maar fijne accommodatie ligt in de straat met allerlei restaurants en strandtentjes. Alles is dan ook op loopafstand. Als je een aantal dagen aan het strand wil liggen, is dit de perfecte uitvalsbasis. Je hebt een tuin waar je lekker kan zitten, een warme douche en een fijn bed.",
+        "prices": {
+          "high": 35,
+          "low": 27
+        },
+        "link": "https://www.tkqlhce.com/click-101138205-15734897?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Flk%2Fluaya-beach.nl.html%3Faid%3D843227%26label%3Dahangama%26sid%3Daa1d624b677218438c02d0e5d3049076%26checkin%3D2025-07-02%26checkout%3D2025-07-03%26dest_id%3D4290161%26dest_type%3Dhotel%26dist%3D0%26group_adults%3D2%26group_children%3D0%26hapos%3D1%26hpos%3D1%26no_rooms%3D1%26req_adults%3D2%26req_children%3D0%26room1%3DA%252CA%26sb_price_type%3Dtotal%26soh%3D1%26sr_order%3Dpopularity%26srepoch%3D1745507837%26srpvid%3D725b6b7d29370c16%26type%3Dtotal%26ucfs%3D1%26%23no_availability_msg"
+      }
+    ],
+    "Negombo": [
+      {
+        "image": {
+          "src": "sri-lanka/city-oasis-66-negombo.jpg",
+          "alt": "City Oasis 66 Negombo Accommodatie Sri Lanka"
+        },
+        "name": "City Oasis 66",
+        "description": "Een accommodatie waar je kan bijkomen na je vlucht of kan uitrusten voordat je vliegt? Dit hotel in Negombo is de perfecte plek om tot rust te komen en je lekker op te frissen. De kamers zijn erg schoon, ruim en de eigenaren willen je overal mee helpen. Ook is het verblijf heel goed betaalbaar!",
+        "prices": {
+          "high": 28,
+          "low": 25
+        },
+        "link": "https://www.tkqlhce.com/click-101138205-15734897?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Flk%2Fcity-oasis-66.nl.html%3Faid%3D843227%26label%3Dahangama%26sid%3Daa1d624b677218438c02d0e5d3049076%26all_sr_blocks%3D1201210001_392386867_2_0_0%26checkin%3D2025-07-02%26checkout%3D2025-07-03%26dest_id%3D12012100%26dest_type%3Dhotel%26dist%3D0%26group_adults%3D2%26group_children%3D0%26hapos%3D1%26highlighted_blocks%3D1201210001_392386867_2_0_0%26hpos%3D1%26matching_block_id%3D1201210001_392386867_2_0_0%26no_rooms%3D1%26req_adults%3D2%26req_children%3D0%26room1%3DA%252CA%26sb_price_type%3Dtotal%26sr_order%3Dpopularity%26sr_pri_blocks%3D1201210001_392386867_2_0_0__2880%26srepoch%3D1745507896%26srpvid%3Dce396b9be957020b%26type%3Dtotal%26ucfs%3D1%26%23hotelTmpl"
+      }
+    ],
+    "Colombo": [
+      {
+        "image": {
+          "src": "sri-lanka/me-colombo.webp",
+          "alt": "ME Colombo Accommodatie Sri Lanka"
+        },
+        "name": "ME Colombo",
+        "description": "Bij ME Colombo kan je even bijkomen van je vlucht of je klaarmaken om naar het vliegveld te gaan. Je hebt verschillende kamertypes en er is een rooftop zwembad. Op 5 minuten loopafstand vind je een winkelcentrum met uitgebreide eetmogelijkheden. De kamer was schoon en het personeel was erg behulpzaam.",
+        "prices": {
+          "high": 43,
+          "low": 42
+        },
+        "link": "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1927899&hl=nl-nl&hid=4363558"
       }
     ]
   }

@@ -56,7 +56,7 @@ const Accommodations: React.FC<AccommodationsProps> = React.memo(({ data }) => {
   });
   const destinations = Object.keys(accommodations);
   const { pageContent } = data;
-  const HeaderImage = require(`../../assets/header/blogs/${pageContent.image.src}`);
+  const HeaderImage = require(`../../assets/header/accommodations/${pageContent.image.src}`);
 
   useEffect(() => {
     setDestFilter("");

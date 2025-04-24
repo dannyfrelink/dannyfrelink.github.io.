@@ -13,7 +13,7 @@ import { GetStaticProps } from "next";
 import Image from "next/image";
 import { ImageProps, MetadataProps } from "@/helpers/types";
 import { useAppContext } from "@/config/AppContext";
-import HeaderImage from "../../assets/header/accommodations.jpg";
+import HeaderImage from "../../assets/header/accommodations/cover.webp";
 
 interface CountryProps {
   [country: string]: {
@@ -50,14 +50,21 @@ const Accommodations: React.FC<AccommodationsProps> = React.memo(
         <Container className="text-center">
           <div className="max-w-[1000px] mx-auto">
             <H2 className={`${screenSize < 1250 ? "mb-4" : "mb-6"}`}>
-              Lorem ipsum liadois
+              Onze favoriete accommodaties
             </H2>
+            <BaseText className={`${screenSize < 750 ? "mb-3" : "mb-5"}`}>
+              Zelf speuren wij altijd het internet af om op zoek te gaan naar de
+              mooiste accommodaties om in te verblijven. Soms zoeken wij meer
+              budget opties en af en toe verblijven we op een plek die wat
+              duurder is. Eén ding is zeker, al deze verblijven hebben onze
+              ervaring een stukje mooier gemaakt. Wat voor ons sowieso
+              belangrijk is, is een schone accommodatie die op een fijne locatie
+              ligt.
+            </BaseText>
             <BaseText>
-              Lorem ipsum dolor sit amet. Et vero distinctio ut ullam voluptatem
-              ut quibusdam eaque hic praesentium fuga qui omnis internos et
-              consequuntur voluptatem. Aut galisum itaque ea totam iusto qui
-              culpa necessitatibus in dolores magni et iste mollitia eos error
-              numquam et quis quisquam.
+              Of je nu opzoek bent naar budgetvriendelijke accommodaties of
+              juist naar iets unieks: dit zijn onze favoriete plekken om te
+              verblijven!
             </BaseText>
           </div>
 
@@ -74,7 +81,7 @@ const Accommodations: React.FC<AccommodationsProps> = React.memo(
               const countryUrl = Object.keys(country)[0];
               const countryName = Object.keys(Object.values(country)[0])[0];
               const countryImage = Object.values(Object.values(country)[0])[0];
-              const countryImageSrc = require(`../../assets/header/blogs/${countryImage.src}`);
+              const countryImageSrc = require(`../../assets/header/accommodations/${countryImage.src}`);
 
               return (
                 <Link
