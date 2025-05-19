@@ -988,8 +988,7 @@
               "image9": "Zonsondergang Mama Pizza Restaurant Gili Air Lombok",
               "image10": "Turtle Beach Strand Gili Air Lombok"
             }
-          },
-          "carousel": true
+          }
         }
       ],
       "Kuta (Lombok)": [
@@ -1215,6 +1214,86 @@
               "image12": "Halpewatte Tea Factory Theeplantage Ella Sri Lanka",
               "image13": "B35 Weg Olifanten Spotten Ella Sri Lanka",
               "image14": "B35 Weg Olifanten Spotten Ella Sri Lanka"
+            }
+          },
+          "carousel": true
+        }
+      ],
+      "Hiriketiya": [
+        {
+          "id": 18,
+          "country": "sri-lanka",
+          "metaTitle": "Wat te doen in Hiriketiya, Sri Lanka? 8 leuke tips!",
+          "metaDesc": "Wat te doen in Hiriketiya? In deze hotspot aan de kust van Sri Lanka kan je surfen, vind je lekker eten, strand en een fijne sfeer. Bekijk onze tips!",
+          "date": "19 may, 2025",
+          "href": "wat-te-doen-in-hiriketiya",
+          "coverImage": {
+            "src": "wat-te-doen-in-hiriketiya/cover.jpg",
+            "alt": "Hiriketiya Centrum Sri Lanka"
+          },
+          "title": "Wat te doen in Hiriketiya, Sri Lanka? 8 leuke tips!",
+          "headers": [
+            "Doe een kookworkshop bij Rosie’s Kitchen",
+            "De hoogste vuurtoren van Sri Lanka bezoeken",
+            "Relaxen bij Dots Bay House",
+            "Ga surfen bij Hiriketiya Beach",
+            "Loop over de zandbank bij Blue Beach Island",
+            "Schildpadden spotten bij Turtle point",
+            "Een dagtrip naar Tangalle",
+            "Neem een massage bij Massage Shed Hiriketiya"
+          ],
+          "content": {
+            "section1": {
+              "text": "<p class='font-semibold'>Dé hotspot van Sri Lanka vind je aan de zuidkust van het land: Hiriketiya. Deze plek wordt steeds populairder onder reizigers en wij snappen wel waarom. Hiriketiya voelt aan als een gemoedelijk dorp met een fijne sfeer en heel veel leuke restaurantjes. Wij hadden hier makkelijk een paar weken kunnen verblijven! Het fijne aan Hiriketiya is dat het niet langs een drukke weg ligt, zoals bij veel andere plekken wel het geval is. Je kan hier dus bijna alles lopend doen en wij vinden deze plek een must tijdens je rondreis in Sri Lanka! Dit zijn de leukste tips voor wat er te doen is in en om Hiriketiya.</p>//<h3>Doe een kookworkshop bij Rosie’s Kitchen</h3>//<div class='blogText-anchor'><p>Onze favoriete activiteit in Hiriketiya is de kookworkshop bij </p>//<a href='https://maps.app.goo.gl/Ax5QWFrJkooz85ra8' target='_blank'>Rosie’s Kitchen</a>//<p>. Een kookles nemen in een land als Sri Lanka is sowieso geweldig, want de Sri Lankaanse keuken is ontzettend lekker. Maar deze koopworkshop was echt een hoogtepunt van onze reis. Rosie en haar familie zijn hele lieve mensen die ervoor zorgen dat jij je helemaal thuis voelt.</p></div>//<p>Tijdens de kookworkshop vertelt Rosie veel over de Sri Lankaanse kruiden, manieren van koken en hoe zij alles op gevoel doen. Je gaat verschillende gerechten maken, zoals kokos sambal, naan en curry’s. Bij veel kookworkshops moet jij ook het snijwerk doen, maar dat is hier niet het geval. Rosie wil dat jij zoveel mogelijk leert van de Sri Lankaanse keuken en snijden kunnen we al.</p>//<p>Als alle gerechten klaar zijn, ga je met z’n alle aan een grote tafel eten. Het eten was echt heel erg lekker en er was veel te veel. Rosie nodigt iedereen vervolgens uit om de volgende ochtend gratis te komen ontbijten. Ook hebben we nog verschillende soorten kruiden mee naar huis gekregen en zelfs een omslagdoek cadeau gehad! Dit alles kostte ons 8500 LKR (€25) per persoon.</p>//<div class='blogImage-container'><image1><image2></div>//<image3>//<h3>De hoogste vuurtoren van Sri Lanka bezoeken</h3>//<p>Op ongeveer een half uur rijden vanaf Hiriketiya vind je Dondra Lighthouse. Dit is de hoogste vuurtoren van Sri Lanka en ligt tussen prachtige palmbomen. Je kan de vuurtoren niet in, maar dit is een prachtige plek om even rond te lopen en te genieten van het uitzicht.</p>//<div class='blogImage-container'><image4><image5></div>//<h3>Relaxen bij Dots Bay House</h3>//<p>Onze favoriete spot voor een relaxed dagje aan het zwembad is Dots Bay House. Wij kwamen hier per toeval terecht en zijn hier 2 keer terug geweest, omdat we het zo’n fijn plekje vonden. Je betaalt hier geen geld voor een bedje en kan zo lang liggen als je wil. Ook is er een bar bij het zwembad waar je lekkere drankjes en eten kan bestellen en het personeel is heel erg leuk.</p>//<div class='blogText-anchor tip'><p class='font-medium'>Tip:</p>//<p> Naast relaxen bij het zwembad, kan je hier ook slapen, eten, winkelen en zelfs feesten!</p></div>//<div class='blogImage-container'><image6><image7></div>//<h3>Ga surfen bij Hiriketiya Beach</h3>//<p>Hiriketiya staat bekend als een surfersdorpje, dus surfers vind je hier volop! Er zijn op Hiriketiya Beach dan ook heel veel surfscholen te vinden, dus ook voor beginners is dit de perfecte plek om te leren surfen. Het kan wel wat druk zijn bij Hiriketiya Beach. Onze tip is dan ook om niet op de populaire surftijden te gaan of uit te wijken naar een dichtbijgelegen strand om hier rustiger te kunnen oefenen. Het uitzicht op al de surfers is dan wel weer prachtig.</p>//<image8>//<div class='blogImage-container'><image9><image10></div>//<h3>Loop over de zandbank bij Blue Beach Island</h3>//<p>Blue Beach Island is te bereiken via een zandbank die het eiland met de kust verbindt. Let dus ook goed op wanneer je gaat, want met vloed kan de zandbank onder water staan. Het is ongeveer 10 minuten rijden vanaf Hiriketiya en echt een waar paradijs. Op Blue Beach Island kan je een rondje lopen met hele mooie uitzichten en daarna kan je heerlijk relaxen op het strand aan de andere kant van de zandbank.</p>//<div class='blogImage-container'><image11><image12></div>",
+              "image": {
+                "src": "wat-te-doen-in-hiriketiya/blue-beach-island-3.webp",
+                "alt": "Blue Beach Island Strand Hiriketiya Sri Lanka"
+              }
+            },
+            "section2": {
+              "text": "<h3>Schildpadden spotten bij Turtle point</h3>//<div class='blogText-anchor'><p>Als je schildpadden wil zien, is </p>//<a href='https://maps.app.goo.gl/266qbRMA8CgNB5AW6' target='_blank'>Turtle Point</a>//<p> (zoals de naam al zegt) dé plek waar je heen moet. Deze plek is te vinden tussen Batheegama en Dickwella Beach en de schildpadden zwemmen hier heel dicht bij de kust. Als je geen eigen snorkel mee hebt, kan je deze bij de omliggende restaurant huren. Raak de schildpadden niet aan! Wij zien dit toch nog te vaak gebeuren, maar dit is echt niet de bedoeling. Er zijn wel lokale mensen die het water in gaan om de schildpadden te voeren.</p></div>//<image13>//<h3>Een dagtrip naar Tangalle</h3>//<p>Tangalle ligt op ongeveer een half uurtje rijden vanuit Hiriketiya. Je vindt hier de mooiste stranden en kan hier lekker tot rust komen. De stranden die je zeker niet mag overslaan zijn: Unakuruwa Beach, Silent Beach en Goyambokka beach. Op al deze stranden kan je een bedje huren, vaak voor een bepaald bedrag wat je dan in het bijbehorende restaurant kan uitgeven. Verwacht hier geen beachclubs of luxe restaurants, want die ga je hier op deze stranden niet vinden. Wel prachtige stranden, palmbomen en rust!</p>//<div class='blogText-anchor'><p>Naast de stranden, vind je in Tangalle ook nog een restaurant genaamd: Tangalle Rice & Curry. Dit is niet zomaar een restaurant, maar een ervaring waar je uitleg krijgt over de Sri Lankaanse keuken en meer dan 30 verschillende gerechten kan proberen. Je kan hier onbeperkt eten voor 3500 LKR (€10) per persoon. Dit was één van onze lekkerste maaltijden in Sri Lanka! Je moet hiervoor wel van tevoren een reservering maken. De contactgegevens vind je op de Instagrampagina van </p>//<a href='https://www.instagram.com/tangalle_rice_and_curry?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target='_blank'>Tangalle Rice & Curry.</a></div>//<p>Zelf hebben wij 3 nachten geslapen in Tangalle, maar wij zouden dit eerder als dagtrip aanraden vanuit Hiriketiya. Vooral omdat er naast de prachtige stranden weinig te doen is en ook qua restaurants is er weinig variatie is qua aanbod.</p>//<div class='blogText-anchor tip'><p class='font-medium'>Tip:</p>//<p> Mocht je willen ontbijten of lunchen in de buurt van Tangalle, is Harmuni’s een echte aanrader. Je zit hier in een gezellige tuin en het eten is heel erg lekker! Een aanrader is de loaded banana bread.</p></div>//<image14>//<div class='blogImage-container'><image15><image16></div>//<h3>Neem een massage bij Massage Shed Hiriketiya</h3>//<div class='blogText-anchor'><p>Heerlijk ontspannen met een massage bij </p>//<a href='https://massageshed.lk/' target='_blank'>Massage Shed Hiriketiya</a>//<p>. Deze massagesalon ziet er heel erg rustgevend uit en je kan hier verschillende behandelingen boeken. Het is wel een populaire salon, dus je kan niet even binnenlopen voor een massage. Je kan terplekke boeken voor vaak de dag erna of later. Voor een surf massage van 1 uur betaal je hier 6000 LKR (€17,50).</p></div>//<div class='blogImage-container'><image17><image18></div>"
+            }
+          },
+          "images": {
+            "src": {
+              "image1": "wat-te-doen-in-hiriketiya/rosies-kitchen-1.webp",
+              "image2": "wat-te-doen-in-hiriketiya/rosies-kitchen-2.webp",
+              "image3": "wat-te-doen-in-hiriketiya/rosies-kitchen-3.webp",
+              "image4": "wat-te-doen-in-hiriketiya/dondra-lighthouse-1.webp",
+              "image5": "wat-te-doen-in-hiriketiya/dondra-lighthouse-2.webp",
+              "image6": "wat-te-doen-in-hiriketiya/dots-bay-house-1.webp",
+              "image7": "wat-te-doen-in-hiriketiya/dots-bay-house-2.webp",
+              "image8": "wat-te-doen-in-hiriketiya/surfing-1.webp",
+              "image9": "wat-te-doen-in-hiriketiya/surfing-2.webp",
+              "image10": "wat-te-doen-in-hiriketiya/surfing-3.webp",
+              "image11": "wat-te-doen-in-hiriketiya/blue-beach-island-1.jpg",
+              "image12": "wat-te-doen-in-hiriketiya/blue-beach-island-2.webp",
+              "image13": "wat-te-doen-in-hiriketiya/turtle-point.webp",
+              "image14": "wat-te-doen-in-hiriketiya/tangalle-1.webp",
+              "image15": "wat-te-doen-in-hiriketiya/tangalle-2.webp",
+              "image16": "wat-te-doen-in-hiriketiya/tangalle-3.webp",
+              "image17": "wat-te-doen-in-hiriketiya/massage-shed-1.jpg",
+              "image18": "wat-te-doen-in-hiriketiya/massage-shed-2.webp"
+            },
+            "alt": {
+              "image1": "Rosie's Kitchen Kookworkshop Hiriketiya Sri Lanka",
+              "image2": "Rosie's Kitchen Kookworkshop Hiriketiya Sri Lanka",
+              "image3": "Rosie's Kitchen Kookworkshop Hiriketiya Sri Lanka",
+              "image4": "Dondra Lighthouse Hiriketiya Sri Lanka",
+              "image5": "Dondra Lighthouse Hiriketiya Sri Lanka",
+              "image6": "Dots Bay House Zwembad Hiriketiya Sri Lanka",
+              "image7": "Dots Bay House Zwembad Hiriketiya Sri Lanka",
+              "image8": "Surfen Hiriketiya Beach Strand Sri Lanka",
+              "image9": "Surfen Hiriketiya Beach Strand Sri Lanka",
+              "image10": "Surfen Hiriketiya Beach Strand Sri Lanka",
+              "image11": "Blue Beach Island Strand Hiriketiya Sri Lanka",
+              "image12": "Blue Beach Island Strand Hiriketiya Sri Lanka",
+              "image13": "Turtle Point Schildpadden Hiriketiya Sri Lanka",
+              "image14": "Tangalle Dagtrip Hiriketiya Sri Lanka",
+              "image15": "Tangalle Dagtrip Hiriketiya Sri Lanka",
+              "image16": "Tangalle Dagtrip Hiriketiya Sri Lanka",
+              "image17": "Massage Shed Hiriketiya Sri Lanka",
+              "image18": "Massage Shed Hiriketiya Sri Lanka"
             }
           },
           "carousel": true

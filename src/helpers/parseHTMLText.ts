@@ -80,7 +80,9 @@ function parseHTMLText(text: string | undefined, images: any) {
           key: index,
           href: element.getAttribute("href"),
           target: element.getAttribute("target"),
-          children: element.innerHTML,
+          children: React.createElement("a", {
+            children: element.innerHTML.replaceAll("&amp;", "&"),
+          }),
         });
       } else if (TagComponent) {
         // If a mapping exists, create the React component
