@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
           </nav>
         </div>
 
-        <BaseText className="mt-8 text-center">© 2024 Reisfeeld</BaseText>
+        <BaseText className="mt-8 text-center">© 2025 Reisfeeld</BaseText>
       </div>
     </div>
   );
