@@ -671,8 +671,7 @@
               "image5": "Suka Espresso Restaurant Uluwatu Bali",
               "image6": "The Bakery Restaurant Uluwatu Bali"
             }
-          },
-          "carousel": true
+          }
         }
       ],
       "Amed (Bali)": [
@@ -1350,24 +1349,24 @@
               "image15": "6-leuke-tips-voor-ahangama/the-kip-2.jpg"
             },
             "alt": {
-              "image1": "",
-              "image2": "",
-              "image3": "",
-              "image4": "",
-              "image5": "",
-              "image6": "",
-              "image7": "",
-              "image8": "",
-              "image9": "",
-              "image10": "",
-              "image11": "",
-              "image12": "",
-              "image13": "",
-              "image14": "",
-              "image15": "",
-              "image16": ""
+              "image1": "Kustlijn Ahangama Sri Lanka",
+              "image2": "Cactus Beachclub Ahangama Sri Lanka",
+              "image3": "Cactus Beachclub Ahangama Sri Lanka",
+              "image4": "Sisters Kabalana Restaurant Ahangama Sri Lanka",
+              "image5": "Manori's Kitchen Restaurant Ahangama Sri Lanka",
+              "image6": "Drone Uitzicht Coconut Tree Mirissa Sri Lanka",
+              "image7": "Kurumba Bay Beachclub Weligama Sri Lanka",
+              "image8": "Kurumba Bay Beachclub Weligama Sri Lanka",
+              "image9": "Drone Uitzicht Coconut Tree Mirissa Sri Lanka",
+              "image10": "Coconut Tree Mirissa Sri Lanka",
+              "image11": "Strand Secret Beach Mirissa Sri Lanka",
+              "image12": "Fort Galle Sri Lanka",
+              "image13": "Fort Galle Sri Lanka",
+              "image14": "The Kip Restaurant Ahangama Sri Lanka",
+              "image15": "The Kip Restaurant Ahangama Sri Lanka"
             }
-          }
+          },
+          "carousel": true
         }
       ],
       "Sigiriya": [
