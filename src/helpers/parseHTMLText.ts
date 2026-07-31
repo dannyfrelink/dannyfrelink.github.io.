@@ -88,7 +88,7 @@ function parseHTMLText(text: string | undefined, images: any) {
         // If a mapping exists, create the React component
         const name = element.innerHTML.split(" ").join("-").toLowerCase();
 
-        if (tagName === "h3") {
+        if (tagName === "h3" || tagName === "h4") {
           // If h3 tag, create Element component with H3 component inside
           return React.createElement(Element, {
             key: index,
